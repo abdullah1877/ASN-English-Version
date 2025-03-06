@@ -1,0 +1,1715 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- <script src="https://cdn.tailwindcss.com"></script> -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- FONTS -->
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+  <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+</head>
+
+<body class="font-[Poppins]  h-screen">
+  <header class="bg-white shadow-lg">
+    <nav class="flex justify-between items-center w-[92%] mx-auto max-w-7xl">
+      <div>
+        <a href="index.html">
+          <img class="md:w-56 w-40 p-3 cursor-pointer" src="ASNlogo.png" alt="...">
+        </a>
+      </div>
+      <div>
+        <div
+          class="nav-links duration-500 md:static absolute bg-white md:min-h-fit top-[57px] left-[-100%] md:w-auto w-60 px-5 flex flex-col justify-start h-full">
+          <ul
+            class="text-gray-500 flex md:flex-row flex-col md:items-center md:gap-[4vw] gap-8 md:font-semibold pt-8 md:pt-0">
+            <li>
+              <div class="hover:text-blue-600 transition duration-300 ease-out">
+                <i class="text-base fas fa-home mr-1 md:hidden"></i>
+                <a href="index.html">Home</a>
+              </div>
+            </li>
+            <li class="relative group">
+              <div class="hover:text-blue-600 transition duration-300 ease-out">
+                <i class="text-base fa-solid fa-briefcase mr-2 md:hidden"></i>
+                <span>Services</span>
+                <i class="ml-2 text-sm fa-solid fa-chevron-down"></i>
+              </div>
+              <div
+                class="absolute z-50 text-sm left-0 hidden group-hover:block bg-white border border-gray-200 border-t-0 rounded-b shadow-lg mt-[-8px] w-40 transition duration-300 ease-out transform translate-y-1">
+                <ul class="pt-2 text-gray-500">
+                  <li><a
+                      class="block px-4 py-2 hover:bg-blue-600 rounded hover:text-white transition duration-300 ease-in-out"
+                      href="webdesign.html">Web Designing</a></li>
+                  <li><a
+                      class="block px-4 py-2 hover:bg-blue-600 rounded hover:text-white transition duration-300 ease-in-out"
+                      href="seo.html">SEO</a></li>
+                  <li><a
+                      class="block px-4 py-2 hover:bg-blue-600 rounded hover:text-white transition duration-300 ease-in-out"
+                      href="branding.html">Branding</a></li>
+                  <li><a
+                      class="block px-4 py-2 text-gray-700 hover:bg-blue-600 rounded hover:text-white transition duration-300 ease-in-out"
+                      href="digitalmarketing.html">Digital Marketing</a></li>
+                </ul>
+              </div>
+            </li>
+            <li>
+              <div class="hover:text-blue-600 transition duration-300 ease-out">
+                <i class="text-base fas fa-envelope mr-2 md:hidden"></i>
+                <a href="contact.html">Contact Us</a>
+              </div>
+            </li>
+            <!-- Language Dropdown -->
+            <li class="relative group">
+              <div class="hover:text-blue-600 transition duration-300 ease-out cursor-pointer">
+                <span>Language</span> <!-- Make this clickable -->
+                <i class="ml-2 text-sm fa-solid fa-chevron-down"></i>
+              </div>
+              <!-- Language Dropdown Menu -->
+              <div id="google_translate_element"
+                class="absolute z-50 text-sm left-0 hidden group-hover:block bg-white border border-gray-200 border-t-0 rounded-b shadow-lg mt-[-4px] w-40 transition duration-300 ease-out transform translate-y-1">
+                <ul class="pt-2 text-gray-500">
+                  <li>
+                    <a class="block px-4 py-2 hover:bg-blue-600 rounded hover:text-white transition duration-300 ease-in-out"
+                      href="http://french.asnconsulting.be/" target="_blank">Français</a>
+                  </li>
+                  <li>
+                    <a class="block px-4 py-2 hover:bg-blue-600 rounded hover:text-white transition duration-300 ease-in-out"
+                      href="#" onclick="changeLanguage('en')">English</a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <div>
+          <ion-icon onclick="onToggleMenu(this)" name="menu" class="text-3xl cursor-pointer md:hidden"></ion-icon>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <!-- HERO section -->
+  <section>
+    <div
+      class="lg:grid lg:grid-cols-2 lg:gap-8 max-w-7xl mx-auto  w-full pt-16 pb- lg:py-0 text-center lg:text-left lg:overflow-hidden">
+      <div>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1000" width="1000" height="1000"
+          preserveAspectRatio="xMidYMid meet"
+          style="width: 100%; height: 100%; transform: translate3d(0px, 0px, 0px); content-visibility: visible;">
+          <defs>
+            <clipPath id="__lottie_element_1201">
+              <rect width="1000" height="1000" x="0" y="0"></rect>
+            </clipPath>
+            <clipPath id="__lottie_element_1203">
+              <path d="M0,0 L624,0 L624,800 L0,800z"></path>
+            </clipPath>
+            <linearGradient id="__lottie_element_1209" spreadMethod="pad" gradientUnits="userSpaceOnUse" x1="-4.25"
+              y1="-7.75" x2="28.5" y2="12.5">
+              <stop offset="0%" stop-color="rgb(191,219,254)"></stop>
+              <stop offset="50%" stop-color="rgb(147,197,253)"></stop>
+              <stop offset="100%" stop-color="rgb(191,219,254)"></stop>
+            </linearGradient>
+            <linearGradient id="__lottie_element_1213" spreadMethod="pad" gradientUnits="userSpaceOnUse" x1="-29.75"
+              y1="-11.75" x2="-4.5" y2="3.75">
+              <stop offset="0%" stop-color="rgb(191,219,254)"></stop>
+              <stop offset="50%" stop-color="rgb(147,197,253)"></stop>
+              <stop offset="100%" stop-color="rgb(191,219,254)"></stop>
+            </linearGradient>
+            <linearGradient id="__lottie_element_1217" spreadMethod="pad" gradientUnits="userSpaceOnUse" x1="-69.5"
+              y1="6" x2="73" y2="-7">
+              <stop offset="0%" stop-color="rgb(135,168,246)"></stop>
+              <stop offset="50%" stop-color="rgb(135,168,246)"></stop>
+              <stop offset="100%" stop-color="rgb(135,168,246)"></stop>
+            </linearGradient>
+            <linearGradient id="__lottie_element_1218" spreadMethod="pad" gradientUnits="userSpaceOnUse" x1="0" y1="0"
+              x2="100" y2="0">
+              <stop offset="0%" stop-color="rgb(59,130,246)"></stop>
+              <stop offset="50%" stop-color="rgb(37,99,235)"></stop>
+              <stop offset="100%" stop-color="rgb(29,78,216)"></stop>
+            </linearGradient>
+            <linearGradient id="__lottie_element_1219" spreadMethod="pad" gradientUnits="userSpaceOnUse" x1="-10"
+              y1="-19" x2="16" y2="19">
+              <stop offset="0%" stop-color="rgb(96,165,250)"></stop>
+              <stop offset="50%" stop-color="rgb(59,130,246)"></stop>
+              <stop offset="100%" stop-color="rgb(37,99,235)"></stop>
+            </linearGradient>
+            <linearGradient id="__lottie_element_1220" spreadMethod="pad" gradientUnits="userSpaceOnUse" x1="-7"
+              y1="8.5" x2="-4.25" y2="-1">
+              <stop offset="0%" stop-color="rgb(30,64,175)"></stop>
+              <stop offset="50%" stop-color="rgb(29,78,216)"></stop>
+              <stop offset="100%" stop-color="rgb(37,99,235)"></stop>
+            </linearGradient>
+            <clipPath id="__lottie_element_1222">
+              <path d="M0,0 L595,0 L595,566 L0,566z"></path>
+            </clipPath>
+            <linearGradient id="__lottie_element_1237" spreadMethod="pad" gradientUnits="userSpaceOnUse" x1="-63"
+              y1="-32.5" x2="65.5" y2="37.5">
+              <stop offset="0%" stop-color="rgb(59,130,246)"></stop>
+              <stop offset="50%" stop-color="rgb(37,99,235)"></stop>
+              <stop offset="100%" stop-color="rgb(29,78,216)"></stop>
+            </linearGradient>
+            <linearGradient id="__lottie_element_1241" spreadMethod="pad" gradientUnits="userSpaceOnUse" x1="-74"
+              y1="-42" x2="72" y2="47.5">
+              <stop offset="0%" stop-color="rgb(135,168,246)"></stop>
+              <stop offset="50%" stop-color="rgb(135,168,246)"></stop>
+              <stop offset="100%" stop-color="rgb(135,168,246)"></stop>
+            </linearGradient>
+            <linearGradient id="__lottie_element_1242" spreadMethod="pad" gradientUnits="userSpaceOnUse" x1="-73.5"
+              y1="-44" x2="73.5" y2="42">
+              <stop offset="0%" stop-color="rgb(59,130,246)"></stop>
+              <stop offset="50%" stop-color="rgb(37,99,235)"></stop>
+              <stop offset="100%" stop-color="rgb(29,78,216)"></stop>
+            </linearGradient>
+            <clipPath id="__lottie_element_1244">
+              <path d="M0,0 L665,0 L665,490 L0,490z"></path>
+            </clipPath>
+            <linearGradient id="__lottie_element_1250" spreadMethod="pad" gradientUnits="userSpaceOnUse" x1="-12.5"
+              y1="-8" x2="15" y2="5">
+              <stop offset="0%" stop-color="rgb(191,219,254)"></stop>
+              <stop offset="50%" stop-color="rgb(191,219,254)"></stop>
+              <stop offset="100%" stop-color="rgb(191,219,254)"></stop>
+            </linearGradient>
+            <linearGradient id="__lottie_element_1254" spreadMethod="pad" gradientUnits="userSpaceOnUse" x1="-54.75"
+              y1="-32" x2="26.25" y2="15.5">
+              <stop offset="0%" stop-color="rgb(191,219,254)"></stop>
+              <stop offset="50%" stop-color="rgb(191,219,254)"></stop>
+              <stop offset="100%" stop-color="rgb(191,219,254)"></stop>
+            </linearGradient>
+            <linearGradient id="__lottie_element_1258" spreadMethod="pad" gradientUnits="userSpaceOnUse" x1="-71"
+              y1="-41.5" x2="15" y2="9">
+              <stop offset="0%" stop-color="rgb(191,219,254)"></stop>
+              <stop offset="50%" stop-color="rgb(191,219,254)"></stop>
+              <stop offset="100%" stop-color="rgb(191,219,254)"></stop>
+            </linearGradient>
+            <linearGradient id="__lottie_element_1262" spreadMethod="pad" gradientUnits="userSpaceOnUse" x1="-37"
+              y1="-21" x2="50" y2="29.5">
+              <stop offset="0%" stop-color="rgb(191,219,254)"></stop>
+              <stop offset="50%" stop-color="rgb(191,219,254)"></stop>
+              <stop offset="100%" stop-color="rgb(191,219,254)"></stop>
+            </linearGradient>
+            <linearGradient id="__lottie_element_1266" spreadMethod="pad" gradientUnits="userSpaceOnUse" x1="-15.75"
+              y1="-9.75" x2="109.75" y2="63.5">
+              <stop offset="0%" stop-color="rgb(191,219,254)"></stop>
+              <stop offset="50%" stop-color="rgb(191,219,254)"></stop>
+              <stop offset="100%" stop-color="rgb(191,219,254)"></stop>
+            </linearGradient>
+            <linearGradient id="__lottie_element_1270" spreadMethod="pad" gradientUnits="userSpaceOnUse" x1="-109"
+              y1="-63.25" x2="21.5" y2="12">
+              <stop offset="0%" stop-color="rgb(191,219,254)"></stop>
+              <stop offset="50%" stop-color="rgb(191,219,254)"></stop>
+              <stop offset="100%" stop-color="rgb(191,219,254)"></stop>
+            </linearGradient>
+            <linearGradient id="__lottie_element_1274" spreadMethod="pad" gradientUnits="userSpaceOnUse" x1="-58.75"
+              y1="-34.5" x2="64.25" y2="37.5">
+              <stop offset="0%" stop-color="rgb(191,219,254)"></stop>
+              <stop offset="50%" stop-color="rgb(191,219,254)"></stop>
+              <stop offset="100%" stop-color="rgb(191,219,254)"></stop>
+            </linearGradient>
+            <linearGradient id="__lottie_element_1278" spreadMethod="pad" gradientUnits="userSpaceOnUse" x1="-73.5"
+              y1="-48" x2="74" y2="38.5">
+              <stop offset="0%" stop-color="rgb(94,139,243)"></stop>
+              <stop offset="50%" stop-color="rgb(94,139,243)"></stop>
+              <stop offset="100%" stop-color="rgb(94,139,243)"></stop>
+            </linearGradient>
+            <linearGradient id="__lottie_element_1279" spreadMethod="pad" gradientUnits="userSpaceOnUse" x1="-74"
+              y1="-44.5" x2="75" y2="42.5">
+              <stop offset="0%" stop-color="rgb(59,130,246)"></stop>
+              <stop offset="50%" stop-color="rgb(37,99,235)"></stop>
+              <stop offset="100%" stop-color="rgb(29,78,216)"></stop>
+            </linearGradient>
+            <linearGradient id="__lottie_element_1292" spreadMethod="pad" gradientUnits="userSpaceOnUse" x1="12.5"
+              y1="-102" x2="17.5" y2="41">
+              <stop offset="0%" stop-color="rgb(0,125,254)"></stop>
+              <stop offset="50%" stop-color="rgb(71,112,226)"></stop>
+              <stop offset="100%" stop-color="rgb(29,78,216)"></stop>
+            </linearGradient>
+            <linearGradient id="__lottie_element_1293" spreadMethod="pad" gradientUnits="userSpaceOnUse" x1="-45"
+              y1="-7.5" x2="63" y2="22.5">
+              <stop offset="0%" stop-color="rgb(219,234,254)"></stop>
+              <stop offset="50%" stop-color="rgb(219,234,254)"></stop>
+              <stop offset="100%" stop-color="rgb(191,219,254)"></stop>
+            </linearGradient>
+            <linearGradient id="__lottie_element_1294" spreadMethod="pad" gradientUnits="userSpaceOnUse" x1="12.75"
+              y1="-7.125" x2="-11.125" y2="6.5">
+              <stop offset="0%" stop-color="rgb(21,68,137)"></stop>
+              <stop offset="50%" stop-color="rgb(21,68,137)"></stop>
+              <stop offset="100%" stop-color="rgb(21,68,137)"></stop>
+            </linearGradient>
+            <linearGradient id="__lottie_element_1295" spreadMethod="pad" gradientUnits="userSpaceOnUse" x1="-17.25"
+              y1="-29.625" x2="17.625" y2="30.25">
+              <stop offset="0%" stop-color="rgb(42,93,168)"></stop>
+              <stop offset="50%" stop-color="rgb(42,93,168)"></stop>
+              <stop offset="100%" stop-color="rgb(42,93,168)"></stop>
+            </linearGradient>
+            <linearGradient id="__lottie_element_1299" spreadMethod="pad" gradientUnits="userSpaceOnUse" x1="0" y1="0"
+              x2="100" y2="0">
+              <stop offset="0%" stop-color="rgb(29,78,216)"></stop>
+              <stop offset="50%" stop-color="rgb(37,99,235)"></stop>
+              <stop offset="100%" stop-color="rgb(59,130,246)"></stop>
+            </linearGradient>
+            <linearGradient id="__lottie_element_1300" spreadMethod="pad" gradientUnits="userSpaceOnUse" x1="-167.5"
+              y1="-29" x2="165.5" y2="25.5">
+              <stop offset="0%" stop-color="rgb(219,234,254)"></stop>
+              <stop offset="50%" stop-color="rgb(191,219,254)"></stop>
+              <stop offset="100%" stop-color="rgb(219,234,254)"></stop>
+            </linearGradient>
+            <linearGradient id="__lottie_element_1301" spreadMethod="pad" gradientUnits="userSpaceOnUse" x1="0" y1="0"
+              x2="100" y2="0">
+              <stop offset="0%" stop-color="rgb(59,130,246)"></stop>
+              <stop offset="50%" stop-color="rgb(37,99,235)"></stop>
+              <stop offset="100%" stop-color="rgb(29,78,216)"></stop>
+            </linearGradient>
+            <linearGradient id="__lottie_element_1302" spreadMethod="pad" gradientUnits="userSpaceOnUse" x1="-97"
+              y1="-13.5" x2="96.5" y2="11">
+              <stop offset="0%" stop-color="rgb(37,99,235)"></stop>
+              <stop offset="50%" stop-color="rgb(59,130,246)"></stop>
+              <stop offset="100%" stop-color="rgb(96,165,250)"></stop>
+            </linearGradient>
+            <linearGradient id="__lottie_element_1303" spreadMethod="pad" gradientUnits="userSpaceOnUse" x1="-39"
+              y1="21.5" x2="25" y2="-32.5">
+              <stop offset="0%" stop-color="rgb(37,99,235)"></stop>
+              <stop offset="50%" stop-color="rgb(59,130,246)"></stop>
+              <stop offset="100%" stop-color="rgb(96,165,250)"></stop>
+            </linearGradient>
+            <linearGradient id="__lottie_element_1304" spreadMethod="pad" gradientUnits="userSpaceOnUse" x1="-50"
+              y1="-27.5" x2="57" y2="30.5">
+              <stop offset="0%" stop-color="rgb(37,99,235)"></stop>
+              <stop offset="50%" stop-color="rgb(59,130,246)"></stop>
+              <stop offset="100%" stop-color="rgb(96,165,250)"></stop>
+            </linearGradient>
+            <linearGradient id="__lottie_element_1308" spreadMethod="pad" gradientUnits="userSpaceOnUse" x1="-32"
+              y1="42" x2="-9.5" y2="41">
+              <stop offset="0%" stop-color="rgb(191,219,254)"></stop>
+              <stop offset="25%" stop-color="rgb(191,219,254)"></stop>
+              <stop offset="50%" stop-color="rgb(147,197,253)"></stop>
+              <stop offset="75%" stop-color="rgb(147,197,253)"></stop>
+              <stop offset="100%" stop-color="rgb(147,197,253)"></stop>
+            </linearGradient>
+            <linearGradient id="__lottie_element_1309" spreadMethod="pad" gradientUnits="userSpaceOnUse" x1="-126.5"
+              y1="12.5" x2="126" y2="-13.5">
+              <stop offset="0%" stop-color="rgb(248,254,255)"></stop>
+              <stop offset="50%" stop-color="rgb(242,253,255)"></stop>
+              <stop offset="100%" stop-color="rgb(236,252,255)"></stop>
+            </linearGradient>
+            <linearGradient id="__lottie_element_1310" spreadMethod="pad" gradientUnits="userSpaceOnUse" x1="-26.5"
+              y1="-15.25" x2="25" y2="14.25">
+              <stop offset="0%" stop-color="rgb(37,99,235)"></stop>
+              <stop offset="50%" stop-color="rgb(59,130,246)"></stop>
+              <stop offset="100%" stop-color="rgb(96,165,250)"></stop>
+            </linearGradient>
+            <linearGradient id="__lottie_element_1311" spreadMethod="pad" gradientUnits="userSpaceOnUse" x1="-24"
+              y1="-15" x2="29" y2="17">
+              <stop offset="0%" stop-color="rgb(37,99,235)"></stop>
+              <stop offset="50%" stop-color="rgb(59,130,246)"></stop>
+              <stop offset="100%" stop-color="rgb(96,165,250)"></stop>
+            </linearGradient>
+            <linearGradient id="__lottie_element_1312" spreadMethod="pad" gradientUnits="userSpaceOnUse" x1="-25"
+              y1="-15" x2="26" y2="15.5">
+              <stop offset="0%" stop-color="rgb(37,99,235)"></stop>
+              <stop offset="50%" stop-color="rgb(59,130,246)"></stop>
+              <stop offset="100%" stop-color="rgb(96,165,250)"></stop>
+            </linearGradient>
+            <linearGradient id="__lottie_element_1313" spreadMethod="pad" gradientUnits="userSpaceOnUse" x1="-27"
+              y1="-16.5" x2="35" y2="20.5">
+              <stop offset="0%" stop-color="rgb(37,99,235)"></stop>
+              <stop offset="50%" stop-color="rgb(59,130,246)"></stop>
+              <stop offset="100%" stop-color="rgb(96,165,250)"></stop>
+            </linearGradient>
+            <linearGradient id="__lottie_element_1314" spreadMethod="pad" gradientUnits="userSpaceOnUse" x1="-8.5"
+              y1="-12.5" x2="11.5" y2="2">
+              <stop offset="0%" stop-color="rgb(191,219,254)"></stop>
+              <stop offset="50%" stop-color="rgb(191,219,254)"></stop>
+              <stop offset="100%" stop-color="rgb(191,219,254)"></stop>
+            </linearGradient>
+            <linearGradient id="__lottie_element_1318" spreadMethod="pad" gradientUnits="userSpaceOnUse" x1="-28"
+              y1="31.5" x2="33" y2="-46">
+              <stop offset="0%" stop-color="rgb(219,234,254)"></stop>
+              <stop offset="50%" stop-color="rgb(219,234,254)"></stop>
+              <stop offset="100%" stop-color="rgb(97,168,248)"></stop>
+            </linearGradient>
+            <linearGradient id="__lottie_element_1319" spreadMethod="pad" gradientUnits="userSpaceOnUse" x1="-21"
+              y1="39.5" x2="6.25" y2="-21">
+              <stop offset="0%" stop-color="rgb(59,130,246)"></stop>
+              <stop offset="50%" stop-color="rgb(37,99,235)"></stop>
+              <stop offset="100%" stop-color="rgb(29,78,216)"></stop>
+            </linearGradient>
+            <linearGradient id="__lottie_element_1320" spreadMethod="pad" gradientUnits="userSpaceOnUse" x1="-158"
+              y1="-87" x2="157.5" y2="96.5">
+              <stop offset="0%" stop-color="rgb(219,234,254)"></stop>
+              <stop offset="50%" stop-color="rgb(191,219,254)"></stop>
+              <stop offset="100%" stop-color="rgb(219,234,254)"></stop>
+            </linearGradient>
+            <linearGradient id="__lottie_element_1321" spreadMethod="pad" gradientUnits="userSpaceOnUse" x1="-56.5"
+              y1="-123" x2="155.5" y2="228">
+              <stop offset="0%" stop-color="rgb(59,130,246)"></stop>
+              <stop offset="50%" stop-color="rgb(37,99,235)"></stop>
+              <stop offset="100%" stop-color="rgb(29,78,216)"></stop>
+            </linearGradient>
+            <linearGradient id="__lottie_element_1322" spreadMethod="pad" gradientUnits="userSpaceOnUse"
+              x1="-156.18699645996094" y1="9.562999725341797" x2="154" y2="-12">
+              <stop offset="0%" stop-color="rgb(81,166,255)"></stop>
+              <stop offset="50%" stop-color="rgb(121,187,255)"></stop>
+              <stop offset="100%" stop-color="rgb(81,166,255)"></stop>
+            </linearGradient>
+            <linearGradient id="__lottie_element_1323" spreadMethod="pad" gradientUnits="userSpaceOnUse" x1="-145"
+              y1="6" x2="143.5" y2="-8.5">
+              <stop offset="0%" stop-color="rgb(191,219,254)"></stop>
+              <stop offset="50%" stop-color="rgb(219,234,254)"></stop>
+              <stop offset="100%" stop-color="rgb(219,234,254)"></stop>
+            </linearGradient>
+            <linearGradient id="__lottie_element_1324" spreadMethod="pad" gradientUnits="userSpaceOnUse" x1="-23"
+              y1="14" x2="26.75" y2="-16.5">
+              <stop offset="0%" stop-color="rgb(59,130,246)"></stop>
+              <stop offset="50%" stop-color="rgb(37,99,235)"></stop>
+              <stop offset="100%" stop-color="rgb(29,78,216)"></stop>
+            </linearGradient>
+            <linearGradient id="__lottie_element_1325" spreadMethod="pad" gradientUnits="userSpaceOnUse" x1="-39.5"
+              y1="5.5" x2="25.5" y2="-28">
+              <stop offset="0%" stop-color="rgb(29,78,216)"></stop>
+              <stop offset="50%" stop-color="rgb(37,99,235)"></stop>
+              <stop offset="100%" stop-color="rgb(59,130,246)"></stop>
+            </linearGradient>
+            <linearGradient id="__lottie_element_1326" spreadMethod="pad" gradientUnits="userSpaceOnUse" x1="-34"
+              y1="18" x2="23.5" y2="-23">
+              <stop offset="0%" stop-color="rgb(191,219,254)"></stop>
+              <stop offset="50%" stop-color="rgb(219,234,254)"></stop>
+              <stop offset="100%" stop-color="rgb(191,219,254)"></stop>
+            </linearGradient>
+          </defs>
+          <g clip-path="url(#__lottie_element_1201)">
+            <g transform="matrix(1,0,0,1,332.5560302734375,222.19296264648438)" opacity="1" style="display: block;">
+              <g opacity="1" transform="matrix(1,0,0,1,206.83999633789062,368.44000244140625)">
+                <path fill="url(#__lottie_element_1318)" fill-opacity="1"
+                  d=" M50.551998138427734,-6.514999866485596 C50.551998138427734,-6.514999866485596 -16.016000747680664,-45.52199935913086 -16.016000747680664,-45.52199935913086 C-12.35200023651123,-43.45800018310547 -10.204999923706055,-38.762001037597656 -10.25,-32.86000061035156 C-10.277999877929688,-28.98200035095215 -13.027999877929688,-24.18600082397461 -16.45599937438965,-22.30900001525879 C-16.45599937438965,-22.30900001525879 -52.88399887084961,-1.4390000104904175 -52.88399887084961,-1.4390000104904175 C-54.70899963378906,-0.421999990940094 -56.2599983215332,2.2200000286102295 -56.2599983215332,4.392000198364258 C-56.2599983215332,5.406000137329102 -55.900001525878906,6.204999923706055 -55.27199935913086,6.544000148773193 C-55.27199935913086,6.544000148773193 11.237000465393066,45.52199935913086 11.237000465393066,45.52199935913086 C10.675000190734863,45.20199966430664 10.265999794006348,44.40599822998047 10.265999794006348,43.388999938964844 C10.265999794006348,41.24300003051758 11.795999526977539,38.63100051879883 13.633999824523926,37.5989990234375 C13.633999824523926,37.5989990234375 50.095001220703125,16.683000564575195 50.095001220703125,16.683000564575195 C53.54999923706055,14.793000221252441 56.21900177001953,10.041000366210938 56.21900177001953,6.15500020980835 C56.2599983215332,0.18299999833106995 54.19900131225586,-4.433000087738037 50.551998138427734,-6.514999866485596z">
+                </path>
+              </g>
+              <g opacity="1" transform="matrix(1,0,0,1,240.09100341796875,370.7690124511719)">
+                <path fill="url(#__lottie_element_1319)" fill-opacity="1"
+                  d=" M-24.96299934387207,-44.060001373291016 C-24.96299934387207,-44.060001373291016 -29.781999588012695,-35.89099884033203 -29.781999588012695,-35.89099884033203 C-29.781999588012695,-35.89099884033203 17.301000595092773,-8.843999862670898 17.301000595092773,-8.843999862670898 C20.947999954223633,-6.76200008392334 23.010000228881836,-2.1449999809265137 22.9689998626709,3.8269999027252197 C22.9689998626709,7.711999893188477 20.299999237060547,12.463000297546387 16.844999313354492,14.354000091552734 C16.844999313354492,14.354000091552734 -19.615999221801758,35.270999908447266 -19.615999221801758,35.270999908447266 C-21.45400047302246,36.303001403808594 -22.983999252319336,38.915000915527344 -22.983999252319336,41.06100082397461 C-22.95400047302246,43.1870002746582 -21.45400047302246,44.060001373291016 -19.615999221801758,43.005001068115234 C-19.615999221801758,43.005001068115234 16.844999313354492,22.111000061035156 16.844999313354492,22.111000061035156 C23.93600082397461,18.045000076293945 29.74799919128418,8.107999801635742 29.781999588012695,-0.06499999761581421 C29.781999588012695,-8.020999908447266 26.975000381469727,-14.211999893188477 22.0310001373291,-17.03499984741211 C22.0310001373291,-17.03499984741211 -24.96299934387207,-44.060001373291016 -24.96299934387207,-44.060001373291016z">
+                </path>
+              </g>
+              <g opacity="1"
+                transform="matrix(1.763350009918213,0,0,1.763350009918213,381.239013671875,410.5799865722656)">
+                <path fill="rgb(37,99,235)" fill-opacity="1"
+                  d=" M2.943000078201294,3.171999931335449 C2.943000078201294,3.171999931335449 2.9839999675750732,-9.973999977111816 2.9839999675750732,-9.973999977111816 C2.9839999675750732,-9.973999977111816 -1.7630000114440918,-7.517000198364258 -1.7630000114440918,-7.517000198364258 C-1.7630000114440918,-7.517000198364258 -1.6979999542236328,9.217000007629395 -2.9830000400543213,9.973999977111816 C-2.9830000400543213,9.973999977111816 0.8370000123977661,7.742000102996826 0.8370000123977661,7.742000102996826 C2.128999948501587,7.000999927520752 2.9549999237060547,5.415999889373779 2.9549999237060547,3.1579999923706055 C2.9549999237060547,3.1579999923706055 2.943000078201294,3.171999931335449 2.943000078201294,3.171999931335449z">
+                </path>
+              </g>
+              <g opacity="1" transform="matrix(1,0,0,1,221.2169952392578,321.0880126953125)">
+                <path fill="url(#__lottie_element_1320)" fill-opacity="1"
+                  d=" M158.625,75.2239990234375 C158.625,75.2239990234375 -158.52000427246094,-112.2750015258789 -158.52000427246094,-112.2750015258789 C-158.52000427246094,-112.2750015258789 -158.52000427246094,-86.91200256347656 -158.52000427246094,-86.91200256347656 C-158.625,-78.92400360107422 -154.3520050048828,-69.177001953125 -147.43699645996094,-65.15399932861328 C-147.43699645996094,-65.15399932861328 -34.44300079345703,0.6480000019073486 -34.44300079345703,0.6480000019073486 C-34.44300079345703,0.6480000019073486 33.845001220703125,40.417999267578125 33.845001220703125,40.417999267578125 C33.845001220703125,40.417999267578125 145.98300170898438,105.74400329589844 145.98300170898438,105.74400329589844 C152.9199981689453,109.7750015258789 158.625,106.572998046875 158.625,98.5479965209961 C158.625,98.5479965209961 158.625,75.2239990234375 158.625,75.2239990234375z">
+                </path>
+              </g>
+              <g opacity="1" transform="matrix(1,0,0,1,225.96299743652344,103.6050033569336)">
+                <path fill="rgb(129,131,131)" fill-opacity="1"
+                  d=" M-558.5189819335938,-325.7969970703125 C-558.5189819335938,-325.7969970703125 441.4800109863281,-325.7969970703125 441.4800109863281,-325.7969970703125 C441.4800109863281,-325.7969970703125 441.4800109863281,674.2030029296875 441.4800109863281,674.2030029296875 C441.4800109863281,674.2030029296875 -558.5189819335938,674.2030029296875 -558.5189819335938,674.2030029296875 C-558.5189819335938,674.2030029296875 -558.5189819335938,-325.7969970703125 -558.5189819335938,-325.7969970703125z M-558.5189819335938,674.2030029296875 C-558.5189819335938,674.2030029296875 441.4800109863281,674.2030029296875 441.4800109863281,674.2030029296875 C441.4800109863281,674.2030029296875 441.4800109863281,-325.7969970703125 441.4800109863281,-325.7969970703125 C441.4800109863281,-325.7969970703125 -558.5189819335938,-325.7969970703125 -558.5189819335938,-325.7969970703125 C-558.5189819335938,-325.7969970703125 -558.5189819335938,674.2030029296875 -558.5189819335938,674.2030029296875z M141.68899536132812,86.4000015258789 C141.68899536132812,86.4000015258789 148.343994140625,82.57599639892578 148.343994140625,82.57599639892578 C148.343994140625,82.57599639892578 -141.68099975585938,-86.4000015258789 -141.68099975585938,-86.4000015258789 C-141.68099975585938,-86.4000015258789 -148.343994140625,-82.56099700927734 -148.343994140625,-82.56099700927734 C-148.343994140625,-82.56099700927734 141.68899536132812,86.4000015258789 141.68899536132812,86.4000015258789z">
+                </path>
+                <g opacity="1" transform="matrix(1,0,0,1,0,0)"></g>
+              </g>
+              <g opacity="1" transform="matrix(1,0,0,1,226.5030059814453,198.54100036621094)">
+                <path fill="url(#__lottie_element_1321)" fill-opacity="1"
+                  d=" M160.10800170898438,-3.4130001068115234 C160.1320037841797,-10.859999656677246 156.08999633789062,-21.014999389648438 148.83200073242188,-25.2549991607666 C148.83200073242188,-25.2549991607666 -144.47000122070312,-196.05999755859375 -144.47000122070312,-196.05999755859375 C-147.9499969482422,-198.12100219726562 -151.08799743652344,-198.29100036621094 -153.42999267578125,-197.01199340820312 C-153.42999267578125,-197.01199340820312 -160.1320037841797,-193.1300048828125 -160.1320037841797,-193.1300048828125 C-157.78399658203125,-194.51100158691406 -155.6320037841797,-191.281005859375 -152.08799743652344,-189.2530059814453 C-152.08799743652344,-189.2530059814453 137.39599609375,-17.409000396728516 137.39599609375,-17.409000396728516 C144.0019989013672,-13.52299976348877 150.22300720214844,-6.414000034332275 150.16400146484375,1.656999945640564 C150.16400146484375,1.656999945640564 152.3249969482422,194.39199829101562 152.3249969482422,194.39199829101562 C152.3249969482422,194.39199829101562 153.33799743652344,198.29100036621094 153.33799743652344,198.29100036621094 C153.33799743652344,198.29100036621094 160.10800170898438,194.33799743652344 160.10800170898438,194.33799743652344 C160.10800170898438,194.33799743652344 160.10800170898438,-3.4130001068115234 160.10800170898438,-3.4130001068115234z">
+                </path>
+              </g>
+              <g opacity="1" transform="matrix(1,0,0,1,221.33700561523438,199.55499267578125)">
+                <path fill="url(#__lottie_element_1322)" fill-opacity="1"
+                  d=" M147.31300354003906,-22.423999786376953 C154.28900146484375,-18.29400062561035 158.63900756835938,-8.58899974822998 158.5800018310547,-0.6069999933242798 C158.5800018310547,-0.6069999933242798 158.5800018310547,197.281005859375 158.5800018310547,197.281005859375 C158.5800018310547,197.281005859375 -158.63900756835938,11.756999969482422 -158.63900756835938,11.756999969482422 C-158.63900756835938,11.756999969482422 -158.63900756835938,-186.0959930419922 -158.63900756835938,-186.0959930419922 C-158.56100463867188,-194.0959930419922 -152.85899353027344,-197.28199768066406 -145.92100524902344,-193.26800537109375 C-145.92100524902344,-193.26800537109375 147.31300354003906,-22.423999786376953 147.31300354003906,-22.423999786376953z">
+                </path>
+              </g>
+              <g opacity="1" transform="matrix(1,0,0,1,222.01100158691406,195.8730010986328)">
+                <path fill="url(#__lottie_element_1323)" fill-opacity="1"
+                  d=" M-144.39199829101562,5.820000171661377 C-144.39199829101562,5.820000171661377 144.39199829101562,174.8300018310547 144.39199829101562,174.8300018310547 C144.39199829101562,174.8300018310547 144.39199829101562,-5.868000030517578 144.39199829101562,-5.868000030517578 C144.39199829101562,-5.868000030517578 -144.39199829101562,-174.8300018310547 -144.39199829101562,-174.8300018310547 C-144.39199829101562,-174.8300018310547 -144.39199829101562,5.820000171661377 -144.39199829101562,5.820000171661377z">
+                </path>
+              </g>
+              <g opacity="1" transform="matrix(1,0,0,1,268.8450012207031,565.3720092773438)">
+                <path fill="url(#__lottie_element_1324)" fill-opacity="1"
+                  d=" M0.010999999940395355,-9.133999824523926 C-11.904999732971191,-2.322000026702881 -22.89699935913086,8.61400032043457 -30.207000732421875,16.9689998626709 C-30.207000732421875,16.9689998626709 -29.555999755859375,17.16699981689453 -29.555999755859375,17.16699981689453 C-28.05299949645996,17.760000228881836 -24.759000778198242,16.215999603271484 -21.82900047302246,14.427000045776367 C-20.29800033569336,13.642999649047852 -18.83099937438965,12.680000305175781 -17.823999404907227,12.128999710083008 C-17.823999404907227,12.128999710083008 17.82699966430664,-8.258000373840332 17.82699966430664,-8.258000373840332 C18.865999221801758,-8.864999771118164 20.33300018310547,-9.65999984741211 21.86400032043457,-10.48900032043457 C24.801000595092773,-12.182000160217285 28.099000930786133,-14.361000061035156 29.658000946044922,-16.70800018310547 C29.658000946044922,-16.70800018310547 30.207000732421875,-17.618000030517578 30.207000732421875,-17.618000030517578 C23.77400016784668,-17.76099967956543 12.37399959564209,-16.1299991607666 0.010999999940395355,-9.133999824523926z">
+                </path>
+              </g>
+              <g opacity="1" transform="matrix(1,0,0,1,256.6239929199219,563.5850219726562)">
+                <path fill="url(#__lottie_element_1325)" fill-opacity="1"
+                  d=" M42.18899917602539,-19.849000930786133 C44.606998443603516,-18.398000717163086 44.082000732421875,-15.302000045776367 41.96799850463867,-14.52299976348877 C40.84299850463867,-14.024999618530273 35.88100051879883,-13.079999923706055 34.1150016784668,-12.661999702453613 C28.16200065612793,-11.057000160217285 21.517000198364258,-8.112000465393066 16.05900001525879,-4.96999979019165 C8.069999694824219,-0.3610000014305115 -2.4260001182556152,7.861000061035156 -9.404000282287598,15.755000114440918 C-11.055999755859375,17.60300064086914 -13.364999771118164,19.020000457763672 -16.349000930786133,19.349000930786133 C-21.290000915527344,19.849000930786133 -23.878000259399414,19.349000930786133 -28.836000442504883,16.1299991607666 C-28.836000442504883,16.1299991607666 -37.888999938964844,10.446999549865723 -37.888999938964844,10.446999549865723 C-42.91899871826172,7.505000114440918 -44.60599899291992,0.5189999938011169 -40.24700164794922,-4.689000129699707 C-40.79199981689453,-5.254000186920166 -33.236000061035156,10.881999969482422 -32.11800003051758,11.539999961853027 C-26.030000686645508,15.180999755859375 -23.55900001525879,16.96299934387207 -19.4060001373291,16.940000534057617 C-15.47599983215332,16.996000289916992 -11.875,15.236000061035156 -10.142999649047852,13.361000061035156 C-2.1080000400543213,4.755000114440918 6.754000186920166,-2.4839999675750732 16.05900001525879,-7.814000129699707 C23.792999267578125,-12.253000259399414 31.242000579833984,-14.869999885559082 38.0620002746582,-16.141000747680664 C39.7599983215332,-16.451000213623047 42.22700119018555,-16.702999114990234 42.584999084472656,-17.764999389648438 C42.900001525878906,-18.81100082397461 42.18899917602539,-19.849000930786133 42.18899917602539,-19.849000930786133z">
+                </path>
+              </g>
+              <g opacity="1" transform="matrix(1,0,0,1,256.7349853515625,555.3560180664062)">
+                <path fill="url(#__lottie_element_1326)" fill-opacity="1"
+                  d=" M-38.90299987792969,1.9420000314712524 C-31.341999053955078,-5.929999828338623 -23.086999893188477,-12.513999938964844 -14.446999549865723,-17.472000122070312 C-5.574999809265137,-22.520000457763672 3.052999973297119,-25.371000289916992 10.854000091552734,-26.135000228881836 C14.949999809265137,-26.635000228881836 18.934999465942383,-25.253000259399414 22.384000778198242,-23.145999908447266 C22.384000778198242,-23.145999908447266 42.07699966430664,-11.621000289916992 42.07699966430664,-11.621000289916992 C43.63199996948242,-10.732000350952148 42.974998474121094,-8.475000381469727 41.28799819946289,-8.279000282287598 C39.88600158691406,-8.222000122070312 38.465999603271484,-7.955999851226807 37.090999603271484,-7.71999979019165 C30.43899917602539,-6.468999862670898 23.356000900268555,-3.8529999256134033 15.947999954223633,0.41499999165534973 C7.958000183105469,4.961999893188477 0.44200000166893005,10.850000381469727 -6.645999908447266,17.81800079345703 C-7.343999862670898,18.534000396728516 -8.284000396728516,19.492000579833984 -9.282999992370605,20.62299919128418 C-13.598999977111816,25.399999618530273 -20.638999938964844,26.635000228881836 -26.141000747680664,23.40999984741211 C-26.141000747680664,23.40999984741211 -27.118999481201172,22.812999725341797 -27.118999481201172,22.812999725341797 C-27.118999481201172,22.812999725341797 -37.59199905395508,16.652000427246094 -37.59199905395508,16.652000427246094 C-42.553001403808594,13.729999542236328 -43.63199996948242,7.015999794006348 -39.7130012512207,2.7880001068115234 C-39.41999816894531,2.4609999656677246 -39.15999984741211,2.174999952316284 -38.90299987792969,1.9420000314712524z">
+                </path>
+              </g>
+            </g>
+            <g transform="matrix(1,0,0,1,124.3759994506836,449.6139831542969)" opacity="1" style="display: block;">
+              <g opacity="1" transform="matrix(1,0,0,1,127.73100280761719,120.4990005493164)">
+                <path fill="url(#__lottie_element_1308)" fill-opacity="1"
+                  d=" M127.4800033569336,-59.04600143432617 C127.4800033569336,-59.04600143432617 -127.4800033569336,-33.68899917602539 -127.4800033569336,-33.68899917602539 C-127.4800033569336,-33.68899917602539 -127.4800033569336,-2.1579999923706055 -127.4800033569336,-2.1579999923706055 C-127.4800033569336,-2.1579999923706055 -21.472000122070312,59.04600143432617 -21.472000122070312,59.04600143432617 C-21.472000122070312,59.04600143432617 127.4800033569336,-27.516000747680664 127.4800033569336,-27.516000747680664 C127.4800033569336,-27.516000747680664 127.4800033569336,-59.04600143432617 127.4800033569336,-59.04600143432617z">
+                </path>
+              </g>
+              <g opacity="1" transform="matrix(1,0,0,1,127.7300033569336,74.13200378417969)">
+                <path fill="url(#__lottie_element_1309)" fill-opacity="1"
+                  d=" M21.47100067138672,-73.88200378417969 C21.47100067138672,-73.88200378417969 127.4800033569336,-12.678999900817871 127.4800033569336,-12.678999900817871 C127.4800033569336,-12.678999900817871 -21.472000122070312,73.88200378417969 -21.472000122070312,73.88200378417969 C-21.472000122070312,73.88200378417969 -127.4800033569336,12.678000450134277 -127.4800033569336,12.678000450134277 C-127.4800033569336,12.678000450134277 21.47100067138672,-73.88200378417969 21.47100067138672,-73.88200378417969z">
+                </path>
+              </g>
+              <g opacity="1" transform="matrix(1,0,0,1,162.24000549316406,54.07699966430664)">
+                <path fill="url(#__lottie_element_1310)" fill-opacity="1"
+                  d=" M24.658000946044922,9.279999732971191 C27.035999298095703,10.652000427246094 27.051000595092773,12.878999710083008 24.68600082397461,14.255000114440918 C22.323999404907227,15.62600040435791 18.475000381469727,15.62600040435791 16.097999572753906,14.255000114440918 C16.097999572753906,14.255000114440918 -24.65999984741211,-9.277000427246094 -24.65999984741211,-9.277000427246094 C-27.040000915527344,-10.651000022888184 -27.049999237060547,-12.878999710083008 -24.687999725341797,-14.25 C-22.32200050354004,-15.62600040435791 -18.481000900268555,-15.62600040435791 -16.10099983215332,-14.25 C-16.10099983215332,-14.25 24.658000946044922,9.279999732971191 24.658000946044922,9.279999732971191z">
+                </path>
+              </g>
+              <g opacity="1" transform="matrix(1,0,0,1,144.96099853515625,64.11900329589844)">
+                <path fill="url(#__lottie_element_1311)" fill-opacity="1"
+                  d=" M24.65999984741211,9.279000282287598 C27.03700065612793,10.649999618530273 27.051000595092773,12.880000114440918 24.687000274658203,14.253000259399414 C22.32200050354004,15.626999855041504 18.476999282836914,15.62600040435791 16.099000930786133,14.253000259399414 C16.099000930786133,14.253000259399414 -24.659000396728516,-9.281000137329102 -24.659000396728516,-9.281000137329102 C-27.038999557495117,-10.652999877929688 -27.052000045776367,-12.876999855041504 -24.687999725341797,-14.253999710083008 C-22.32200050354004,-15.626999855041504 -18.479000091552734,-15.626999855041504 -16.100000381469727,-14.253999710083008 C-16.100000381469727,-14.253999710083008 24.65999984741211,9.279000282287598 24.65999984741211,9.279000282287598z">
+                </path>
+              </g>
+              <g opacity="1" transform="matrix(1,0,0,1,127.68499755859375,74.16000366210938)">
+                <path fill="url(#__lottie_element_1312)" fill-opacity="1"
+                  d=" M24.659000396728516,9.277000427246094 C27.03700065612793,10.64900016784668 27.052000045776367,12.878999710083008 24.687000274658203,14.251999855041504 C22.322999954223633,15.628000259399414 18.47599983215332,15.625 16.097999572753906,14.251999855041504 C16.097999572753906,14.251999855041504 -24.65999984741211,-9.279000282287598 -24.65999984741211,-9.279000282287598 C-27.040000915527344,-10.652000427246094 -27.052000045776367,-12.878000259399414 -24.687999725341797,-14.253000259399414 C-22.322999954223633,-15.626999855041504 -18.479999542236328,-15.626999855041504 -16.100000381469727,-14.253000259399414 C-16.100000381469727,-14.253000259399414 24.659000396728516,9.277000427246094 24.659000396728516,9.277000427246094z">
+                </path>
+              </g>
+              <g opacity="1" transform="matrix(1,0,0,1,110.40599822998047,84.19999694824219)">
+                <path fill="url(#__lottie_element_1313)" fill-opacity="1"
+                  d=" M24.65999984741211,9.277000427246094 C27.03700065612793,10.651000022888184 27.049999237060547,12.880000114440918 24.687000274658203,14.255000114440918 C22.323999404907227,15.62600040435791 18.47800064086914,15.62600040435791 16.100000381469727,14.255000114440918 C16.100000381469727,14.255000114440918 -24.658000946044922,-9.277999877929688 -24.658000946044922,-9.277999877929688 C-27.038000106811523,-10.652999877929688 -27.049999237060547,-12.880000114440918 -24.68600082397461,-14.251999855041504 C-22.323999404907227,-15.62600040435791 -18.47800064086914,-15.62600040435791 -16.099000930786133,-14.251999855041504 C-16.099000930786133,-14.251999855041504 24.65999984741211,9.277000427246094 24.65999984741211,9.277000427246094z">
+                </path>
+              </g>
+              <g opacity="0.4" transform="matrix(1,0,0,1,127.73100280761719,112.07099914550781)">
+                <path fill="rgb(51,74,139)" fill-opacity="1"
+                  d=" M127.4800033569336,-44.83000183105469 C127.4800033569336,-44.83000183105469 -21.47599983215332,41.720001220703125 -21.47599983215332,41.720001220703125 C-21.47599983215332,41.720001220703125 -127.4800033569336,-19.49799919128418 -127.4800033569336,-19.49799919128418 C-127.4800033569336,-19.49799919128418 -127.4800033569336,-16.364999771118164 -127.4800033569336,-16.364999771118164 C-127.4800033569336,-16.364999771118164 -21.472000122070312,44.83000183105469 -21.472000122070312,44.83000183105469 C-21.472000122070312,44.83000183105469 127.4800033569336,-41.71799850463867 127.4800033569336,-41.71799850463867 C127.4800033569336,-41.71799850463867 127.4800033569336,-44.83000183105469 127.4800033569336,-44.83000183105469z">
+                </path>
+              </g>
+              <g opacity="0.4" transform="matrix(1,0,0,1,127.73100280761719,120.60199737548828)">
+                <path fill="rgb(51,74,139)" fill-opacity="1"
+                  d=" M127.4800033569336,-44.83000183105469 C127.4800033569336,-44.83000183105469 -21.47599983215332,41.720001220703125 -21.47599983215332,41.720001220703125 C-21.47599983215332,41.720001220703125 -127.4800033569336,-19.49799919128418 -127.4800033569336,-19.49799919128418 C-127.4800033569336,-19.49799919128418 -127.4800033569336,-16.364999771118164 -127.4800033569336,-16.364999771118164 C-127.4800033569336,-16.364999771118164 -21.472000122070312,44.83000183105469 -21.472000122070312,44.83000183105469 C-21.472000122070312,44.83000183105469 127.4800033569336,-41.71799850463867 127.4800033569336,-41.71799850463867 C127.4800033569336,-41.71799850463867 127.4800033569336,-44.83000183105469 127.4800033569336,-44.83000183105469z">
+                </path>
+              </g>
+              <g opacity="0.4" transform="matrix(1,0,0,1,127.74600219726562,129.13400268554688)">
+                <path fill="rgb(51,74,139)" fill-opacity="1"
+                  d=" M127.4800033569336,-44.83000183105469 C127.4800033569336,-44.83000183105469 -21.47599983215332,41.720001220703125 -21.47599983215332,41.720001220703125 C-21.47599983215332,41.720001220703125 -127.4800033569336,-19.49799919128418 -127.4800033569336,-19.49799919128418 C-127.4800033569336,-19.49799919128418 -127.4800033569336,-16.364999771118164 -127.4800033569336,-16.364999771118164 C-127.4800033569336,-16.364999771118164 -21.472000122070312,44.83000183105469 -21.472000122070312,44.83000183105469 C-21.472000122070312,44.83000183105469 127.4800033569336,-41.71799850463867 127.4800033569336,-41.71799850463867 C127.4800033569336,-41.71799850463867 127.4800033569336,-44.83000183105469 127.4800033569336,-44.83000183105469z">
+                </path>
+              </g>
+              <g opacity="1" transform="matrix(1,0,0,1,223.48500061035156,61.33599853515625)">
+                <path fill="url(#__lottie_element_1314)" fill-opacity="1"
+                  d=" M-8.32800006866455,-12.461000442504883 C-8.32800006866455,-12.461000442504883 7.769999980926514,-13.71500015258789 7.769999980926514,-13.71500015258789 C7.769999980926514,-13.71500015258789 8.32800006866455,13.71500015258789 8.32800006866455,13.71500015258789 C8.32800006866455,13.71500015258789 -8.32800006866455,-12.461000442504883 -8.32800006866455,-12.461000442504883z">
+                </path>
+              </g>
+            </g>
+            <g transform="matrix(1,0,0,1,277.823974609375,571.7169799804688)" opacity="1" style="display: block;">
+              <g opacity="1" transform="matrix(1,0,0,1,215.9340057373047,77.45500183105469)">
+                <path fill="rgb(96,165,250)" fill-opacity="1"
+                  d=" M114.37799835205078,66.21299743652344 C114.37799835205078,66.21299743652344 -112.12699890136719,-57.310001373291016 -112.12699890136719,-57.310001373291016 C-113.50900268554688,-58.15299987792969 -114.37799835205078,-59.86199951171875 -114.37799835205078,-62.229000091552734 C-114.37799835205078,-63.51100158691406 -114.13999938964844,-64.91799926757812 -113.74299621582031,-66.21299743652344 C-113.74299621582031,-66.21299743652344 112.8759994506836,57.35300064086914 112.8759994506836,57.35300064086914 C112.427001953125,58.696998596191406 112.16500091552734,60.11199951171875 112.16500091552734,61.33700180053711 C112.16500091552734,63.7239990234375 113.03500366210938,65.41999816894531 114.37799835205078,66.21299743652344z">
+                </path>
+              </g>
+              <g opacity="1" transform="matrix(1,0,0,1,284.4309997558594,161.6439971923828)">
+                <path fill="url(#__lottie_element_1299)" fill-opacity="1"
+                  d=" M51.132999420166016,-36.11000061035156 C55.29800033569336,-38.55799865722656 58.94499969482422,-36.45800018310547 58.94499969482422,-31.60099983215332 C58.94499969482422,-26.759000778198242 55.512001037597656,-20.83300018310547 51.30099868774414,-18.503999710083008 C47.10100173950195,-15.963000297546387 43.667999267578125,-17.986000061035156 43.667999267578125,-22.851999282836914 C43.667999267578125,-24.07699966430664 43.93000030517578,-25.492000579833984 44.37900161743164,-26.836999893188477 C44.37900161743164,-26.836999893188477 42.689998626708984,-25.740999221801758 42.689998626708984,-25.740999221801758 C42.689998626708984,-25.740999221801758 -56.74800109863281,37.83300018310547 -56.74800109863281,37.83300018310547 C-57.90800094604492,38.55799865722656 -58.72999954223633,38.17599868774414 -58.87200164794922,37.06999969482422 C-58.94499969482422,35.869998931884766 -58.16899871826172,34.38800048828125 -57.13999938964844,33.61899948120117 C-57.13999938964844,33.61899948120117 50.007999420166016,-35.48500061035156 50.007999420166016,-35.48500061035156 C50.007999420166016,-35.48500061035156 51.00400161743164,-36.025001525878906 51.132999420166016,-36.11000061035156z">
+                </path>
+              </g>
+              <g opacity="1" transform="matrix(1,0,0,1,171.58599853515625,97.75599670410156)">
+                <path fill="url(#__lottie_element_1300)" fill-opacity="1"
+                  d=" M-63.840999603271484,-94.75399780273438 C-63.840999603271484,-94.75399780273438 -169.56700134277344,-28.64699935913086 -169.56700134277344,-28.64699935913086 C-169.56700134277344,-28.64699935913086 55.70500183105469,97.50700378417969 55.70500183105469,97.50700378417969 C55.70500183105469,97.50700378417969 163.10800170898438,28.503000259399414 163.10800170898438,28.503000259399414 C166.09500122070312,26.472999572753906 168.26100158691406,26.58300018310547 169.56700134277344,27.347000122070312 C169.56700134277344,27.347000122070312 -56.88999938964844,-96.2750015258789 -56.88999938964844,-96.2750015258789 C-59.189998626708984,-97.50700378417969 -61.821998596191406,-96.2750015258789 -63.840999603271484,-94.75399780273438z">
+                </path>
+              </g>
+              <g opacity="1" transform="matrix(1,0,0,1,113.7699966430664,134.375)">
+                <path fill="url(#__lottie_element_1301)" fill-opacity="1"
+                  d=" M-111.7509994506836,-65.26599884033203 C-112.12200164794922,-65.03299713134766 -112.36000061035156,-64.68900299072266 -112.58399963378906,-64.4229965209961 C-113.15299987792969,-63.604000091552734 -113.5199966430664,-62.59700012207031 -113.43599700927734,-61.89500045776367 C-113.43599700927734,-61.43299865722656 -113.18499755859375,-61.082000732421875 -112.9209976196289,-60.933998107910156 C-112.9209976196289,-60.933998107910156 112.31500244140625,65.26599884033203 112.31500244140625,65.26599884033203 C112.08100128173828,65.08100128173828 111.93099975585938,64.81900024414062 111.78900146484375,64.33899688720703 C111.75199890136719,63.525001525878906 112.08100128173828,62.597999572753906 112.69999694824219,61.79199981689453 C112.91799926757812,61.505001068115234 113.16999816894531,61.30500030517578 113.4520034790039,61.02299880981445 C113.4520034790039,61.02299880981445 113.5199966430664,60.887001037597656 113.5199966430664,60.887001037597656 C113.5199966430664,60.887001037597656 -111.7509994506836,-65.26599884033203 -111.7509994506836,-65.26599884033203z">
+                </path>
+              </g>
+              <g opacity="1" transform="matrix(1,0,0,1,152.83200073242188,76.8030014038086)">
+                <path fill="url(#__lottie_element_1302)" fill-opacity="1"
+                  d=" M97.36699676513672,11.265000343322754 C99.11399841308594,12.284000396728516 99.58699798583984,15.581000328063965 97.63200378417969,17.503999710083008 C97.63200378417969,17.503999710083008 36.388999938964844,56.630001068115234 36.388999938964844,56.630001068115234 C31.20599937438965,59.808998107910156 26.781999588012695,56.93600082397461 22.017000198364258,54.191001892089844 C22.017000198364258,54.191001892089844 -96.52799987792969,-9.765999794006348 -96.52799987792969,-9.765999794006348 C-100.21199798583984,-11.899999618530273 -99.12799835205078,-15.199999809265137 -96.52799987792969,-16.69300079345703 C-96.52799987792969,-16.69300079345703 -37.21500015258789,-55.965999603271484 -37.21500015258789,-55.965999603271484 C-33.874000549316406,-57.90999984741211 -29.996999740600586,-58.72100067138672 -27.549999237060547,-57.32600021362305 C-27.549999237060547,-57.32600021362305 97.36699676513672,11.265000343322754 97.36699676513672,11.265000343322754z">
+                </path>
+              </g>
+              <g opacity="1" transform="matrix(1,0,0,1,249.84500122070312,129.3679962158203)">
+                <path fill="url(#__lottie_element_1303)" fill-opacity="1"
+                  d=" M51.76100158691406,-13.487000465393066 C53.5099983215332,-12.475000381469727 53.983001708984375,-9.168000221252441 52.029998779296875,-7.244999885559082 C52.029998779296875,-7.244999885559082 -9.213000297546387,31.88599967956543 -9.213000297546387,31.88599967956543 C-14.397000312805176,35.05699920654297 -18.81800079345703,32.178001403808594 -23.58799934387207,29.437999725341797 C-23.58799934387207,29.437999725341797 -50.92300033569336,14.991999626159668 -50.92300033569336,14.991999626159668 C-54.61000061035156,12.850000381469727 -53.52399826049805,9.553000450134277 -50.92300033569336,8.055999755859375 C-50.92300033569336,8.055999755859375 8.38700008392334,-31.211000442504883 8.38700008392334,-31.211000442504883 C11.729000091552734,-33.15700149536133 15.607999801635742,-33.970001220703125 18.05299949645996,-32.57500076293945 C18.05299949645996,-32.57500076293945 51.76100158691406,-13.487000465393066 51.76100158691406,-13.487000465393066z">
+                </path>
+              </g>
+              <g opacity="1" transform="matrix(1,0,0,1,107.83899688720703,107.40499877929688)">
+                <path fill="url(#__lottie_element_1304)" fill-opacity="1"
+                  d=" M52.22200012207031,23.92799949645996 C53.297000885009766,24.549999237060547 53.58700180053711,26.582000732421875 52.3849983215332,27.766000747680664 C52.3849983215332,27.766000747680664 49.547000885009766,28.875999450683594 49.547000885009766,28.875999450683594 C46.362998962402344,30.822999954223633 43.638999938964844,29.055999755859375 40.70899963378906,27.371000289916992 C40.70899963378906,27.371000289916992 -51.70800018310547,-23.009000778198242 -51.70800018310547,-23.009000778198242 C-53.96699905395508,-24.322999954223633 -53.30699920654297,-26.343000411987305 -51.70800018310547,-27.26799964904785 C-51.70800018310547,-27.26799964904785 -50.04899978637695,-28.459999084472656 -50.04899978637695,-28.459999084472656 C-47.99800109863281,-29.656999588012695 -45.61600112915039,-30.1560001373291 -44.11000061035156,-29.301000595092773 C-44.11000061035156,-29.301000595092773 52.22200012207031,23.92799949645996 52.22200012207031,23.92799949645996z">
+                </path>
+              </g>
+            </g>
+            <g transform="matrix(1,0,0,1,773.7510375976562,399.83599853515625)" opacity="1" style="display: block;">
+              <g opacity="1" transform="matrix(1,0,0,1,70.45099639892578,92.4990005493164)">
+                <path fill="url(#__lottie_element_1292)" fill-opacity="1"
+                  d=" M5.348999977111816,-77.7300033569336 C-12.699999809265137,-88.1520004272461 -29.055999755859375,-89.12000274658203 -40.8650016784668,-82.25599670410156 C-40.8650016784668,-82.25599670410156 -51.13999938964844,-76.06600189208984 -51.13999938964844,-76.06600189208984 C-51.0989990234375,-76.08699798583984 -51.058998107910156,-76.10900115966797 -51.01900100708008,-76.13200378417969 C-62.749000549316406,-69.38600158691406 -70.0270004272461,-54.95500183105469 -70.08499908447266,-34.4109992980957 C-70.20099639892578,6.806000232696533 -41.215999603271484,57.00600051879883 -5.3470001220703125,77.71499633789062 C12.925000190734863,88.26499938964844 29.45400047302246,89.12000274658203 41.29600143432617,81.97799682617188 C41.15299987792969,82.06500244140625 41.0099983215332,82.15699768066406 40.86399841308594,82.24099731445312 C47.382999420166016,78.4540023803711 44.62099838256836,79.83499908447266 51.13800048828125,76.0479965209961 C62.79600143432617,69.2750015258789 70.0260009765625,54.869998931884766 70.08300018310547,34.38999938964844 C70.20099639892578,-6.822999954223633 41.215999603271484,-57.02299880981445 5.348999977111816,-77.7300033569336z">
+                </path>
+              </g>
+              <g opacity="1" transform="matrix(1,0,0,1,65.31400299072266,95.58699798583984)">
+                <path fill="url(#__lottie_element_1293)" fill-opacity="1"
+                  d=" M0.21199999749660492,-74.62799835205078 C36.08100128173828,-53.91999816894531 65.06400299072266,-3.7190001010894775 64.9469985961914,37.494998931884766 C64.83100128173828,78.71099853515625 35.65700149536133,95.33699798583984 -0.210999995470047,74.62699890136719 C-36.08000183105469,53.917999267578125 -65.06300354003906,3.7179999351501465 -64.9469985961914,-37.499000549316406 C-64.83100128173828,-78.71499633789062 -35.654998779296875,-95.33699798583984 0.21199999749660492,-74.62799835205078z">
+                </path>
+              </g>
+              <g opacity="1" transform="matrix(1,0,0,1,92.97000122070312,55.845001220703125)">
+                <path fill="rgb(0,125,254)" fill-opacity="1"
+                  d=" M0.012000000104308128,-2.562999963760376 C0.3880000114440918,-2.3450000286102295 0.7710000276565552,-2.01200008392334 1.125,-1.5779999494552612 C2.190000057220459,-0.25099998712539673 2.5460000038146973,1.524999976158142 1.9290000200271606,2.3989999294281006 C1.5130000114440918,2.9820001125335693 0.7620000243186951,3.007999897003174 -0.00800000037997961,2.565000057220459 C-0.3880000114440918,2.3450000286102295 -0.7710000276565552,2.01200008392334 -1.1200000047683716,1.5750000476837158 C-2.187000036239624,0.25200000405311584 -2.5490000247955322,-1.5290000438690186 -1.9290000200271606,-2.3970000743865967 C-1.5130000114440918,-2.9820001125335693 -0.7590000033378601,-3.006999969482422 0.012000000104308128,-2.562999963760376z">
+                </path>
+              </g>
+              <g opacity="1" transform="matrix(1,0,0,1,113.322998046875,91.09700012207031)">
+                <path fill="rgb(0,125,254)" fill-opacity="1"
+                  d=" M0.004000000189989805,-2.565000057220459 C0.7739999890327454,-2.11899995803833 1.524999976158142,-1.2269999980926514 1.934999942779541,-0.16599999368190765 C2.5490000247955322,1.4140000343322754 2.178999900817871,2.7720000743865967 1.1089999675750732,2.865999937057495 C0.7590000033378601,2.8959999084472656 0.37400001287460327,2.7839999198913574 -0.004999999888241291,2.565000057220459 C-0.7760000228881836,2.121000051498413 -1.5240000486373901,1.2300000190734863 -1.934000015258789,0.16899999976158142 C-2.549999952316284,-1.4140000343322754 -2.178999900817871,-2.7720000743865967 -1.1089999675750732,-2.865999937057495 C-0.7590000033378601,-2.8940000534057617 -0.3720000088214874,-2.7820000648498535 0.004000000189989805,-2.565000057220459z">
+                </path>
+              </g>
+              <g opacity="1" transform="matrix(1,0,0,1,120.70800018310547,127.46600341796875)">
+                <path fill="rgb(0,125,254)" fill-opacity="1"
+                  d=" M0.01600000075995922,-5.7820000648498535 C2.7920000553131104,-4.177999973297119 5.039999961853027,-0.289000004529953 5.0320000648498535,2.9059998989105225 C5.021999835968018,6.0970001220703125 2.760999917984009,7.383999824523926 -0.01600000075995922,5.7829999923706055 C-2.7960000038146973,4.176000118255615 -5.039000034332275,0.28600001335144043 -5.031000137329102,-2.9030001163482666 C-5.019000053405762,-6.099999904632568 -2.763000011444092,-7.383999824523926 0.01600000075995922,-5.7820000648498535z">
+                </path>
+              </g>
+              <g opacity="1" transform="matrix(1,0,0,1,113.14299774169922,155.2030029296875)">
+                <path fill="rgb(0,125,254)" fill-opacity="1"
+                  d=" M0.00800000037997961,-2.562999963760376 C0.3869999945163727,-2.3440001010894775 0.7730000019073486,-2.007999897003174 1.121000051498413,-1.5729999542236328 C2.184999942779541,-0.2540000081062317 2.5480000972747803,1.527999997138977 1.9270000457763672,2.3970000743865967 C1.5110000371932983,2.9809999465942383 0.7620000243186951,3.009000062942505 -0.00800000037997961,2.561000108718872 C-0.3869999945163727,2.3429999351501465 -0.7730000019073486,2.009999990463257 -1.121000051498413,1.5750000476837158 C-2.184999942779541,0.25099998712539673 -2.5460000038146973,-1.5290000438690186 -1.9290000200271606,-2.3980000019073486 C-1.5130000114440918,-2.9809999465942383 -0.7630000114440918,-3.006999969482422 0.00800000037997961,-2.562999963760376z">
+                </path>
+              </g>
+              <g opacity="1" transform="matrix(1,0,0,1,92.65599822998047,166.8800048828125)">
+                <path fill="rgb(0,125,254)" fill-opacity="1"
+                  d=" M0.006000000052154064,-2.566999912261963 C0.7770000100135803,-2.121999979019165 1.5240000486373901,-1.2289999723434448 1.937000036239624,-0.17100000381469727 C2.5480000972747803,1.4119999408721924 2.177999973297119,2.7709999084472656 1.1100000143051147,2.864000082015991 C0.7580000162124634,2.8959999084472656 0.375,2.7860000133514404 -0.004000000189989805,2.565999984741211 C-0.7749999761581421,2.119999885559082 -1.5260000228881836,1.225000023841858 -1.9359999895095825,0.16300000250339508 C-2.549999952316284,-1.4170000553131104 -2.177000045776367,-2.7709999084472656 -1.1069999933242798,-2.865000009536743 C-0.7570000290870667,-2.8929998874664307 -0.37299999594688416,-2.7839999198913574 0.006000000052154064,-2.566999912261963z">
+                </path>
+              </g>
+              <g opacity="1" transform="matrix(1,0,0,1,64.73799896240234,159.36099243164062)">
+                <path fill="rgb(0,125,254)" fill-opacity="1"
+                  d=" M0.01600000075995922,-5.7789998054504395 C2.7929999828338623,-4.176000118255615 5.038000106811523,-0.2919999957084656 5.0320000648498535,2.9049999713897705 C5.021999835968018,6.0970001220703125 2.760999917984009,7.386000156402588 -0.01600000075995922,5.781000137329102 C-2.7980000972747803,4.176000118255615 -5.043000221252441,0.28600001335144043 -5.0329999923706055,-2.9059998989105225 C-5.02400016784668,-6.0980000495910645 -2.76200008392334,-7.386000156402588 0.01600000075995922,-5.7789998054504395z">
+                </path>
+              </g>
+              <g opacity="1" transform="matrix(1,0,0,1,36.867000579833984,134.66799926757812)">
+                <path fill="rgb(0,125,254)" fill-opacity="1"
+                  d=" M0.008999999612569809,-2.563999891281128 C0.3880000114440918,-2.3450000286102295 0.7730000019073486,-2.013000011444092 1.1239999532699585,-1.5740000009536743 C2.188999891281128,-0.25099998712539673 2.5480000972747803,1.531000018119812 1.9279999732971191,2.4000000953674316 C1.5119999647140503,2.9830000400543213 0.7599999904632568,3.009000062942505 -0.012000000104308128,2.563999891281128 C-0.3889999985694885,2.3459999561309814 -0.7689999938011169,2.01200008392334 -1.121000051498413,1.5800000429153442 C-2.188999891281128,0.2540000081062317 -2.549999952316284,-1.5290000438690186 -1.9290000200271606,-2.3970000743865967 C-1.5130000114440918,-2.9820001125335693 -0.7620000243186951,-3.006999969482422 0.008999999612569809,-2.563999891281128z">
+                </path>
+              </g>
+              <g opacity="1" transform="matrix(1,0,0,1,16.514999389648438,99.41300201416016)">
+                <path fill="rgb(0,125,254)" fill-opacity="1"
+                  d=" M0.0020000000949949026,-2.565999984741211 C0.7749999761581421,-2.11899995803833 1.5230000019073486,-1.2269999980926514 1.9359999895095825,-0.16599999368190765 C2.549999952316284,1.4160000085830688 2.180000066757202,2.7730000019073486 1.1069999933242798,2.86299991607666 C0.7549999952316284,2.8940000534057617 0.3720000088214874,2.7860000133514404 -0.00800000037997961,2.566999912261963 C-0.777999997138977,2.121000051498413 -1.524999976158142,1.2300000190734863 -1.9359999895095825,0.16699999570846558 C-2.549999952316284,-1.4179999828338623 -2.180000066757202,-2.7739999294281006 -1.1080000400543213,-2.861999988555908 C-0.7549999952316284,-2.8940000534057617 -0.375,-2.7809998989105225 0.0020000000949949026,-2.565999984741211z">
+                </path>
+              </g>
+              <g opacity="1" transform="matrix(1,0,0,1,9.130999565124512,63.047000885009766)">
+                <path fill="rgb(0,125,254)" fill-opacity="1"
+                  d=" M0.017000000923871994,-5.78000020980835 C2.7939999103546143,-4.176000118255615 5.040999889373779,-0.289000004529953 5.0320000648498535,2.9059998989105225 C5.0229997634887695,6.0970001220703125 2.76200008392334,7.386000156402588 -0.014000000432133675,5.7829999923706055 C-2.7960000038146973,4.176000118255615 -5.043000221252441,0.2840000092983246 -5.0320000648498535,-2.9049999713897705 C-5.0229997634887695,-6.099999904632568 -2.7639999389648438,-7.385000228881836 0.017000000923871994,-5.78000020980835z">
+                </path>
+              </g>
+              <g opacity="1" transform="matrix(1,0,0,1,16.695999145507812,35.310001373291016)">
+                <path fill="rgb(0,125,254)" fill-opacity="1"
+                  d=" M0.007000000216066837,-2.562999963760376 C0.38600000739097595,-2.3429999351501465 0.7710000276565552,-2.01200008392334 1.1200000047683716,-1.5750000476837158 C2.188999891281128,-0.25200000405311584 2.5490000247955322,1.527999997138977 1.9290000200271606,2.3980000019073486 C1.5130000114440918,2.9800000190734863 0.7620000243186951,3.007999897003174 -0.007000000216066837,2.563999891281128 C-0.38600000739097595,2.3440001010894775 -0.7689999938011169,2.010999917984009 -1.1200000047683716,1.5740000009536743 C-2.188999891281128,0.25 -2.5510001182556152,-1.5299999713897705 -1.9290000200271606,-2.3970000743865967 C-1.5130000114440918,-2.9800000190734863 -0.7639999985694885,-3.007999897003174 0.007000000216066837,-2.562999963760376z">
+                </path>
+              </g>
+              <g opacity="1" transform="matrix(1,0,0,1,37.18199920654297,23.635000228881836)">
+                <path fill="rgb(0,125,254)" fill-opacity="1"
+                  d=" M0.004000000189989805,-2.566999912261963 C0.7749999761581421,-2.122999906539917 1.524999976158142,-1.2280000448226929 1.937999963760376,-0.16699999570846558 C2.5480000972747803,1.4140000343322754 2.180999994277954,2.7709999084472656 1.1109999418258667,2.865000009536743 C0.7590000033378601,2.8949999809265137 0.3720000088214874,2.7839999198913574 -0.007000000216066837,2.565000057220459 C-0.777999997138977,2.119999885559082 -1.5240000486373901,1.2280000448226929 -1.937000036239624,0.16599999368190765 C-2.5490000247955322,-1.4179999828338623 -2.177000045776367,-2.7709999084472656 -1.1080000400543213,-2.865999937057495 C-0.7570000290870667,-2.8959999084472656 -0.37400001287460327,-2.7850000858306885 0.004000000189989805,-2.566999912261963z">
+                </path>
+              </g>
+              <g opacity="1" transform="matrix(1,0,0,1,65.0989990234375,31.152000427246094)">
+                <path fill="rgb(0,125,254)" fill-opacity="1"
+                  d=" M0.020999999716877937,-5.78000020980835 C2.796999931335449,-4.176000118255615 5.041999816894531,-0.2849999964237213 5.0329999923706055,2.9049999713897705 C5.02400016784668,6.0970001220703125 2.763000011444092,7.385000228881836 -0.012000000104308128,5.7820000648498535 C-2.7929999828338623,4.176000118255615 -5.039000034332275,0.2849999964237213 -5.0329999923706055,-2.9059998989105225 C-5.021999835968018,-6.098999977111816 -2.760999917984009,-7.385000228881836 0.020999999716877937,-5.78000020980835z">
+                </path>
+              </g>
+              <g opacity="1" transform="matrix(1,0,0,1,72.40299987792969,92.59500122070312)">
+                <path fill="url(#__lottie_element_1294)" fill-opacity="1"
+                  d=" M13.62600040435791,-7.889999866485596 C15.487000465393066,-4.660999774932861 15.479000091552734,-1.1820000410079956 13.602999687194824,-0.11299999803304672 C13.602999687194824,-0.11299999803304672 -7.295000076293945,11.79800033569336 -7.295000076293945,11.79800033569336 C-8.234000205993652,12.329999923706055 -9.460000038146973,12.16100025177002 -10.682999610900879,11.454000473022461 C-11.907999992370605,10.748000144958496 -13.133000373840332,9.503999710083008 -14.062000274658203,7.890999794006348 C-15.02400016784668,6.223999977111816 -15.487000465393066,4.493000030517578 -15.45199966430664,3.056999921798706 C-15.418999671936035,1.715000033378601 -14.947999954223633,0.6299999952316284 -14.038999557495117,0.11599999666213989 C-14.038999557495117,0.11599999666213989 -11.550999641418457,-1.3020000457763672 -11.550999641418457,-1.3020000457763672 C-11.550999641418457,-1.3020000457763672 6.859000205993652,-11.79699993133545 6.859000205993652,-11.79699993133545 C7.797999858856201,-12.329999923706055 9.024999618530273,-12.159000396728516 10.246999740600586,-11.45199966430664 C11.472000122070312,-10.743000030517578 12.694000244140625,-9.503000259399414 13.62600040435791,-7.889999866485596z M-10.583999633789062,7.389999866485596 C-9.965999603271484,7.744999885559082 -9.465999603271484,7.459000110626221 -9.46399974822998,6.749000072479248 C-9.461000442504883,6.041999816894531 -9.958999633789062,5.177999973297119 -10.574000358581543,4.824999809265137 C-11.192000389099121,4.4679999351501465 -11.694000244140625,4.755000114440918 -11.694000244140625,5.4629998207092285 C-11.696999549865723,6.169000148773193 -11.199000358581543,7.0329999923706055 -10.583999633789062,7.389999866485596z">
+                </path>
+              </g>
+              <g opacity="1" transform="matrix(1,0,0,1,42.5989990234375,65.6050033569336)">
+                <path fill="url(#__lottie_element_1295)" fill-opacity="1"
+                  d=" M-14.503999710083008,-29.42300033569336 C-13.630999565124512,-28.91900062561035 -12.76200008392334,-28.033000946044922 -12.100000381469727,-26.886999130249023 C-12.100000381469727,-26.886999130249023 18.253999710083008,25.687999725341797 18.253999710083008,25.687999725341797 C18.253999710083008,25.687999725341797 15.765000343322754,27.106000900268555 15.765000343322754,27.106000900268555 C14.854999542236328,27.621000289916992 14.385000228881836,28.70599937438965 14.35099983215332,30.04800033569336 C14.35099983215332,30.04800033569336 -16.92799949645996,-24.134000778198242 -16.92799949645996,-24.134000778198242 C-18.253000259399414,-26.429000854492188 -18.249000549316406,-28.906999588012695 -16.913999557495117,-29.666000366210938 C-16.24799919128418,-30.047000885009766 -15.37600040435791,-29.924999237060547 -14.503999710083008,-29.42300033569336z">
+                </path>
+              </g>
+            </g>
+            <g transform="matrix(1,0,0,1,448.8600158691406,370.8609924316406)" opacity="1" style="display: block;">
+              <g opacity="1" transform="matrix(1,0,0,1,5.050000190734863,43.88100051879883)">
+                <path stroke-linecap="round" stroke-linejoin="miter" fill-opacity="0" stroke-miterlimit="10"
+                  stroke="rgb(73,90,139)" stroke-opacity="1" stroke-width="2"
+                  d=" M-0.05000000074505806,17.490999221801758 C-0.05000000074505806,17.490999221801758 0.05000000074505806,-17.490999221801758 0.05000000074505806,-17.490999221801758">
+                </path>
+              </g>
+              <g opacity="1" transform="matrix(1,0,0,1,41.904998779296875,43.84000015258789)">
+                <path stroke-linecap="round" stroke-linejoin="miter" fill-opacity="0" stroke-miterlimit="10"
+                  stroke="rgb(73,90,139)" stroke-opacity="1" stroke-width="2"
+                  d=" M-0.08500000089406967,38.84000015258789 C-0.08500000089406967,38.84000015258789 0.08500000089406967,-38.84000015258789 0.08500000089406967,-38.84000015258789">
+                </path>
+              </g>
+              <g opacity="1" transform="matrix(1,0,0,1,78.6510009765625,77.04199981689453)">
+                <path stroke-linecap="round" stroke-linejoin="miter" fill-opacity="0" stroke-miterlimit="10"
+                  stroke="rgb(73,90,139)" stroke-opacity="1" stroke-width="2"
+                  d=" M-0.039000000804662704,27.014999389648438 C-0.039000000804662704,27.014999389648438 0.039000000804662704,-27.014999389648438 0.039000000804662704,-27.014999389648438">
+                </path>
+              </g>
+              <g opacity="1" transform="matrix(1,0,0,1,115.63800048828125,76.83399963378906)">
+                <path stroke-linecap="round" stroke-linejoin="miter" fill-opacity="0" stroke-miterlimit="10"
+                  stroke="rgb(73,90,139)" stroke-opacity="1" stroke-width="2"
+                  d=" M0.05700000002980232,49.138999938964844 C0.05700000002980232,49.138999938964844 -0.05700000002980232,-49.138999938964844 -0.05700000002980232,-49.138999938964844">
+                </path>
+              </g>
+              <g opacity="1" transform="matrix(1,0,0,1,152.177001953125,109.9280014038086)">
+                <path stroke-linecap="round" stroke-linejoin="miter" fill-opacity="0" stroke-miterlimit="10"
+                  stroke="rgb(73,90,139)" stroke-opacity="1" stroke-width="2"
+                  d=" M-0.10400000214576721,37.21200180053711 C-0.10400000214576721,37.21200180053711 0.10400000214576721,-37.21200180053711 0.10400000214576721,-37.21200180053711">
+                </path>
+              </g>
+              <g opacity="1" transform="matrix(1,0,0,1,189.00999450683594,108.14299774169922)">
+                <path stroke-linecap="round" stroke-linejoin="miter" fill-opacity="0" stroke-miterlimit="10"
+                  stroke="rgb(73,90,139)" stroke-opacity="1" stroke-width="2"
+                  d=" M-0.16899999976158142,60.58100128173828 C-0.16899999976158142,60.58100128173828 0.16899999976158142,-60.58100128173828 0.16899999976158142,-60.58100128173828">
+                </path>
+              </g>
+            </g>
+            <g transform="matrix(1,0,0,1,438.13897705078125,348.1679992675781)" opacity="1" style="display: block;">
+              <g opacity="1" transform="matrix(1,0,0,1,107.41600036621094,51)">
+                <path fill="rgb(129,131,131)" fill-opacity="1"
+                  d=" M-13.5,8.166000366210938 C-13.5,8.166000366210938 13.5,-8.166000366210938 13.5,-8.166000366210938">
+                </path>
+                <path stroke-linecap="butt" stroke-linejoin="miter" fill-opacity="0" stroke-miterlimit="10"
+                  stroke="rgb(73,90,139)" stroke-opacity="1" stroke-width="8"
+                  d=" M-13.5,8.166000366210938 C-13.5,8.166000366210938 13.5,-8.166000366210938 13.5,-8.166000366210938">
+                </path>
+              </g>
+              <g opacity="1" transform="matrix(1,0,0,1,144.25,62.499000549316406)">
+                <path fill="rgb(129,131,131)" fill-opacity="1"
+                  d=" M-12.583000183105469,-15.416999816894531 C-12.583000183105469,-15.416999816894531 12.583000183105469,15.416999816894531 12.583000183105469,15.416999816894531">
+                </path>
+                <path stroke-linecap="butt" stroke-linejoin="miter" fill-opacity="0" stroke-miterlimit="10"
+                  stroke="rgb(73,90,139)" stroke-opacity="1" stroke-width="5"
+                  d=" M-12.583000183105469,-15.416999816894531 C-12.583000183105469,-15.416999816894531 12.583000183105469,15.416999816894531 12.583000183105469,15.416999816894531">
+                </path>
+              </g>
+              <g opacity="1" transform="matrix(1,0,0,1,180.875,72.45800018310547)">
+                <path fill="rgb(129,131,131)" fill-opacity="1"
+                  d=" M-14.041000366210938,9.541000366210938 C-14.041000366210938,9.541000366210938 14.041000366210938,-9.541000366210938 14.041000366210938,-9.541000366210938">
+                </path>
+                <path stroke-linecap="butt" stroke-linejoin="miter" fill-opacity="0" stroke-miterlimit="10"
+                  stroke="rgb(73,90,139)" stroke-opacity="1" stroke-width="8"
+                  d=" M-14.041000366210938,9.541000366210938 C-14.041000366210938,9.541000366210938 14.041000366210938,-9.541000366210938 14.041000366210938,-9.541000366210938">
+                </path>
+              </g>
+              <g opacity="1" transform="matrix(1,0,0,1,70.58300018310547,39.45800018310547)">
+                <path fill="rgb(129,131,131)" fill-opacity="1"
+                  d=" M-12.083000183105469,-14.958000183105469 C-12.083000183105469,-14.958000183105469 12.083000183105469,14.958000183105469 12.083000183105469,14.958000183105469">
+                </path>
+                <path stroke-linecap="butt" stroke-linejoin="miter" fill-opacity="0" stroke-miterlimit="10"
+                  stroke="rgb(73,90,139)" stroke-opacity="1" stroke-width="5"
+                  d=" M-12.083000183105469,-14.958000183105469 C-12.083000183105469,-14.958000183105469 12.083000183105469,14.958000183105469 12.083000183105469,14.958000183105469">
+                </path>
+              </g>
+              <g opacity="1" transform="matrix(1,0,0,1,33.66600036621094,28)">
+                <path fill="rgb(129,131,131)" fill-opacity="1"
+                  d=" M-13.666000366210938,8 C-13.666000366210938,8 13.666000366210938,-8 13.666000366210938,-8"></path>
+                <path stroke-linecap="butt" stroke-linejoin="miter" fill-opacity="0" stroke-miterlimit="10"
+                  stroke="rgb(73,90,139)" stroke-opacity="1" stroke-width="8"
+                  d=" M-13.666000366210938,8 C-13.666000366210938,8 13.666000366210938,-8 13.666000366210938,-8"></path>
+              </g>
+            </g>
+            <g transform="matrix(1,0,0,1,443.9010314941406,351.1150207519531)" opacity="1" style="display: block;">
+              <g opacity="1" transform="matrix(1,0,0,1,9.696999549865723,35.59199905395508)">
+                <path fill="rgb(51,74,139)" fill-opacity="1"
+                  d=" M0.03099999949336052,-10.833999633789062 C5.235000133514404,-7.829999923706055 9.447999954223633,-0.5400000214576721 9.430999755859375,5.446000099182129 C9.413999557495117,11.432999610900879 5.173999786376953,13.842000007629395 -0.029999999329447746,10.838000297546387 C-5.239999771118164,7.829999923706055 -9.447999954223633,0.5440000295639038 -9.430000305175781,-5.441999912261963 C-9.413000106811523,-11.428999900817871 -5.177999973297119,-13.842000007629395 0.03099999949336052,-10.833999633789062z M-0.012000000104308128,4.586999893188477 C2.190000057220459,5.859000205993652 3.9839999675750732,4.836999893188477 3.990999937057495,2.305999994277954 C3.997999906539917,-0.22499999403953552 2.2160000801086426,-3.311000108718872 0.013000000268220901,-4.583000183105469 C-2.190000057220459,-5.855000019073486 -3.9839999675750732,-4.833000183105469 -3.990999937057495,-2.302000045776367 C-3.997999906539917,0.2290000021457672 -2.2149999141693115,3.315999984741211 -0.012000000104308128,4.586999893188477z">
+                </path>
+              </g>
+              <g opacity="1" transform="matrix(1,0,0,1,46.446998596191406,14.092000007629395)">
+                <path fill="rgb(51,74,139)" fill-opacity="1"
+                  d=" M0.03099999949336052,-10.833999633789062 C5.235000133514404,-7.829999923706055 9.447999954223633,-0.5400000214576721 9.430999755859375,5.446000099182129 C9.413999557495117,11.432999610900879 5.173999786376953,13.842000007629395 -0.029999999329447746,10.838000297546387 C-5.239999771118164,7.829999923706055 -9.447999954223633,0.5440000295639038 -9.430000305175781,-5.441999912261963 C-9.413000106811523,-11.428999900817871 -5.177999973297119,-13.842000007629395 0.03099999949336052,-10.833999633789062z M-0.012000000104308128,4.586999893188477 C2.190000057220459,5.859000205993652 3.9839999675750732,4.836999893188477 3.990999937057495,2.305999994277954 C3.997999906539917,-0.22499999403953552 2.2160000801086426,-3.311000108718872 0.013000000268220901,-4.583000183105469 C-2.190000057220459,-5.855000019073486 -3.9839999675750732,-4.833000183105469 -3.990999937057495,-2.302000045776367 C-3.997999906539917,0.2290000021457672 -2.2149999141693115,3.315999984741211 -0.012000000104308128,4.586999893188477z">
+                </path>
+              </g>
+              <g opacity="1" transform="matrix(1,0,0,1,83.1969985961914,59.17499923706055)">
+                <path fill="rgb(51,74,139)" fill-opacity="1"
+                  d=" M0.03099999949336052,-10.833999633789062 C5.234000205993652,-7.829999923706055 9.446999549865723,-0.5400000214576721 9.430000305175781,5.446000099182129 C9.413999557495117,11.432999610900879 5.173999786376953,13.842000007629395 -0.03099999949336052,10.838000297546387 C-5.241000175476074,7.829999923706055 -9.447999954223633,0.5440000295639038 -9.430000305175781,-5.441999912261963 C-9.411999702453613,-11.428999900817871 -5.177999973297119,-13.842000007629395 0.03099999949336052,-10.833999633789062z M-0.010999999940395355,4.586999893188477 C2.190000057220459,5.859000205993652 3.9839999675750732,4.836999893188477 3.990000009536743,2.305999994277954 C3.997999906539917,-0.22499999403953552 2.2170000076293945,-3.311000108718872 0.013000000268220901,-4.583000183105469 C-2.190000057220459,-5.855000019073486 -3.9820001125335693,-4.833000183105469 -3.990000009536743,-2.302000045776367 C-3.996000051498413,0.2290000021457672 -2.2139999866485596,3.315999984741211 -0.010999999940395355,4.586999893188477z">
+                </path>
+              </g>
+              <g opacity="1" transform="matrix(1,0,0,1,120.1969985961914,36.840999603271484)">
+                <path fill="rgb(51,74,139)" fill-opacity="1"
+                  d=" M0.03099999949336052,-10.833999633789062 C5.234000205993652,-7.829999923706055 9.446999549865723,-0.5400000214576721 9.430000305175781,5.446000099182129 C9.413999557495117,11.432999610900879 5.173999786376953,13.842000007629395 -0.03099999949336052,10.838000297546387 C-5.241000175476074,7.829999923706055 -9.447999954223633,0.5440000295639038 -9.430000305175781,-5.441999912261963 C-9.411999702453613,-11.428999900817871 -5.177999973297119,-13.842000007629395 0.03099999949336052,-10.833999633789062z M-0.010999999940395355,4.586999893188477 C2.190000057220459,5.859000205993652 3.9839999675750732,4.836999893188477 3.990000009536743,2.305999994277954 C3.997999906539917,-0.22499999403953552 2.2170000076293945,-3.311000108718872 0.013000000268220901,-4.583000183105469 C-2.190000057220459,-5.855000019073486 -3.9820001125335693,-4.833000183105469 -3.990000009536743,-2.302000045776367 C-3.996000051498413,0.2290000021457672 -2.2139999866485596,3.315999984741211 -0.010999999940395355,4.586999893188477z">
+                </path>
+              </g>
+              <g opacity="1" transform="matrix(1,0,0,1,156.86300659179688,82.00800323486328)">
+                <path fill="rgb(51,74,139)" fill-opacity="1"
+                  d=" M0.03099999949336052,-10.833999633789062 C5.234000205993652,-7.829999923706055 9.446999549865723,-0.5400000214576721 9.430000305175781,5.446000099182129 C9.413999557495117,11.432999610900879 5.173999786376953,13.842000007629395 -0.03099999949336052,10.838000297546387 C-5.241000175476074,7.829999923706055 -9.447999954223633,0.5440000295639038 -9.430000305175781,-5.441999912261963 C-9.411999702453613,-11.428999900817871 -5.177999973297119,-13.842000007629395 0.03099999949336052,-10.833999633789062z M-0.010999999940395355,4.586999893188477 C2.190000057220459,5.859000205993652 3.9839999675750732,4.836999893188477 3.990000009536743,2.305999994277954 C3.997999906539917,-0.22499999403953552 2.2170000076293945,-3.311000108718872 0.013000000268220901,-4.583000183105469 C-2.190000057220459,-5.855000019073486 -3.9820001125335693,-4.833000183105469 -3.990000009536743,-2.302000045776367 C-3.996000051498413,0.2290000021457672 -2.2139999866485596,3.315999984741211 -0.010999999940395355,4.586999893188477z">
+                </path>
+              </g>
+              <g opacity="1" transform="matrix(1,0,0,1,193.6959991455078,56.84199905395508)">
+                <path fill="rgb(51,74,139)" fill-opacity="1"
+                  d=" M0.03099999949336052,-10.833999633789062 C5.234000205993652,-7.829999923706055 9.446999549865723,-0.5400000214576721 9.430000305175781,5.446000099182129 C9.413999557495117,11.432999610900879 5.173999786376953,13.842000007629395 -0.03099999949336052,10.838000297546387 C-5.241000175476074,7.829999923706055 -9.447999954223633,0.5440000295639038 -9.430000305175781,-5.441999912261963 C-9.411999702453613,-11.428999900817871 -5.177999973297119,-13.842000007629395 0.03099999949336052,-10.833999633789062z M-0.010999999940395355,4.586999893188477 C2.190000057220459,5.859000205993652 3.9839999675750732,4.836999893188477 3.990000009536743,2.305999994277954 C3.997999906539917,-0.22499999403953552 2.2170000076293945,-3.311000108718872 0.013000000268220901,-4.583000183105469 C-2.190000057220459,-5.855000019073486 -3.9820001125335693,-4.833000183105469 -3.990000009536743,-2.302000045776367 C-3.996000051498413,0.2290000021457672 -2.2139999866485596,3.315999984741211 -0.010999999940395355,4.586999893188477z">
+                </path>
+              </g>
+            </g>
+            <g clip-path="url(#__lottie_element_1244)" transform="matrix(1,0,0,1,167.5,258.34100341796875)" opacity="1"
+              style="display: block;">
+              <g transform="matrix(1,0,0,1,480.14697265625,274.3589782714844)" opacity="1" style="display: block;">
+                <g opacity="1" transform="matrix(1,0,0,1,74.36000061035156,103.37899780273438)">
+                  <path fill="url(#__lottie_element_1278)" fill-opacity="1"
+                    d=" M74.11699676513672,-9.053999900817871 C74.11699676513672,-9.053999900817871 74.11000061035156,84.98799896240234 74.11000061035156,84.98799896240234 C74.09100341796875,91.447998046875 69.51300048828125,94.05500030517578 63.88999938964844,90.80999755859375 C63.88999938964844,90.80999755859375 -63.944000244140625,17.0049991607666 -63.944000244140625,17.0049991607666 C-69.56600189208984,13.758000373840332 -74.11000061035156,5.881999969482422 -74.09100341796875,-0.5770000219345093 C-74.09100341796875,-0.5770000219345093 -74.0979995727539,-94.74299621582031 -74.0979995727539,-94.74299621582031 C-74.0979995727539,-94.74299621582031 74.11699676513672,-9.053999900817871 74.11699676513672,-9.053999900817871z">
+                  </path>
+                </g>
+                <g opacity="1" transform="matrix(1,0,0,1,74.37799835205078,47.56800079345703)">
+                  <path fill="url(#__lottie_element_1279)" fill-opacity="1"
+                    d=" M-74.10900115966797,-38.24599838256836 C-74.09200286865234,-44.7130012512207 -69.25199890136719,-47.319000244140625 -63.630001068115234,-44.071998596191406 C-63.630001068115234,-44.071998596191406 64.2040023803711,29.732999801635742 64.2040023803711,29.732999801635742 C69.82599639892578,32.98099899291992 74.10900115966797,40.85499954223633 74.09100341796875,47.319000244140625 C74.09100341796875,47.319000244140625 -74.10900115966797,-38.24599838256836 -74.10900115966797,-38.24599838256836z">
+                  </path>
+                </g>
+              </g>
+              <g transform="matrix(1,0,0,1,496.47796630859375,375.6210021972656)" opacity="1" style="display: block;">
+                <g opacity="1" transform="matrix(1,0,0,1,59.25,35.90800094604492)">
+                  <path fill="url(#__lottie_element_1274)" fill-opacity="1"
+                    d=" M-17.215999603271484,-12.696999549865723 C-15.892000198364258,-11.932000160217285 -14.821999549865723,-10.081000328063965 -14.82699966430664,-8.5600004196167 C-14.829999923706055,-7.038000106811523 -15.906000137329102,-6.425000190734863 -17.232999801635742,-7.189000129699707 C-17.232999801635742,-7.189000129699707 -36.37699890136719,-18.243000030517578 -36.37699890136719,-18.243000030517578 C-37.70100021362305,-19.009000778198242 -38.770999908447266,-20.858999252319336 -38.76599884033203,-22.382999420166016 C-38.762001037597656,-23.905000686645508 -37.68600082397461,-24.51799964904785 -36.36199951171875,-23.750999450683594 C-36.36199951171875,-23.750999450683594 -17.215999603271484,-12.696999549865723 -17.215999603271484,-12.696999549865723z M-48.292999267578125,-30.639999389648438 C-46.97200012207031,-29.87700080871582 -45.9010009765625,-28.027000427246094 -45.904998779296875,-26.503999710083008 C-45.90700149536133,-24.981000900268555 -46.986000061035156,-24.3700008392334 -48.310001373291016,-25.132999420166016 C-48.310001373291016,-25.132999420166016 -56.861000061035156,-30.070999145507812 -56.861000061035156,-30.070999145507812 C-58.183998107910156,-30.833999633789062 -59.25600051879883,-32.68600082397461 -59.25,-34.20899963378906 C-59.244998931884766,-35.731998443603516 -58.167999267578125,-36.34000015258789 -56.84600067138672,-35.58000183105469 C-56.84600067138672,-35.58000183105469 -48.292999267578125,-30.639999389648438 -48.292999267578125,-30.639999389648438z M51.474998474121094,26.959999084472656 C52.79899978637695,27.725000381469727 53.86800003051758,29.576000213623047 53.86399841308594,31.099000930786133 C53.85900115966797,32.62099838256836 52.784000396728516,33.231998443603516 51.45899963378906,32.46799850463867 C51.45899963378906,32.46799850463867 16.95199966430664,12.545000076293945 16.95199966430664,12.545000076293945 C15.626999855041504,11.779999732971191 14.557999610900879,9.928999900817871 14.562999725341797,8.406999588012695 C14.567000389099121,6.885000228881836 15.642000198364258,6.271999835968018 16.968000411987305,7.0370001792907715 C16.968000411987305,7.0370001792907715 51.474998474121094,26.959999084472656 51.474998474121094,26.959999084472656z M6.005000114440918,0.7080000042915344 C7.329999923706055,1.4739999771118164 8.39900016784668,3.325000047683716 8.395000457763672,4.8480000495910645 C8.388999938964844,6.367000102996826 7.315000057220459,6.980999946594238 5.98799991607666,6.216000080108643 C5.98799991607666,6.216000080108643 -6.006999969482422,-0.7089999914169312 -6.006999969482422,-0.7089999914169312 C-7.328999996185303,-1.472000002861023 -8.39900016784668,-3.325000047683716 -8.394000053405762,-4.8460001945495605 C-8.390999794006348,-6.368000030517578 -7.313000202178955,-6.980999946594238 -5.988999843597412,-6.2170000076293945 C-5.988999843597412,-6.2170000076293945 6.005000114440918,0.7080000042915344 6.005000114440918,0.7080000042915344z">
+                  </path>
+                </g>
+              </g>
+              <g transform="matrix(1,0,0,1,496.4220275878906,363.1920166015625)" opacity="1" style="display: block;">
+                <g opacity="1" transform="matrix(1,0,0,1,106.26899719238281,63.04999923706055)">
+                  <path fill="url(#__lottie_element_1270)" fill-opacity="1"
+                    d=" M-15.758999824523926,-11.855999946594238 C-14.437000274658203,-11.09000015258789 -13.36400032043457,-9.237000465393066 -13.369999885559082,-7.7179999351501465 C-13.37399959564209,-6.196000099182129 -14.45199966430664,-5.584000110626221 -15.774999618530273,-6.3460001945495605 C-15.774999618530273,-6.3460001945495605 -42.33700180053711,-21.684999465942383 -42.33700180053711,-21.684999465942383 C-43.66299819946289,-22.448999404907227 -44.731998443603516,-24.29800033569336 -44.72600173950195,-25.82200050354004 C-44.72200012207031,-27.34000015258789 -43.64699935913086,-27.95599937438965 -42.32099914550781,-27.19300079345703 C-42.32099914550781,-27.19300079345703 -15.758999824523926,-11.855999946594238 -15.758999824523926,-11.855999946594238z M-54.25600051879883,-34.082000732421875 C-52.93199920654297,-33.316001892089844 -51.86199951171875,-31.46299934387207 -51.86800003051758,-29.941999435424805 C-51.869998931884766,-28.420000076293945 -52.94599914550781,-27.809999465942383 -54.27199935913086,-28.573999404907227 C-54.27199935913086,-28.573999404907227 -103.87699890136719,-57.2140007019043 -103.87699890136719,-57.2140007019043 C-105.20099639892578,-57.97700119018555 -106.27300262451172,-59.83000183105469 -106.26899719238281,-61.35300064086914 C-106.26499938964844,-62.869998931884766 -105.18499755859375,-63.486000061035156 -103.86000061035156,-62.72200012207031 C-103.86000061035156,-62.72200012207031 -54.25600051879883,-34.082000732421875 -54.25600051879883,-34.082000732421875z M4.546000003814697,-0.13300000131130219 C5.870999813079834,0.6330000162124634 6.939000129699707,2.484999895095825 6.936999797821045,4.006999969482422 C6.932000160217285,5.5289998054504395 5.855999946594238,6.138000011444092 4.53000020980835,5.375 C4.53000020980835,5.375 -4.548999786376953,0.13500000536441803 -4.548999786376953,0.13500000536441803 C-5.872000217437744,-0.6320000290870667 -6.940999984741211,-2.4830000400543213 -6.935999870300293,-4.00600004196167 C-6.933000087738037,-5.525000095367432 -5.857999801635742,-6.140999794006348 -4.5320000648498535,-5.374000072479248 C-4.5320000648498535,-5.374000072479248 4.546000003814697,-0.13300000131130219 4.546000003814697,-0.13300000131130219z">
+                  </path>
+                </g>
+              </g>
+              <g transform="matrix(1,0,0,1,496.1980285644531,349.64599609375)" opacity="1" style="display: block;">
+                <g opacity="1" transform="matrix(1,0,0,1,10.645000457763672,7.8470001220703125)">
+                  <path fill="url(#__lottie_element_1266)" fill-opacity="1"
+                    d=" M51.07699966430664,26.729000091552734 C52.4010009765625,27.4950008392334 53.47100067138672,29.347999572753906 53.465999603271484,30.871000289916992 C53.46200180053711,32.39099884033203 52.387001037597656,33.00699996948242 51.06100082397461,32.24100112915039 C51.06100082397461,32.24100112915039 34.56399917602539,22.715999603271484 34.56399917602539,22.715999603271484 C33.2400016784668,21.95400047302246 32.17300033569336,20.100000381469727 32.176998138427734,18.579999923706055 C32.180999755859375,17.05699920654297 33.25600051879883,16.44099998474121 34.58100128173828,17.20599937438965 C34.58100128173828,17.20599937438965 51.07699966430664,26.729000091552734 51.07699966430664,26.729000091552734z M100.43099975585938,55.224998474121094 C101.75700378417969,55.992000579833984 102.82599639892578,57.84400177001953 102.8219985961914,59.36600112915039 C102.81800079345703,60.88600158691406 101.74099731445312,61.500999450683594 100.41699981689453,60.737998962402344 C100.41699981689453,60.737998962402344 61.404998779296875,38.2140007019043 61.404998779296875,38.2140007019043 C60.08300018310547,37.45000076293945 59.012001037597656,35.595001220703125 59.018001556396484,34.07600021362305 C59.02199935913086,32.553001403808594 60.099998474121094,31.93899917602539 61.42100143432617,32.70199966430664 C61.42100143432617,32.70199966430664 100.43099975585938,55.224998474121094 100.43099975585938,55.224998474121094z M24.148000717163086,11.182999610900879 C25.472999572753906,11.947999954223633 26.542999267578125,13.800999641418457 26.538999557495117,15.324000358581543 C26.534000396728516,16.840999603271484 25.45800018310547,17.457000732421875 24.132999420166016,16.69499969482422 C24.132999420166016,16.69499969482422 18.231000900268555,13.286999702453613 18.231000900268555,13.286999702453613 C16.909000396728516,12.52299976348877 15.836999893188477,10.668000221252441 15.840999603271484,9.14799976348877 C15.845000267028809,7.625999927520752 16.924999237060547,7.011000156402588 18.24799919128418,7.775000095367432 C18.24799919128418,7.775000095367432 24.148000717163086,11.182999610900879 24.148000717163086,11.182999610900879z M8.255000114440918,2.007999897003174 C9.579999923706055,2.7709999084472656 10.649999618530273,4.626999855041504 10.645000457763672,6.146999835968018 C10.640999794006348,7.666999816894531 9.5649995803833,8.282999992370605 8.23799991607666,7.51800012588501 C8.23799991607666,7.51800012588501 -8.255999565124512,-2.00600004196167 -8.255999565124512,-2.00600004196167 C-9.581000328063965,-2.7720000743865967 -10.649999618530273,-4.625 -10.645000457763672,-6.144000053405762 C-10.640999794006348,-7.666999816894531 -9.5649995803833,-8.282999992370605 -8.241000175476074,-7.51800012588501 C-8.241000175476074,-7.51800012588501 8.255000114440918,2.007999897003174 8.255000114440918,2.007999897003174z">
+                  </path>
+                </g>
+              </g>
+              <g transform="matrix(1,0,0,1,529.6119995117188,354.8219909667969)" opacity="1" style="display: block;">
+                <g opacity="1" transform="matrix(1,0,0,1,33.77899932861328,21.201000213623047)">
+                  <path fill="url(#__lottie_element_1262)" fill-opacity="1"
+                    d=" M43.92399978637695,22.60300064086914 C45.249000549316406,23.367000579833984 46.31800079345703,25.218000411987305 46.3120002746582,26.73900032043457 C46.310001373291016,28.259000778198242 45.23400115966797,28.875 43.90800094604492,28.110000610351562 C43.90800094604492,28.110000610351562 22.115999221801758,15.527999877929688 22.115999221801758,15.527999877929688 C20.791000366210938,14.762999534606934 19.722999572753906,12.90999984741211 19.72599983215332,11.390000343322754 C19.731000900268555,9.866999626159668 20.80699920654297,9.253000259399414 22.131000518798828,10.020999908447266 C22.131000518798828,10.020999908447266 43.92399978637695,22.60300064086914 43.92399978637695,22.60300064086914z M-22.823999404907227,-15.935999870300293 C-21.499000549316406,-15.170999526977539 -20.42799949645996,-13.317999839782715 -20.433000564575195,-11.79699993133545 C-20.43600082397461,-10.277999877929688 -21.513999938964844,-9.663999557495117 -22.840999603271484,-10.425999641418457 C-22.840999603271484,-10.425999641418457 -31.388999938964844,-15.36400032043457 -31.388999938964844,-15.36400032043457 C-32.71500015258789,-16.128000259399414 -33.784000396728516,-17.982999801635742 -33.77899932861328,-19.50200080871582 C-33.77399826049805,-21.024999618530273 -32.698001861572266,-21.63599967956543 -31.37299919128418,-20.87299919128418 C-31.37299919128418,-20.87299919128418 -22.823999404907227,-15.935999870300293 -22.823999404907227,-15.935999870300293z M10.904999732971191,3.5369999408721924 C12.22700023651123,4.302999973297119 13.298999786376953,6.1529998779296875 13.295000076293945,7.677000045776367 C13.288999557495117,9.194999694824219 12.211000442504883,9.8100004196167 10.888999938964844,9.04800033569336 C10.888999938964844,9.04800033569336 -10.906000137329102,-3.5360000133514404 -10.906000137329102,-3.5360000133514404 C-12.230999946594238,-4.302000045776367 -13.300000190734863,-6.15500020980835 -13.295000076293945,-7.672999858856201 C-13.291000366210938,-9.197999954223633 -12.215999603271484,-9.8100004196167 -10.892000198364258,-9.04699993133545 C-10.892000198364258,-9.04699993133545 10.904999732971191,3.5369999408721924 10.904999732971191,3.5369999408721924z">
+                  </path>
+                </g>
+              </g>
+              <g transform="matrix(1,0,0,1,529.64599609375,342.4440002441406)" opacity="1" style="display: block;">
+                <g opacity="1" transform="matrix(1,0,0,1,70.77200317382812,42.560001373291016)">
+                  <path fill="url(#__lottie_element_1258)" fill-opacity="1"
+                    d=" M-18.143999099731445,-13.234000205993652 C-16.81999969482422,-12.468000411987305 -15.75100040435791,-10.61400032043457 -15.755000114440918,-9.095999717712402 C-15.760000228881836,-7.573999881744385 -16.833999633789062,-6.960999965667725 -18.160999298095703,-7.72599983215332 C-18.160999298095703,-7.72599983215332 -32.00600051879883,-15.720999717712402 -32.00600051879883,-15.720999717712402 C-33.332000732421875,-16.483999252319336 -34.400001525878906,-18.334999084472656 -34.395999908447266,-19.85700035095215 C-34.39099884033203,-21.378000259399414 -33.31700134277344,-21.993999481201172 -31.990999221801758,-21.229999542236328 C-31.990999221801758,-21.229999542236328 -18.143999099731445,-13.234000205993652 -18.143999099731445,-13.234000205993652z M-43.92499923706055,-28.118000030517578 C-42.599998474121094,-27.354999542236328 -41.53099822998047,-25.499000549316406 -41.53499984741211,-23.981000900268555 C-41.54199981689453,-22.458999633789062 -42.61600112915039,-21.844999313354492 -43.94200134277344,-22.610000610351562 C-43.94200134277344,-22.610000610351562 -68.38400268554688,-36.72200012207031 -68.38400268554688,-36.72200012207031 C-69.70899963378906,-37.48699951171875 -70.7770004272461,-39.3390007019043 -70.77300262451172,-40.861000061035156 C-70.76799774169922,-42.380001068115234 -69.69300079345703,-42.994998931884766 -68.36699676513672,-42.23099899291992 C-68.36699676513672,-42.23099899291992 -43.92499923706055,-28.118000030517578 -43.92499923706055,-28.118000030517578z M6.931000232696533,1.2430000305175781 C8.255000114440918,2.00600004196167 9.324000358581543,3.861999988555908 9.321000099182129,5.38100004196167 C9.315999984741211,6.9029998779296875 8.241000175476074,7.514999866485596 6.914999961853027,6.750999927520752 C6.914999961853027,6.750999927520752 -6.929999828338623,-1.2419999837875366 -6.929999828338623,-1.2419999837875366 C-8.255999565124512,-2.009000062942505 -9.324999809265137,-3.8589999675750732 -9.319999694824219,-5.382999897003174 C-9.315999984741211,-6.901000022888184 -8.239999771118164,-7.514999866485596 -6.915999889373779,-6.752999782562256 C-6.915999889373779,-6.752999782562256 6.931000232696533,1.2430000305175781 6.931000232696533,1.2430000305175781z">
+                  </path>
+                </g>
+              </g>
+              <g transform="matrix(1,0,0,1,529.595947265625,329.0009765625)" opacity="1" style="display: block;">
+                <g opacity="1" transform="matrix(1,0,0,1,54.30400085449219,32.83599853515625)">
+                  <path fill="url(#__lottie_element_1254)" fill-opacity="1"
+                    d=" M-35.400001525878906,-22.983999252319336 C-34.07899856567383,-22.219999313354492 -33.00699996948242,-20.364999771118164 -33.01100158691406,-18.84600067138672 C-33.01599884033203,-17.322999954223633 -34.09400177001953,-16.709999084472656 -35.41600036621094,-17.47100067138672 C-35.41600036621094,-17.47100067138672 -51.91600036621094,-26.99799919128418 -51.91600036621094,-26.99799919128418 C-53.237998962402344,-27.760000228881836 -54.30799865722656,-29.615999221801758 -54.30400085449219,-31.136999130249023 C-54.29999923706055,-32.65700149536133 -53.22200012207031,-33.27299880981445 -51.89799880981445,-32.50699996948242 C-51.89799880981445,-32.50699996948242 -35.400001525878906,-22.983999252319336 -35.400001525878906,-22.983999252319336z M23.48900032043457,11.017000198364258 C24.81399917602539,11.781000137329102 25.884000778198242,13.63599967956543 25.87700080871582,15.152999877929688 C25.87299919128418,16.677000045776367 24.798999786376953,17.29199981689453 23.472000122070312,16.530000686645508 C23.472000122070312,16.530000686645508 -23.483999252319336,-10.583000183105469 -23.483999252319336,-10.583000183105469 C-24.805999755859375,-11.347000122070312 -25.87700080871582,-13.20199966430664 -25.871999740600586,-14.723999977111816 C-25.868000030517578,-16.243999481201172 -24.791000366210938,-16.857999801635742 -23.468000411987305,-16.094999313354492 C-23.468000411987305,-16.094999313354492 23.48900032043457,11.017000198364258 23.48900032043457,11.017000198364258z">
+                  </path>
+                </g>
+              </g>
+              <g style="display: block;" transform="matrix(1,0,0,1,496.3190002441406,308.7279968261719)" opacity="1">
+                <g opacity="1" transform="matrix(1,0,0,1,12.949000358581543,23.253999710083008)">
+                  <path fill="url(#__lottie_element_1250)" fill-opacity="1"
+                    d=" M12.949000358581543,-8.300000190734863 C12.949000358581543,-8.300000190734863 12.949000358581543,23.253999710083008 12.949000358581543,23.253999710083008 C12.949000358581543,23.253999710083008 -12.949000358581543,8.302000045776367 -12.949000358581543,8.302000045776367 C-12.949000358581543,8.302000045776367 -12.949000358581543,-23.253000259399414 -12.949000358581543,-23.253000259399414 C-12.949000358581543,-23.253000259399414 12.949000358581543,-8.300000190734863 12.949000358581543,-8.300000190734863z">
+                  </path>
+                </g>
+              </g>
+            </g>
+            <g clip-path="url(#__lottie_element_1222)" transform="matrix(1,0,0,1,203.44000244140625,252.08615112304688)"
+              opacity="1" style="display: block;">
+              <g transform="matrix(1,0,0,1,22.17400360107422,33.24800109863281)" opacity="1" style="display: block;">
+                <g opacity="1" transform="matrix(1,0,0,1,74.43599700927734,103.48300170898438)">
+                  <path fill="url(#__lottie_element_1241)" fill-opacity="1"
+                    d=" M74.1709976196289,-9.75100040435791 C74.1709976196289,-9.75100040435791 74.18599700927734,85.0739974975586 74.18599700927734,85.0739974975586 C74.16699981689453,91.53900146484375 69.58300018310547,94.1500015258789 63.95500183105469,90.9020004272461 C63.95500183105469,90.9020004272461 -64.01000213623047,17.023000717163086 -64.01000213623047,17.023000717163086 C-69.63800048828125,13.77299976348877 -74.18599700927734,5.889999866485596 -74.16799926757812,-0.5770000219345093 C-74.16799926757812,-0.5770000219345093 -74.16200256347656,-95.2750015258789 -74.16200256347656,-95.2750015258789 C-74.16200256347656,-95.2750015258789 74.1709976196289,-9.75100040435791 74.1709976196289,-9.75100040435791z">
+                  </path>
+                </g>
+                <g opacity="1" transform="matrix(1,0,0,1,74.4530029296875,47.61600112915039)">
+                  <path fill="url(#__lottie_element_1242)" fill-opacity="1"
+                    d=" M-74.18599700927734,-38.284000396728516 C-74.16699981689453,-44.75600051879883 -69.3219985961914,-47.36600112915039 -63.694000244140625,-44.117000579833984 C-63.694000244140625,-44.117000579833984 64.2699966430664,29.763999938964844 64.2699966430664,29.763999938964844 C69.89800262451172,33.013999938964844 74.18599700927734,40.895999908447266 74.16799926757812,47.36600112915039 C74.16799926757812,47.36600112915039 -74.18599700927734,-38.284000396728516 -74.18599700927734,-38.284000396728516z">
+                  </path>
+                </g>
+                <g opacity="1" transform="matrix(1,0,0,1,129.21200561523438,94.60399627685547)">
+                  <path fill="rgb(51,74,139)" fill-opacity="1"
+                    d=" M2.48799991607666,0.32600000500679016 C3.0190000534057617,0.6359999775886536 3.446000099182129,1.378999948501587 3.444000005722046,1.9919999837875366 C3.444000005722046,2.5999999046325684 3.010999917984009,2.8469998836517334 2.4790000915527344,2.5409998893737793 C2.4790000915527344,2.5409998893737793 -2.4860000610351562,-0.3240000009536743 -2.4860000610351562,-0.3240000009536743 C-3.015000104904175,-0.6320000290870667 -3.446000099182129,-1.3730000257492065 -3.444000005722046,-1.9869999885559082 C-3.441999912261963,-2.5969998836517334 -3.009999990463257,-2.8480000495910645 -2.4769999980926514,-2.5390000343322754 C-2.4769999980926514,-2.5390000343322754 2.48799991607666,0.32600000500679016 2.48799991607666,0.32600000500679016z">
+                  </path>
+                </g>
+                <g opacity="1" transform="matrix(1,0,0,1,101.57099914550781,78.64600372314453)">
+                  <path fill="rgb(51,74,139)" fill-opacity="1"
+                    d=" M2.6519999504089355,0.4230000078678131 C3.184000015258789,0.7300000190734863 3.61299991607666,1.4769999980926514 3.609999895095825,2.0859999656677246 C3.6080000400543213,2.697000026702881 3.174999952316284,2.943000078201294 2.6449999809265137,2.635999917984009 C2.6449999809265137,2.635999917984009 -2.6540000438690186,-0.421999990940094 -2.6540000438690186,-0.421999990940094 C-3.184000015258789,-0.7300000190734863 -3.61299991607666,-1.472000002861023 -3.611999988555908,-2.0829999446868896 C-3.609999895095825,-2.694999933242798 -3.180000066757202,-2.944000005722046 -2.6449999809265137,-2.63700008392334 C-2.6449999809265137,-2.63700008392334 2.6519999504089355,0.4230000078678131 2.6519999504089355,0.4230000078678131z">
+                  </path>
+                </g>
+                <g opacity="1" transform="matrix(1,0,0,1,85.99299621582031,69.65499877929688)">
+                  <path fill="rgb(51,74,139)" fill-opacity="1"
+                    d=" M4.992000102996826,1.7710000276565552 C5.525000095367432,2.078000068664551 5.951000213623047,2.8239998817443848 5.949999809265137,3.434000015258789 C5.947000026702881,4.044000148773193 5.51800012588501,4.291999816894531 4.986000061035156,3.984999895095825 C4.986000061035156,3.984999895095825 -4.986999988555908,-1.7730000019073486 -4.986999988555908,-1.7730000019073486 C-5.519000053405762,-2.0799999237060547 -5.951000213623047,-2.8239998817443848 -5.946000099182129,-3.434000015258789 C-5.946000099182129,-4.045000076293945 -5.510000228881836,-4.291999816894531 -4.980999946594238,-3.9860000610351562 C-4.980999946594238,-3.9860000610351562 4.992000102996826,1.7710000276565552 4.992000102996826,1.7710000276565552z">
+                  </path>
+                </g>
+                <g opacity="1" transform="matrix(1,0,0,1,69.75299835205078,60.2760009765625)">
+                  <path fill="rgb(51,74,139)" fill-opacity="1"
+                    d=" M3.322000026702881,0.8080000281333923 C3.8540000915527344,1.1160000562667847 4.2820000648498535,1.8609999418258667 4.2789998054504395,2.4719998836517334 C4.2789998054504395,3.0820000171661377 3.8469998836517334,3.328000068664551 3.313999891281128,3.0209999084472656 C3.313999891281128,3.0209999084472656 -3.318000078201294,-0.8069999814033508 -3.318000078201294,-0.8069999814033508 C-3.8499999046325684,-1.1139999628067017 -4.2829999923706055,-1.8580000400543213 -4.281000137329102,-2.4690001010894775 C-4.2779998779296875,-3.0789999961853027 -3.8450000286102295,-3.3289999961853027 -3.312000036239624,-3.0209999084472656 C-3.312000036239624,-3.0209999084472656 3.322000026702881,0.8080000281333923 3.322000026702881,0.8080000281333923z">
+                  </path>
+                </g>
+                <g opacity="1" transform="matrix(1,0,0,1,19.17799949645996,31.604000091552734)">
+                  <path fill="rgb(51,74,139)" fill-opacity="1"
+                    d=" M1.0399999618530273,-2.546999931335449 C2.5480000972747803,-1.6770000457763672 3.7699999809265137,0.44200000166893005 3.7660000324249268,2.1740000247955322 C3.760999917984009,3.9110000133514404 2.5290000438690186,4.609000205993652 1.0219999551773071,3.73799991607666 C1.0219999551773071,3.73799991607666 -1.0379999876022339,2.5490000247955322 -1.0379999876022339,2.5490000247955322 C-2.5480000972747803,1.6749999523162842 -3.7699999809265137,-0.43700000643730164 -3.7660000324249268,-2.174999952316284 C-3.759999990463257,-3.9070000648498535 -2.5299999713897705,-4.609000205993652 -1.0180000066757202,-3.7339999675750732 C-1.0180000066757202,-3.7339999675750732 1.0399999618530273,-2.546999931335449 1.0399999618530273,-2.546999931335449z">
+                  </path>
+                </g>
+              </g>
+              <g transform="matrix(1,0,0,1,34.03099822998047,71.44099426269531)" opacity="1" style="display: block;">
+                <g opacity="1" transform="matrix(1,0,0,1,61.9900016784668,53.86800003051758)">
+                  <path fill="url(#__lottie_element_1237)" fill-opacity="1"
+                    d=" M61.7400016784668,17.61400032043457 C61.7400016784668,17.61400032043457 61.6349983215332,53.61800003051758 61.6349983215332,53.61800003051758 C61.6349983215332,53.61800003051758 -61.7400016784668,-17.615999221801758 -61.7400016784668,-17.615999221801758 C-61.7400016784668,-17.615999221801758 -61.637001037597656,-53.61800003051758 -61.637001037597656,-53.61800003051758 C-61.637001037597656,-53.61800003051758 61.7400016784668,17.61400032043457 61.7400016784668,17.61400032043457z">
+                  </path>
+                </g>
+              </g>
+              <g style="display: block;" transform="matrix(1,0,0,1,121.83599853515625,173.98699951171875)" opacity="1">
+                <g opacity="1" transform="matrix(1,0,0,1,18.624000549316406,18.09000015258789)">
+                  <path fill="rgb(191,219,254)" fill-opacity="1"
+                    d=" M4.377999782562256,1.4190000295639038 C4.909999847412109,1.7269999980926514 5.339000225067139,2.4690001010894775 5.335999965667725,3.0789999961853027 C5.335999965667725,3.690999984741211 4.9039998054504395,3.940999984741211 4.370999813079834,3.631999969482422 C4.370999813079834,3.631999969482422 -4.379000186920166,-1.4210000038146973 -4.379000186920166,-1.4210000038146973 C-4.909999847412109,-1.7280000448226929 -5.339000225067139,-2.4730000495910645 -5.336999893188477,-3.0850000381469727 C-5.335999965667725,-3.694000005722046 -4.90500020980835,-3.940999984741211 -4.373000144958496,-3.634000062942505 C-4.373000144958496,-3.634000062942505 4.377999782562256,1.4190000295639038 4.377999782562256,1.4190000295639038z">
+                  </path>
+                </g>
+                <g opacity="1" transform="matrix(1,0,0,1,13.824999809265137,20.29400062561035)">
+                  <path fill="rgb(191,219,254)" fill-opacity="1"
+                    d=" M2.7820000648498535,0.5 C3.313999891281128,0.8080000281333923 3.742000102996826,1.5490000247955322 3.739000082015991,2.1589999198913574 C3.73799991607666,2.7720000743865967 3.308000087738037,3.0169999599456787 2.7769999504089355,2.7100000381469727 C2.7769999504089355,2.7100000381469727 -2.7829999923706055,-0.49900001287460327 -2.7829999923706055,-0.49900001287460327 C-3.313999891281128,-0.8080000281333923 -3.743000030517578,-1.5499999523162842 -3.743000030517578,-2.1610000133514404 C-3.740999937057495,-2.7709999084472656 -3.309000015258789,-3.0169999599456787 -2.7780001163482666,-2.7119998931884766 C-2.7780001163482666,-2.7119998931884766 2.7820000648498535,0.5 2.7820000648498535,0.5z">
+                  </path>
+                </g>
+                <g opacity="1" transform="matrix(1,0,0,1,5.368000030517578,10.435999870300293)">
+                  <path fill="rgb(191,219,254)" fill-opacity="1"
+                    d=" M4.377999782562256,1.4199999570846558 C4.908999919891357,1.7259999513626099 5.339000225067139,2.4670000076293945 5.336999893188477,3.0799999237060547 C5.335999965667725,3.690999984741211 4.901000022888184,3.938999891281128 4.373000144958496,3.632999897003174 C4.373000144958496,3.632999897003174 -4.379000186920166,-1.4199999570846558 -4.379000186920166,-1.4199999570846558 C-4.909999847412109,-1.7259999513626099 -5.339000225067139,-2.4730000495910645 -5.336999893188477,-3.0840001106262207 C-5.335000038146973,-3.693000078201294 -4.9039998054504395,-3.938999891281128 -4.373000144958496,-3.632999897003174 C-4.373000144958496,-3.632999897003174 4.377999782562256,1.4199999570846558 4.377999782562256,1.4199999570846558z">
+                  </path>
+                </g>
+                <g opacity="1" transform="matrix(1,0,0,1,3.756999969482422,14.480999946594238)">
+                  <path fill="rgb(191,219,254)" fill-opacity="1"
+                    d=" M2.7829999923706055,0.5019999742507935 C3.315000057220459,0.8069999814033508 3.743000030517578,1.5490000247955322 3.740999937057495,2.1600000858306885 C3.740999937057495,2.7730000019073486 3.308000087738037,3.0169999599456787 2.7760000228881836,2.7109999656677246 C2.7760000228881836,2.7109999656677246 -2.7829999923706055,-0.49900001287460327 -2.7829999923706055,-0.49900001287460327 C-3.312999963760376,-0.8069999814033508 -3.74399995803833,-1.5470000505447388 -3.740000009536743,-2.1589999198913574 C-3.740000009536743,-2.7699999809265137 -3.308000087738037,-3.0169999599456787 -2.7760000228881836,-2.7090001106262207 C-2.7760000228881836,-2.7090001106262207 2.7829999923706055,0.5019999742507935 2.7829999923706055,0.5019999742507935z">
+                  </path>
+                </g>
+                <g opacity="1" transform="matrix(1,0,0,1,10.387999534606934,23.69499969482422)">
+                  <path fill="rgb(191,219,254)" fill-opacity="1"
+                    d=" M9.428000450134277,4.335999965667725 C9.960000038146973,4.644000053405762 10.387999534606934,5.388000011444092 10.38599967956543,5.999000072479248 C10.385000228881836,6.607999801635742 9.954000473022461,6.855000019073486 9.42199993133545,6.546999931335449 C9.42199993133545,6.546999931335449 -9.428999900817871,-4.335999965667725 -9.428999900817871,-4.335999965667725 C-9.961999893188477,-4.64300012588501 -10.390000343322754,-5.386000156402588 -10.387999534606934,-5.997000217437744 C-10.38700008392334,-6.607999801635742 -9.954999923706055,-6.855000019073486 -9.42300033569336,-6.546999931335449 C-9.42300033569336,-6.546999931335449 9.428000450134277,4.335999965667725 9.428000450134277,4.335999965667725z">
+                  </path>
+                </g>
+                <g opacity="1" transform="matrix(1,0,0,1,26.299999237060547,27.496000289916992)">
+                  <path fill="rgb(191,219,254)" fill-opacity="1"
+                    d=" M4.910999774932861,1.7280000448226929 C5.442999839782715,2.0339999198913574 5.86899995803833,2.7769999504089355 5.867000102996826,3.388000011444092 C5.867000102996826,4 5.434000015258789,4.24399995803833 4.9019999504089355,3.937999963760376 C4.9019999504089355,3.937999963760376 -4.9079999923706055,-1.7289999723434448 -4.9079999923706055,-1.7289999723434448 C-5.439000129699707,-2.0339999198913574 -5.868000030517578,-2.7769999504089355 -5.867000102996826,-3.38700008392334 C-5.864999771118164,-3.997999906539917 -5.434999942779541,-4.244999885559082 -4.9019999504089355,-3.937999963760376 C-4.9019999504089355,-3.937999963760376 4.910999774932861,1.7280000448226929 4.910999774932861,1.7280000448226929z">
+                  </path>
+                </g>
+                <g opacity="1" transform="matrix(1,0,0,1,27.915000915527344,33.72800064086914)">
+                  <path fill="rgb(191,219,254)" fill-opacity="1"
+                    d=" M3.315999984741211,0.8939999938011169 C3.8480000495910645,1.2020000219345093 4.275000095367432,1.9429999589920044 4.275000095367432,2.553999900817871 C4.2729997634887695,3.1649999618530273 3.8399999141693115,3.4119999408721924 3.308000087738037,3.1050000190734863 C3.308000087738037,3.1050000190734863 -3.313999891281128,-0.718999981880188 -3.313999891281128,-0.718999981880188 C-3.8459999561309814,-1.0269999504089355 -4.275000095367432,-1.7680000066757202 -4.271999835968018,-2.378999948501587 C-4.269999980926514,-2.992000102996826 -3.8399999141693115,-3.2360000610351562 -3.308000087738037,-2.930000066757202 C-3.308000087738037,-2.930000066757202 3.315999984741211,0.8939999938011169 3.315999984741211,0.8939999938011169z">
+                  </path>
+                </g>
+                <g opacity="1" transform="matrix(1,0,0,1,29.5049991607666,24.371999740600586)">
+                  <path fill="rgb(191,219,254)" fill-opacity="1"
+                    d=" M1.718999981880188,-0.11599999666213989 C2.250999927520752,0.19099999964237213 2.680000066757202,0.9330000281333923 2.677000045776367,1.5440000295639038 C2.6760001182556152,2.1540000438690186 2.244999885559082,2.4049999713897705 1.7130000591278076,2.0959999561309814 C1.7130000591278076,2.0959999561309814 -1.718999981880188,0.11500000208616257 -1.718999981880188,0.11500000208616257 C-2.250999927520752,-0.1899999976158142 -2.680000066757202,-0.9350000023841858 -2.677000045776367,-1.5470000505447388 C-2.677000045776367,-2.1579999923706055 -2.244999885559082,-2.4049999713897705 -1.7120000123977661,-2.0980000495910645 C-1.7120000123977661,-2.0980000495910645 1.718999981880188,-0.11599999666213989 1.718999981880188,-0.11599999666213989z">
+                  </path>
+                </g>
+                <g opacity="1" transform="matrix(1,0,0,1,15.869999885559082,6.197000026702881)">
+                  <path fill="rgb(191,219,254)" fill-opacity="1"
+                    d=" M0.029999999329447746,-6.196000099182129 C0.029999999329447746,-6.196000099182129 4.882999897003174,6.196000099182129 4.882999897003174,6.196000099182129 C4.882999897003174,6.196000099182129 -4.882999897003174,0.5580000281333923 -4.882999897003174,0.5580000281333923 C-4.882999897003174,0.5580000281333923 0.029999999329447746,-6.196000099182129 0.029999999329447746,-6.196000099182129z M0.02199999988079071,-3.1619999408721924 C0.02199999988079071,-3.1619999408721924 -2.546999931335449,0.3700000047683716 -2.546999931335449,0.3700000047683716 C-2.546999931335449,0.3700000047683716 2.559999942779541,3.316999912261963 2.559999942779541,3.316999912261963 C2.559999942779541,3.316999912261963 0.02199999988079071,-3.1619999408721924 0.02199999988079071,-3.1619999408721924z">
+                  </path>
+                </g>
+              </g>
+              <g style="display: block;" transform="matrix(1,0,0,1,79.40499877929688,148.37200927734375)" opacity="1">
+                <g opacity="1" transform="matrix(1,0,0,1,16.850000381469727,28.726999282836914)">
+                  <path fill="rgb(191,219,254)" fill-opacity="1"
+                    d=" M2.4110000133514404,0.28600001335144043 C2.940000057220459,0.5899999737739563 3.371999979019165,1.3359999656677246 3.369999885559082,1.9450000524520874 C3.36899995803833,2.556999921798706 2.934000015258789,2.8010001182556152 2.4040000438690186,2.494999885559082 C2.4040000438690186,2.494999885559082 -2.4110000133514404,-0.28600001335144043 -2.4110000133514404,-0.28600001335144043 C-2.940999984741211,-0.5910000205039978 -3.371999979019165,-1.3329999446868896 -3.369999885559082,-1.9450000524520874 C-3.36899995803833,-2.556999921798706 -2.934999942779541,-2.8010001182556152 -2.4049999713897705,-2.49399995803833 C-2.4049999713897705,-2.49399995803833 2.4110000133514404,0.28600001335144043 2.4110000133514404,0.28600001335144043z">
+                  </path>
+                </g>
+                <g opacity="1" transform="matrix(1,0,0,1,21.104000091552734,26.207000732421875)">
+                  <path fill="rgb(191,219,254)" fill-opacity="1"
+                    d=" M2.3980000019073486,0.2759999930858612 C2.930000066757202,0.5839999914169312 3.359999895095825,1.3270000219345093 3.3589999675750732,1.937999963760376 C3.3570001125335693,2.5490000247955322 2.9240000247955322,2.7939999103546143 2.3910000324249268,2.4860000610351562 C2.3910000324249268,2.4860000610351562 -2.3959999084472656,-0.2770000100135803 -2.3959999084472656,-0.2770000100135803 C-2.927999973297119,-0.5849999785423279 -3.359999895095825,-1.3279999494552612 -3.3580000400543213,-1.940000057220459 C-3.3550000190734863,-2.5510001182556152 -2.921999931335449,-2.7939999103546143 -2.390000104904175,-2.48799991607666 C-2.390000104904175,-2.48799991607666 2.3980000019073486,0.2759999930858612 2.3980000019073486,0.2759999930858612z">
+                  </path>
+                </g>
+                <g opacity="1" transform="matrix(1,0,0,1,27.648000717163086,34.874000549316406)">
+                  <path fill="rgb(191,219,254)" fill-opacity="1"
+                    d=" M3.993000030517578,1.284000039100647 C4.525000095367432,1.593000054359436 4.953000068664551,2.3350000381469727 4.951000213623047,2.944999933242798 C4.949999809265137,3.555000066757202 4.517000198364258,3.802999973297119 3.984999895095825,3.494999885559082 C3.984999895095825,3.494999885559082 -3.992000102996826,-1.1119999885559082 -3.992000102996826,-1.1119999885559082 C-4.52400016784668,-1.4179999828338623 -4.953000068664551,-2.1610000133514404 -4.953000068664551,-2.7720000743865967 C-4.948999881744385,-3.384000062942505 -4.51800012588501,-3.628000020980835 -3.9860000610351562,-3.322000026702881 C-3.9860000610351562,-3.322000026702881 3.993000030517578,1.284000039100647 3.993000030517578,1.284000039100647z">
+                  </path>
+                </g>
+                <g opacity="1" transform="matrix(1,0,0,1,29.82900047302246,31.243999481201172)">
+                  <path fill="rgb(191,219,254)" fill-opacity="1"
+                    d=" M1.8259999752044678,-0.05400000140070915 C2.3580000400543213,0.2549999952316284 2.7860000133514404,0.9950000047683716 2.7829999923706055,1.6039999723434448 C2.7809998989105225,2.2179999351501465 2.3519999980926514,2.4660000801086426 1.8200000524520874,2.1549999713897705 C1.8200000524520874,2.1549999713897705 -1.8250000476837158,0.050999999046325684 -1.8250000476837158,0.050999999046325684 C-2.3570001125335693,-0.2549999952316284 -2.7869999408721924,-0.996999979019165 -2.7850000858306885,-1.6080000400543213 C-2.7829999923706055,-2.2190001010894775 -2.3519999980926514,-2.4660000801086426 -1.8209999799728394,-2.1579999923706055 C-1.8209999799728394,-2.1579999923706055 1.8259999752044678,-0.05400000140070915 1.8259999752044678,-0.05400000140070915z">
+                  </path>
+                </g>
+                <g opacity="1" transform="matrix(1,0,0,1,5.506999969482422,22.177000045776367)">
+                  <path fill="rgb(191,219,254)" fill-opacity="1"
+                    d=" M4.433000087738037,1.4539999961853027 C4.433000087738037,1.4539999961853027 -2.0789999961853027,-2.305999994277954 -2.0789999961853027,-2.305999994277954 C-2.0789999961853027,-2.305999994277954 -4.429999828338623,-3.6630001068115234 -4.429999828338623,-3.6630001068115234 C-4.956999778747559,-3.9690001010894775 -5.392000198364258,-3.7249999046325684 -5.394999980926514,-3.114000082015991 C-5.394999980926514,-2.500999927520752 -4.9629998207092285,-1.7589999437332153 -4.435999870300293,-1.4529999494552612 C-4.435999870300293,-1.4529999494552612 -2.0859999656677246,-0.09799999743700027 -2.0859999656677246,-0.09799999743700027 C-2.0850000381469727,-0.09700000286102295 -2.0850000381469727,-0.09600000083446503 -2.0850000381469727,-0.09600000083446503 C-2.0850000381469727,-0.09600000083446503 -1,0.5289999842643738 -1,0.5289999842643738 C-1,0.5289999842643738 4.427999973297119,3.6649999618530273 4.427999973297119,3.6649999618530273 C4.954999923706055,3.9690001010894775 5.390999794006348,3.7249999046325684 5.390999794006348,3.114000082015991 C5.394999980926514,2.503000020980835 4.9629998207092285,1.7589999437332153 4.433000087738037,1.4539999961853027z">
+                  </path>
+                </g>
+                <g opacity="1" transform="matrix(1,0,0,1,4.275000095367432,11.102999687194824)">
+                  <path fill="rgb(191,219,254)" fill-opacity="1"
+                    d=" M3.313999891281128,0.8080000281333923 C3.8459999561309814,1.1139999628067017 4.27400016784668,1.8559999465942383 4.271999835968018,2.4679999351501465 C4.271999835968018,3.0789999961853027 3.8389999866485596,3.322999954223633 3.306999921798706,3.0179998874664307 C3.306999921798706,3.0179998874664307 -3.313999891281128,-0.8069999814033508 -3.313999891281128,-0.8069999814033508 C-3.8469998836517334,-1.1130000352859497 -4.275000095367432,-1.8550000190734863 -4.275000095367432,-2.4660000801086426 C-4.269999980926514,-3.0769999027252197 -3.8410000801086426,-3.322999954223633 -3.309000015258789,-3.0169999599456787 C-3.309000015258789,-3.0169999599456787 3.313999891281128,0.8080000281333923 3.313999891281128,0.8080000281333923z">
+                  </path>
+                </g>
+                <g opacity="1" transform="matrix(1,0,0,1,7.486999988555908,18.3439998626709)">
+                  <path fill="rgb(191,219,254)" fill-opacity="1"
+                    d=" M6.435999870300293,2.6089999675750732 C6.965000152587891,2.9140000343322754 7.396999835968018,3.6589999198913574 7.394000053405762,4.269999980926514 C7.39300012588501,4.881999969482422 6.960999965667725,5.125999927520752 6.432000160217285,4.818999767303467 C6.432000160217285,4.818999767303467 -6.434999942779541,-2.609999895095825 -6.434999942779541,-2.609999895095825 C-6.9670000076293945,-2.9159998893737793 -7.396999835968018,-3.6600000858306885 -7.394000053405762,-4.269999980926514 C-7.394000053405762,-4.880000114440918 -6.960999965667725,-5.125 -6.427000045776367,-4.815999984741211 C-6.427000045776367,-4.815999984741211 6.435999870300293,2.6089999675750732 6.435999870300293,2.6089999675750732z">
+                  </path>
+                </g>
+                <g opacity="1" transform="matrix(1,0,0,1,12.781000137329102,16.016000747680664)">
+                  <path fill="rgb(191,219,254)" fill-opacity="1"
+                    d=" M1.187999963760376,-0.421999990940094 C1.7209999561309814,-0.11299999803304672 2.1489999294281006,0.6269999742507935 2.1459999084472656,1.2369999885559082 C2.1459999084472656,1.8489999771118164 1.7139999866485596,2.0959999561309814 1.1820000410079956,1.7879999876022339 C1.1820000410079956,1.7879999876022339 -1.1859999895095825,0.421999990940094 -1.1859999895095825,0.421999990940094 C-1.7170000076293945,0.11400000005960464 -2.1489999294281006,-0.6290000081062317 -2.1480000019073486,-1.2410000562667847 C-2.1459999084472656,-1.8519999980926514 -1.7109999656677246,-2.0959999561309814 -1.1799999475479126,-1.7910000085830688 C-1.1799999475479126,-1.7910000085830688 1.187999963760376,-0.421999990940094 1.187999963760376,-0.421999990940094z">
+                  </path>
+                </g>
+                <g opacity="1" transform="matrix(1,0,0,1,25.010000228881836,23.07699966430664)">
+                  <path fill="rgb(191,219,254)" fill-opacity="1"
+                    d=" M6.658999919891357,2.734999895095825 C7.190999984741211,3.0420000553131104 7.619999885559082,3.7869999408721924 7.619999885559082,4.3979997634887695 C7.618000030517578,5.006999969482422 7.184999942779541,5.255000114440918 6.6529998779296875,4.947000026702881 C6.6529998779296875,4.947000026702881 -6.6570000648498535,-2.736999988555908 -6.6570000648498535,-2.736999988555908 C-7.189000129699707,-3.046999931335449 -7.619999885559082,-3.7869999408721924 -7.617000102996826,-4.39900016784668 C-7.614999771118164,-5.010000228881836 -7.181000232696533,-5.254000186920166 -6.64900016784668,-4.947999954223633 C-6.64900016784668,-4.947999954223633 6.658999919891357,2.734999895095825 6.658999919891357,2.734999895095825z">
+                  </path>
+                </g>
+                <g opacity="1" transform="matrix(1,0,0,1,16.659000396728516,6.919000148773193)">
+                  <path fill="rgb(191,219,254)" fill-opacity="1"
+                    d=" M-3.99399995803833,-6.919000148773193 C-3.99399995803833,-6.919000148773193 4.020999908447266,-2.2920000553131104 4.020999908447266,-2.2920000553131104 C4.020999908447266,-2.2920000553131104 3.99399995803833,6.919000148773193 3.99399995803833,6.919000148773193 C3.99399995803833,6.919000148773193 -4.020999908447266,2.2890000343322754 -4.020999908447266,2.2890000343322754 C-4.020999908447266,2.2890000343322754 -3.99399995803833,-6.919000148773193 -3.99399995803833,-6.919000148773193z M2.6610000133514404,4.607999801635742 C2.6610000133514404,4.607999801635742 2.678999900817871,-1.531000018119812 2.678999900817871,-1.531000018119812 C2.678999900817871,-1.531000018119812 -2.6600000858306885,-4.614999771118164 -2.6600000858306885,-4.614999771118164 C-2.6600000858306885,-4.614999771118164 -2.678999900817871,1.5240000486373901 -2.678999900817871,1.5240000486373901 C-2.678999900817871,1.5240000486373901 2.6610000133514404,4.607999801635742 2.6610000133514404,4.607999801635742z">
+                  </path>
+                </g>
+              </g>
+              <g style="display: block;" transform="matrix(1,0,0,1,37.38500213623047,125.06399536132812)" opacity="1">
+                <g opacity="1" transform="matrix(1,0,0,1,5.889999866485596,16.285999298095703)">
+                  <path fill="rgb(191,219,254)" fill-opacity="1"
+                    d=" M4.910999774932861,1.7289999723434448 C5.440999984741211,2.0339999198913574 5.869999885559082,2.7760000228881836 5.869999885559082,3.3889999389648438 C5.866000175476074,4 5.434000015258789,4.24399995803833 4.9039998054504395,3.937999963760376 C4.9039998054504395,3.937999963760376 -4.909999847412109,-1.7280000448226929 -4.909999847412109,-1.7280000448226929 C-5.442999839782715,-2.0339999198913574 -5.869999885559082,-2.7769999504089355 -5.868000030517578,-3.388000011444092 C-5.867000102996826,-4 -5.434999942779541,-4.24399995803833 -4.9019999504089355,-3.937999963760376 C-4.9019999504089355,-3.937999963760376 4.910999774932861,1.7289999723434448 4.910999774932861,1.7289999723434448z">
+                  </path>
+                </g>
+                <g opacity="1" transform="matrix(1,0,0,1,4.27400016784668,9.970999717712402)">
+                  <path fill="rgb(191,219,254)" fill-opacity="1"
+                    d=" M3.315000057220459,0.8050000071525574 C3.8469998836517334,1.1109999418258667 4.27400016784668,1.8530000448226929 4.2729997634887695,2.4639999866485596 C4.270999908447266,3.0759999752044678 3.8410000801086426,3.3259999752044678 3.309000015258789,3.0190000534057617 C3.309000015258789,3.0190000534057617 -3.315000057220459,-0.8050000071525574 -3.315000057220459,-0.8050000071525574 C-3.8440001010894775,-1.1119999885559082 -4.276000022888184,-1.8580000400543213 -4.27400016784668,-2.4690001010894775 C-4.270999908447266,-3.0820000171661377 -3.8380000591278076,-3.3259999752044678 -3.308000087738037,-3.0199999809265137 C-3.308000087738037,-3.0199999809265137 3.315000057220459,0.8050000071525574 3.315000057220459,0.8050000071525574z">
+                  </path>
+                </g>
+                <g opacity="1" transform="matrix(1,0,0,1,18.368000030517578,23.489999771118164)">
+                  <path fill="rgb(191,219,254)" fill-opacity="1"
+                    d=" M2.7829999923706055,0.5 C3.311000108718872,0.8050000071525574 3.74399995803833,1.5490000247955322 3.740999937057495,2.1619999408721924 C3.740000009536743,2.7720000743865967 3.305000066757202,3.0179998874664307 2.7790000438690186,2.7109999656677246 C2.7790000438690186,2.7109999656677246 -2.7829999923706055,-0.49900001287460327 -2.7829999923706055,-0.49900001287460327 C-3.313999891281128,-0.8059999942779541 -3.74399995803833,-1.5509999990463257 -3.74399995803833,-2.1600000858306885 C-3.740999937057495,-2.7730000019073486 -3.309000015258789,-3.0179998874664307 -2.7769999504089355,-2.7090001106262207 C-2.7769999504089355,-2.7090001106262207 2.7829999923706055,0.5 2.7829999923706055,0.5z">
+                  </path>
+                </g>
+                <g opacity="1" transform="matrix(1,0,0,1,26.822999954223633,33.262001037597656)">
+                  <path fill="rgb(191,219,254)" fill-opacity="1"
+                    d=" M4.377999782562256,1.5069999694824219 C4.909999847412109,1.815999984741211 5.339000225067139,2.556999921798706 5.335999965667725,3.1689999103546143 C5.334000110626221,3.7799999713897705 4.901000022888184,4.025000095367432 4.372000217437744,3.7179999351501465 C4.372000217437744,3.7179999351501465 -4.375999927520752,-1.3329999446868896 -4.375999927520752,-1.3329999446868896 C-4.909999847412109,-1.6390000581741333 -5.339000225067139,-2.382999897003174 -5.3379998207092285,-2.994999885559082 C-5.335999965667725,-3.6059999465942383 -4.901000022888184,-3.8499999046325684 -4.369999885559082,-3.5429999828338623 C-4.369999885559082,-3.5429999828338623 4.377999782562256,1.5069999694824219 4.377999782562256,1.5069999694824219z">
+                  </path>
+                </g>
+                <g opacity="1" transform="matrix(1,0,0,1,28.433000564575195,29.302000045776367)">
+                  <path fill="rgb(191,219,254)" fill-opacity="1"
+                    d=" M2.7820000648498535,0.49799999594688416 C3.313999891281128,0.8069999814033508 3.742000102996826,1.5479999780654907 3.739000082015991,2.1589999198913574 C3.739000082015991,2.7709999084472656 3.306999921798706,3.0179998874664307 2.7769999504089355,2.7100000381469727 C2.7769999504089355,2.7100000381469727 -2.7829999923706055,-0.5019999742507935 -2.7829999923706055,-0.5019999742507935 C-3.313999891281128,-0.8069999814033508 -3.742000102996826,-1.5499999523162842 -3.740000009536743,-2.1610000133514404 C-3.740000009536743,-2.7730000019073486 -3.309000015258789,-3.0179998874664307 -2.7780001163482666,-2.7109999656677246 C-2.7780001163482666,-2.7109999656677246 2.7820000648498535,0.49799999594688416 2.7820000648498535,0.49799999594688416z">
+                  </path>
+                </g>
+                <g opacity="1" transform="matrix(1,0,0,1,13.567000389099121,25.69700050354004)">
+                  <path fill="rgb(191,219,254)" fill-opacity="1"
+                    d=" M4.377999782562256,1.4199999570846558 C4.909999847412109,1.7269999980926514 5.339000225067139,2.4690001010894775 5.335999965667725,3.0799999237060547 C5.334000110626221,3.690999984741211 4.9039998054504395,3.937000036239624 4.372000217437744,3.63100004196167 C4.372000217437744,3.63100004196167 -4.376999855041504,-1.4210000038146973 -4.376999855041504,-1.4210000038146973 C-4.9070000648498535,-1.7269999980926514 -5.339000225067139,-2.4709999561309814 -5.336999893188477,-3.0820000171661377 C-5.335999965667725,-3.693000078201294 -4.901000022888184,-3.937000036239624 -4.369999885559082,-3.63100004196167 C-4.369999885559082,-3.63100004196167 4.377999782562256,1.4199999570846558 4.377999782562256,1.4199999570846558z">
+                  </path>
+                </g>
+                <g opacity="1" transform="matrix(1,0,0,1,21.799999237060547,20.089000701904297)">
+                  <path fill="rgb(191,219,254)" fill-opacity="1"
+                    d=" M9.428999900817871,4.335999965667725 C9.963000297546387,4.640999794006348 10.388999938964844,5.383999824523926 10.38700008392334,5.99399995803833 C10.38599967956543,6.60699987411499 9.954999923706055,6.855000019073486 9.423999786376953,6.548999786376953 C9.423999786376953,6.548999786376953 -9.427000045776367,-4.335999965667725 -9.427000045776367,-4.335999965667725 C-9.958999633789062,-4.64300012588501 -10.387999534606934,-5.388999938964844 -10.385000228881836,-5.998000144958496 C-10.383999824523926,-6.611999988555908 -9.95300006866455,-6.855000019073486 -9.420999526977539,-6.547999858856201 C-9.420999526977539,-6.547999858856201 9.428999900817871,4.335999965667725 9.428999900817871,4.335999965667725z">
+                  </path>
+                </g>
+                <g opacity="1" transform="matrix(1,0,0,1,2.687000036239624,19.413999557495117)">
+                  <path fill="rgb(191,219,254)" fill-opacity="1"
+                    d=" M1.715999960899353,-0.11699999868869781 C2.250999927520752,0.19200000166893005 2.680999994277954,0.9359999895095825 2.680000066757202,1.5460000038146973 C2.677000045776367,2.1559998989105225 2.242000102996826,2.4019999504089355 1.7120000123977661,2.0950000286102295 C1.7120000123977661,2.0950000286102295 -1.722000002861023,0.1120000034570694 -1.722000002861023,0.1120000034570694 C-2.253000020980835,-0.1940000057220459 -2.680999994277954,-0.9359999895095825 -2.678999900817871,-1.5460000038146973 C-2.677999973297119,-2.1589999198913574 -2.246999979019165,-2.4019999504089355 -1.715999960899353,-2.0950000286102295 C-1.715999960899353,-2.0950000286102295 1.715999960899353,-0.11699999868869781 1.715999960899353,-0.11699999868869781z">
+                  </path>
+                </g>
+                <g opacity="1" transform="matrix(1,0,0,1,16.357999801635742,6.129000186920166)">
+                  <path fill="rgb(191,219,254)" fill-opacity="1"
+                    d=" M0.012000000104308128,-5.519000053405762 C2.4690001010894775,-4.099999904632568 4.460000038146973,-0.6499999761581421 4.453000068664551,2.1700000762939453 C4.443999767303467,4.992000102996826 2.438999891281128,6.129000186920166 -0.014999999664723873,4.7129998207092285 C-2.4709999561309814,3.2929999828338623 -4.460000038146973,-0.15000000596046448 -4.452000141143799,-2.9700000286102295 C-4.443999767303467,-5.793000221252441 -2.441999912261963,-6.936999797821045 0.012000000104308128,-5.519000053405762z M-0.012000000104308128,3.180000066757202 C1.7079999446868896,4.171000003814697 3.1089999675750732,3.372999906539917 3.115000009536743,1.3980000019073486 C3.121000051498413,-0.578000009059906 1.7259999513626099,-2.990000009536743 0.008999999612569809,-3.9820001125335693 C-1.7100000381469727,-4.973999977111816 -3.11299991607666,-4.175000190734863 -3.11899995803833,-2.2009999752044678 C-3.124000072479248,-0.22599999606609344 -1.7319999933242798,2.187999963760376 -0.012000000104308128,3.180000066757202z">
+                  </path>
+                </g>
+              </g>
+            </g>
+            <g clip-path="url(#__lottie_element_1203)" transform="matrix(1,0,0,1,188,115.78305053710938)" opacity="1"
+              style="display: block;">
+              <g transform="matrix(1,0,0,1,137.25,35.02300262451172)" opacity="1" style="display: block;">
+                <g opacity="1" transform="matrix(1,0,0,1,74.43699645996094,103.48600006103516)">
+                  <path fill="url(#__lottie_element_1217)" fill-opacity="1"
+                    d=" M74.1259994506836,-9.75100040435791 C74.1259994506836,-9.75100040435791 74.18800354003906,85.07499694824219 74.18800354003906,85.07499694824219 C74.16999816894531,91.54100036621094 69.58599853515625,94.15399932861328 63.95800018310547,90.90499877929688 C63.95800018310547,90.90499877929688 -64.01000213623047,17.02199935913086 -64.01000213623047,17.02199935913086 C-69.63800048828125,13.77299976348877 -74.18800354003906,5.888000011444092 -74.16899871826172,-0.5789999961853027 C-74.16899871826172,-0.5789999961853027 -74.21199798583984,-95.15399932861328 -74.21199798583984,-95.15399932861328 C-74.21199798583984,-95.15399932861328 74.1259994506836,-9.75100040435791 74.1259994506836,-9.75100040435791z">
+                  </path>
+                </g>
+                <g opacity="1" transform="matrix(1,0,0,1,74.45600128173828,47.61800003051758)">
+                  <path fill="url(#__lottie_element_1218)" fill-opacity="1"
+                    d=" M-74.18699645996094,-38.2859992980957 C-74.16899871826172,-44.757999420166016 -69.32499694824219,-47.367000579833984 -63.69599914550781,-44.117000579833984 C-63.69599914550781,-44.117000579833984 64.27100372314453,29.764999389648438 64.27100372314453,29.764999389648438 C69.9000015258789,33.013999938964844 74.18699645996094,40.89500045776367 74.16899871826172,47.367000579833984 C74.16899871826172,47.367000579833984 -74.18699645996094,-38.2859992980957 -74.18699645996094,-38.2859992980957z">
+                  </path>
+                </g>
+                <g opacity="1" transform="matrix(1,0,0,1,99.8239974975586,105.71199798583984)">
+                  <path fill="url(#__lottie_element_1219)" fill-opacity="1"
+                    d=" M0.10899999737739563,0 C1.3519999980926514,-0.04399999976158142 13.984000205993652,-0.4880000054836273 13.984000205993652,-0.4880000054836273 C15.157999992370605,2.742000102996826 15.822999954223633,6.0370001792907715 15.814000129699707,9.126999855041504 C15.78600025177002,19.155000686645508 8.687999725341797,23.200000762939453 -0.03999999910593033,18.16200065612793 C-8.770999908447266,13.121000289916992 -15.822999954223633,0.906000018119812 -15.793999671936035,-9.123000144958496 C-15.765999794006348,-19.155000686645508 -8.666999816894531,-23.200000762939453 0.06300000101327896,-18.159000396728516">
+                  </path>
+                </g>
+                <g opacity="1" transform="matrix(1,0,0,1,108.58399963378906,94.03500366210938)">
+                  <path fill="url(#__lottie_element_1220)" fill-opacity="1"
+                    d=" M-6.934000015258789,-9.079000473022461 C-0.8949999809265137,-5.5929999351501465 4.341000080108643,1.3309999704360962 6.986000061035156,8.588000297546387 C6.986000061035156,8.588000297546387 -6.986000061035156,9.079000473022461 -6.986000061035156,9.079000473022461 C-6.986000061035156,9.079000473022461 -6.934000015258789,-9.079000473022461 -6.934000015258789,-9.079000473022461z">
+                  </path>
+                </g>
+                <g opacity="1" transform="matrix(1,0,0,1,26.177000045776367,73.13300323486328)">
+                  <path fill="rgb(191,219,254)" fill-opacity="1"
+                    d=" M3.0829999446868896,-8.209691047668457 C3.0829999446868896,-8.209691047668457 3.049999952316284,9.423999786376953 3.049999952316284,9.423999786376953 C3.049999952316284,9.423999786376953 -3.0829999446868896,5.882999897003174 -3.0829999446868896,5.882999897003174 C-3.0829999446868896,5.882999897003174 -3.0510001182556152,-11.750691413879395 -3.0510001182556152,-11.750691413879395 C-3.0510001182556152,-11.750691413879395 3.0829999446868896,-8.209691047668457 3.0829999446868896,-8.209691047668457z">
+                  </path>
+                </g>
+                <g opacity="1" transform="matrix(1,0,0,1,35.25600051879883,73.68900299072266)">
+                  <path fill="rgb(191,219,254)" fill-opacity="1"
+                    d=" M3.0950000286102295,1.9684332609176636 C3.0950000286102295,1.9684332609176636 3.0369999408721924,14.178999900817871 3.0369999408721924,14.178999900817871 C3.0369999408721924,14.178999900817871 -3.0950000286102295,10.638999938964844 -3.0950000286102295,10.638999938964844 C-3.0950000286102295,10.638999938964844 -3.0380001068115234,-1.5735666751861572 -3.0380001068115234,-1.5735666751861572 C-3.0380001068115234,-1.5735666751861572 3.0950000286102295,1.9684332609176636 3.0950000286102295,1.9684332609176636z">
+                  </path>
+                </g>
+                <g opacity="1" transform="matrix(1,0,0,1,44.3129997253418,80.70500183105469)">
+                  <path fill="rgb(191,219,254)" fill-opacity="1"
+                    d=" M3.0880000591278076,-15.455893516540527 C3.0880000591278076,-15.455893516540527 3.0450000762939453,12.39799976348877 3.0450000762939453,12.39799976348877 C3.0450000762939453,12.39799976348877 -3.0880000591278076,8.857000350952148 -3.0880000591278076,8.857000350952148 C-3.0880000591278076,8.857000350952148 -3.0450000762939453,-18.99689292907715 -3.0450000762939453,-18.99689292907715 C-3.0450000762939453,-18.99689292907715 3.0880000591278076,-15.455893516540527 3.0880000591278076,-15.455893516540527z">
+                  </path>
+                </g>
+                <g opacity="1" transform="matrix(1,0,0,1,53.393001556396484,79.6989974975586)">
+                  <path fill="rgb(191,219,254)" fill-opacity="1"
+                    d=" M3.1010000705718994,-12.595980644226074 C3.1010000705718994,-12.595980644226074 3.0320000648498535,18.63800048828125 3.0320000648498535,18.63800048828125 C3.0320000648498535,18.63800048828125 -3.1010000705718994,15.097999572753906 -3.1010000705718994,15.097999572753906 C-3.1010000705718994,15.097999572753906 -3.0329999923706055,-16.136980056762695 -3.0329999923706055,-16.136980056762695 C-3.0329999923706055,-16.136980056762695 3.1010000705718994,-12.595980644226074 3.1010000705718994,-12.595980644226074z">
+                  </path>
+                </g>
+              </g>
+              <g transform="matrix(1,0,0,1,219.23300170898438,159.95599365234375)" opacity="1" style="display: block;">
+                <g opacity="1" transform="matrix(1,0,0,1,29.756000518798828,18.125)">
+                  <path fill="url(#__lottie_element_1213)" fill-opacity="1"
+                    d=" M-6.502999782562256,-4.86299991607666 C-5.9710001945495605,-4.556000232696533 -5.543000221252441,-3.812999963760376 -5.545000076293945,-3.2019999027252197 C-5.546000003814697,-2.5910000801086426 -5.9770002365112305,-2.3429999351501465 -6.508999824523926,-2.6500000953674316 C-6.508999824523926,-2.6500000953674316 -15.260000228881836,-7.702000141143799 -15.260000228881836,-7.702000141143799 C-15.793000221252441,-8.008999824523926 -16.22100067138672,-8.755000114440918 -16.2189998626709,-9.366000175476074 C-16.216999053955078,-9.97700023651123 -15.78600025177002,-10.222000122070312 -15.253999710083008,-9.914999961853027 C-15.253999710083008,-9.914999961853027 -6.502999782562256,-4.86299991607666 -6.502999782562256,-4.86299991607666z M-12.897000312805176,-3.578000068664551 C-12.364999771118164,-3.2699999809265137 -11.937000274658203,-2.5280001163482666 -11.939000129699707,-1.9170000553131104 C-11.9399995803833,-1.305999994277954 -12.371000289916992,-1.059999942779541 -12.902999877929688,-1.3680000305175781 C-12.902999877929688,-1.3680000305175781 -18.46299934387207,-4.577000141143799 -18.46299934387207,-4.577000141143799 C-18.9950008392334,-4.883999824523926 -19.42300033569336,-5.626999855041504 -19.42099952697754,-6.23799991607666 C-19.420000076293945,-6.848999977111816 -18.98900032043457,-7.09499979019165 -18.457000732421875,-6.788000106811523 C-18.457000732421875,-6.788000106811523 -12.897000312805176,-3.578000068664551 -12.897000312805176,-3.578000068664551z M-19.759000778198242,-12.515999794006348 C-19.229999542236328,-12.210000038146973 -18.798999786376953,-11.468000411987305 -18.801000595092773,-10.855999946594238 C-18.802000045776367,-10.244000434875488 -19.236000061035156,-9.996999740600586 -19.766000747680664,-10.303000450134277 C-19.766000747680664,-10.303000450134277 -28.517000198364258,-15.354999542236328 -28.517000198364258,-15.354999542236328 C-29.04800033569336,-15.661999702453613 -29.476999282836914,-16.406999588012695 -29.475000381469727,-17.018999099731445 C-29.472999572753906,-17.631000518798828 -29.04199981689453,-17.875 -28.510000228881836,-17.56800079345703 C-28.510000228881836,-17.56800079345703 -19.759000778198242,-12.515999794006348 -19.759000778198242,-12.515999794006348z M-22.964000701904297,-9.388999938964844 C-22.433000564575195,-9.081999778747559 -22.0049991607666,-8.340999603271484 -22.006000518798828,-7.729000091552734 C-22.007999420166016,-7.118000030517578 -22.43899917602539,-6.872000217437744 -22.97100067138672,-7.179999828338623 C-22.97100067138672,-7.179999828338623 -28.5310001373291,-10.388999938964844 -28.5310001373291,-10.388999938964844 C-29.062000274658203,-10.696000099182129 -29.490999221801758,-11.437999725341797 -29.48900032043457,-12.050000190734863 C-29.48699951171875,-12.65999984741211 -29.05699920654297,-12.906000137329102 -28.524999618530273,-12.598999977111816 C-28.524999618530273,-12.598999977111816 -22.964000701904297,-9.388999938964844 -22.964000701904297,-9.388999938964844z M-9.687999725341797,3.6610000133514404 C-9.156000137329102,3.9679999351501465 -8.72700023651123,4.710000038146973 -8.729000091552734,5.322000026702881 C-8.729999542236328,5.932000160217285 -9.161999702453613,6.177999973297119 -9.694000244140625,5.870999813079834 C-9.694000244140625,5.870999813079834 -28.54599952697754,-5.013000011444092 -28.54599952697754,-5.013000011444092 C-29.077999114990234,-5.320000171661377 -29.506000518798828,-6.063000202178955 -29.503999710083008,-6.673999786376953 C-29.50200080871582,-7.284999847412109 -29.070999145507812,-7.531000137329102 -28.538999557495117,-7.2230000495910645 C-28.538999557495117,-7.2230000495910645 -9.687999725341797,3.6610000133514404 -9.687999725341797,3.6610000133514404z M1.7050000429153442,4.854000091552734 C2.236999988555908,5.160999774932861 2.6649999618530273,5.9019999504089355 2.6630001068115234,6.513999938964844 C2.6619999408721924,7.125 2.2309999465942383,7.370999813079834 1.6990000009536743,7.063000202178955 C1.6990000009536743,7.063000202178955 -8.11299991607666,1.3980000019073486 -8.11299991607666,1.3980000019073486 C-8.645000457763672,1.090999960899353 -9.072999954223633,0.3499999940395355 -9.071000099182129,-0.2619999945163727 C-9.069999694824219,-0.8730000257492065 -8.638999938964844,-1.1180000305175781 -8.107000350952148,-0.8119999766349792 C-8.107000350952148,-0.8119999766349792 1.7050000429153442,4.854000091552734 1.7050000429153442,4.854000091552734z M1.7259999513626099,10.25 C2.256999969482422,10.557999610900879 2.686000108718872,11.300000190734863 2.684000015258789,11.91100025177002 C2.681999921798706,12.522000312805176 2.250999927520752,12.767999649047852 1.7200000286102295,12.460000038146973 C1.7200000286102295,12.460000038146973 -4.9039998054504395,8.63599967956543 -4.9039998054504395,8.63599967956543 C-5.435999870300293,8.329999923706055 -5.863999843597412,7.5879998207092285 -5.86299991607666,6.9770002365112305 C-5.861000061035156,6.364999771118164 -5.429999828338623,6.119999885559082 -4.8979997634887695,6.427000045776367 C-4.8979997634887695,6.427000045776367 1.7259999513626099,10.25 1.7259999513626099,10.25z M1.718999981880188,-0.11599999666213989 C2.250999927520752,0.19099999964237213 2.678999900817871,0.9330000281333923 2.677000045776367,1.5449999570846558 C2.6760001182556152,2.1549999713897705 2.244999885559082,2.4049999713897705 1.7130000591278076,2.0969998836517334 C1.7130000591278076,2.0969998836517334 -1.718999981880188,0.11599999666213989 -1.718999981880188,0.11599999666213989 C-2.250999927520752,-0.19099999964237213 -2.678999900817871,-0.9369999766349792 -2.677000045776367,-1.5470000505447388 C-2.6760001182556152,-2.1579999923706055 -2.244999885559082,-2.4049999713897705 -1.7130000591278076,-2.0969998836517334 C-1.7130000591278076,-2.0969998836517334 1.718999981880188,-0.11599999666213989 1.718999981880188,-0.11599999666213989z">
+                  </path>
+                </g>
+              </g>
+              <g transform="matrix(1,0,0,1,159.11801147460938,125.91799926757812)" opacity="1" style="display: block;">
+                <g opacity="1" transform="matrix(1,0,0,1,2.881999969482422,12.753999710083008)">
+                  <path fill="url(#__lottie_element_1209)" fill-opacity="1"
+                    d=" M4.801000118255615,-8.461000442504883 C5.322000026702881,-8.159000396728516 5.742000102996826,-7.433000087738037 5.739999771118164,-6.835000038146973 C5.73799991607666,-6.235000133514404 5.315999984741211,-5.991000175476074 4.795000076293945,-6.293000221252441 C4.795000076293945,-6.293000221252441 -1.6920000314712524,-10.038000106811523 -1.6920000314712524,-10.038000106811523 C-2.2090001106262207,-10.336000442504883 -2.631999969482422,-11.069000244140625 -2.630000114440918,-11.666999816894531 C-2.628999948501587,-12.265999794006348 -2.203000068664551,-12.503999710083008 -1.684999942779541,-12.206000328063965 C-1.684999942779541,-12.206000328063965 4.801000118255615,-8.461000442504883 4.801000118255615,-8.461000442504883z M18.08300018310547,4.482999801635742 C18.60099983215332,4.781000137329102 19.023000717163086,5.511000156402588 19.020999908447266,6.109000205993652 C19.020000457763672,6.708000183105469 18.594999313354492,6.946000099182129 18.07699966430664,6.6479997634887695 C18.07699966430664,6.6479997634887695 12.631999969482422,3.503999948501587 12.631999969482422,3.503999948501587 C12.111000061035156,3.203000068664551 11.689000129699707,2.4749999046325684 11.690999984741211,1.8769999742507935 C11.692999839782715,1.2769999504089355 12.118000030517578,1.0379999876022339 12.638999938964844,1.3389999866485596 C12.638999938964844,1.3389999866485596 18.08300018310547,4.482999801635742 18.08300018310547,4.482999801635742z M27.927000045776367,15.039999961853027 C28.447999954223633,15.340999603271484 28.867000579833984,16.06800079345703 28.864999771118164,16.666000366210938 C28.86400032043457,17.263999938964844 28.441999435424805,17.5049991607666 27.92099952697754,17.204999923706055 C27.92099952697754,17.204999923706055 19.35300064086914,12.258999824523926 19.35300064086914,12.258999824523926 C18.832000732421875,11.956999778747559 18.40999984741211,11.229000091552734 18.41200065612793,10.630999565124512 C18.413999557495117,10.031999588012695 18.839000701904297,9.793000221252441 19.358999252319336,10.093000411987305 C19.358999252319336,10.093000411987305 27.927000045776367,15.039999961853027 27.927000045776367,15.039999961853027z M27.940000534057617,10.173999786376953 C28.461000442504883,10.473999977111816 28.8799991607666,11.199999809265137 28.878000259399414,11.798999786376953 C28.87700080871582,12.39799976348877 28.454999923706055,12.637999534606934 27.934999465942383,12.336999893188477 C27.934999465942383,12.336999893188477 22.488000869750977,9.194000244140625 22.488000869750977,9.194000244140625 C21.968000411987305,8.892999649047852 21.548999786376953,8.166999816894531 21.549999237060547,7.567999839782715 C21.552000045776367,6.968999862670898 21.974000930786133,6.728000164031982 22.4950008392334,7.03000020980835 C22.4950008392334,7.03000020980835 27.940000534057617,10.173999786376953 27.940000534057617,10.173999786376953z M7.947999954223633,-1.36899995803833 C8.465999603271484,-1.0709999799728394 8.887999534606934,-0.34200000762939453 8.88700008392334,0.25699999928474426 C8.885000228881836,0.8550000190734863 8.460000038146973,1.0950000286102295 7.941999912261963,0.7960000038146973 C7.941999912261963,0.7960000038146973 -1.6710000038146973,-4.754000186920166 -1.6710000038146973,-4.754000186920166 C-2.191999912261963,-5.056000232696533 -2.6110000610351562,-5.7820000648498535 -2.609999895095825,-6.380000114440918 C-2.6080000400543213,-6.979000091552734 -2.184999942779541,-7.21999979019165 -1.6649999618530273,-6.918000221252441 C-1.6649999618530273,-6.918000221252441 7.947999954223633,-1.36899995803833 7.947999954223633,-1.36899995803833z M14.944000244140625,7.544000148773193 C15.46500015258789,7.8460001945495605 15.883999824523926,8.571999549865723 15.881999969482422,9.170999526977539 C15.880999565124512,9.769000053405762 15.458999633789062,10.008999824523926 14.937999725341797,9.708999633789062 C14.937999725341797,9.708999633789062 6.369999885559082,4.761000156402588 6.369999885559082,4.761000156402588 C5.849999904632568,4.460999965667725 5.427000045776367,3.7330000400543213 5.427999973297119,3.134999990463257 C5.429999828338623,2.5369999408721924 5.855999946594238,2.296999931335449 6.376999855041504,2.5980000495910645 C6.376999855041504,2.5980000495910645 14.944000244140625,7.544000148773193 14.944000244140625,7.544000148773193z M27.95599937438965,4.9079999923706055 C28.476999282836914,5.208000183105469 28.895000457763672,5.934000015258789 28.89299964904785,6.533999919891357 C28.892000198364258,7.131999969482422 28.4689998626709,7.376999855041504 27.948999404907227,7.074999809265137 C27.948999404907227,7.074999809265137 9.486000061035156,-3.5840001106262207 9.486000061035156,-3.5840001106262207 C8.965999603271484,-3.884000062942505 8.545999526977539,-4.614999771118164 8.54699993133545,-5.2129998207092285 C8.550000190734863,-5.811999797821045 8.972000122070312,-6.052000045776367 9.493000030517578,-5.750999927520752 C9.493000030517578,-5.750999927520752 27.95599937438965,4.9079999923706055 27.95599937438965,4.9079999923706055z M1.6820000410079956,-0.1120000034570694 C2.203000068664551,0.1889999955892563 2.625,0.9169999957084656 2.624000072479248,1.5160000324249268 C2.622999906539917,2.114000082015991 2.197000026702881,2.3540000915527344 1.6770000457763672,2.052000045776367 C1.6770000457763672,2.052000045776367 -1.684000015258789,0.1120000034570694 -1.684000015258789,0.1120000034570694 C-2.2060000896453857,-0.1889999955892563 -2.625,-0.9160000085830688 -2.622999906539917,-1.5140000581741333 C-2.621999979019165,-2.111999988555908 -2.200000047683716,-2.3540000915527344 -1.6779999732971191,-2.052000045776367 C-1.6779999732971191,-2.052000045776367 1.6820000410079956,-0.1120000034570694 1.6820000410079956,-0.1120000034570694z">
+                  </path>
+                </g>
+              </g>
+            </g>
+          </g>
+        </svg>
+      </div>
+      <!-- Div no 1 -->
+      <div class="px-4 sm:px-8 lg:py-32 xl:py-48 py-42  ">
+        <p class="text-sm text-gray-400">METHODOLOGY</p>
+        <h1
+          class="text-4xl font-extrabold text-gray-900 sm:text-4xl md:text-4xl tracking-tight  lg:text-4xl xl:text-4xl ">
+          Improve your business’s<br>
+          <span class="text-blue-600">online visibility and reach.</span>
+        </h1>
+        <p class="text-lg font-normal text-gray-500 pt-4">Most people do not look past the first page of result.
+          <span class="font-semibold text-[#2563EB]">Our SEO services help</span> improve your ranking and visibility,
+          <span class="font-semibold text-[#2563EB]">helping</span> your <span
+            class="font-semibold text-[#2563EB]">reach the top of search</span> results and attract more <span
+            class="font-semibold text-[#2563EB]">top</span> <span class="font-semibold text-[#2563EB]">local and
+            relevant traffic</span>.
+        </p>
+        <button href="contact.html"
+          class=" mb-6 z-decrease lg:mt-2 xl:mt-2 2xl:mt-2 mt-6 z-10 relative bg-blue-500 text-white mx-auto lg:mx-0 xl:mx-0 px-4 py-2 rounded-md flex items-center transform transition-all duration-300 ease-in-out hover:scale-105 hover:shadow-lg active:scale-95 active:bg-blue-600">
+          Contact Us
+          <i class="fa-solid fa-arrow-right text-base ml-2"></i>
+        </button>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Cards -->
+
+  <section class="relative py-16 bg-cover bg-center" style="background-image: url('technical-seo-services.jpeg');">
+    <!-- Canvas for Astronomy Lines Effect -->
+    <canvas id="astronomyCanvas" class="absolute inset-0 w-full h-full pointer-events-none"></canvas>
+
+    <!-- Dark overlay to enhance readability -->
+    <div class="absolute inset-0 opacity-90"></div>
+    <!-- Content -->
+    <div class="relative grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 p-8">
+
+      <!-- Card 1 -->
+      <div class="relative bg-white/10 backdrop-blur-3xl shadow-lg rounded-xl overflow-hidden group">
+        <div
+          class="text-center h-full overflow-hidden p-5 relative z-10 transform transition-all duration-500 hover:scale-105 hover:bg-white/20 hover:backdrop-blur-xl hover:shadow-2xl">
+          <img src="WhatsApp Image 2025-01-10 at 8.25.59 PM.jpeg"
+            class="mx-auto w-30 h-30 mb-6 filter brightness-150 invert" alt="">
+          <h3 class="text-lg font-semibold text-white group-hover:text-blue-200 transition-colors duration-300">
+            Technical SEO
+          </h3>
+          <p class="mt-4 text-gray-300 group-hover:text-white transition-colors duration-300">
+            We help improve the website performance and structure to ensure search engines can easily rank your pages.
+          </p>
+        </div>
+      </div>
+
+      <!-- Card 2 -->
+      <div class="relative bg-white/10 backdrop-blur-3xl shadow-lg rounded-xl overflow-hidden group">
+        <div
+          class="text-center h-full overflow-hidden p-5 relative z-10 transform transition-all duration-500 hover:scale-105 hover:bg-white/20 hover:backdrop-blur-xl hover:shadow-2xl">
+          <img src="WhatsApp Image 2025-01-10 at 8.26.01 PM (1).jpeg"
+            class="mx-auto w-30 h-30 mb-6 filter brightness-150 invert" alt="">
+          <h3 class="text-lg font-semibold text-white group-hover:text-blue-200 transition-colors duration-300">
+            On-Page SEO
+          </h3>
+          <p class="mt-4 text-gray-300 group-hover:text-white transition-colors duration-300">
+            We suggest improvements for your site headings, descriptions and content to boost rankings.
+          </p>
+        </div>
+      </div>
+
+      <!-- Card 3 -->
+      <div class="relative bg-white/10 backdrop-blur-3xl shadow-lg rounded-xl overflow-hidden group">
+        <div
+          class="text-center h-full overflow-hidden p-5 relative z-10 transform transition-all duration-500 hover:scale-105 hover:bg-white/20 hover:backdrop-blur-xl hover:shadow-2xl">
+          <img src="WhatsApp Image 2025-01-10 at 8.26.00 PM (1).jpeg"
+            class="mx-auto w-30 h-30 mb-6 filter brightness-150 invert" alt="">
+          <h3 class="text-lg font-semibold text-white group-hover:text-blue-200 transition-colors duration-300">
+            Off-Page SEO
+          </h3>
+          <p class="mt-4 text-gray-300 group-hover:text-white transition-colors duration-300">
+            Off-page SEO plays a vital role in building your brand’s authority and expanding your online reach.
+          </p>
+        </div>
+      </div>
+
+      <!-- Card 4 -->
+      <div class="relative bg-white/10 backdrop-blur-3xl shadow-lg rounded-xl overflow-hidden group">
+        <div
+          class="text-center h-full overflow-hidden p-5 relative z-10 transform transition-all duration-500 hover:scale-105 hover:bg-white/20 hover:backdrop-blur-xl hover:shadow-2xl">
+          <img src="WhatsApp Image 2025-01-10 at 8.26.00 PM.jpeg" class="mx-auto mb-6 filter brightness-150 invert"
+            style="height: 133px; width: 236px;" alt="">
+          <h3 class="text-lg font-semibold text-white group-hover:text-blue-200 transition-colors duration-300">
+            Local SEO
+          </h3>
+          <p class="mt-4 text-gray-300 group-hover:text-white transition-colors duration-300">
+            Improve your visibility in search results in your area, and attract more local customers.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const canvas = document.getElementById('astronomyCanvas');
+      const ctx = canvas.getContext('2d');
+      let particles = [];
+
+      // Resizing canvas to fill section
+      function resizeCanvas() {
+        canvas.width = canvas.clientWidth;
+        canvas.height = canvas.clientHeight;
+      }
+
+      // Create particles with random position and velocity
+      function createParticles() {
+        for (let i = 0; i < 120; i++) {
+          particles.push({
+            x: Math.random() * canvas.width,
+            y: Math.random() * canvas.height,
+            vx: (Math.random() - 0.5) * 1,
+            vy: (Math.random() - 0.5) * 1,
+            radius: 1.5,
+            color: Math.random() < 0.5 ? 'rgba(37, 99, 235, 0.7)' : 'rgba(255, 255, 255, 0.7)'
+          });
+        }
+      }
+
+      function drawParticles() {
+        ctx.clearRect(0, 0, canvas.width, canvas.height);
+
+        particles.forEach((p, index) => {
+          // Move particle
+          p.x += p.vx;
+          p.y += p.vy;
+
+          // Wrap around edges
+          if (p.x > canvas.width) p.x = 0;
+          if (p.x < 0) p.x = canvas.width;
+          if (p.y > canvas.height) p.y = 0;
+          if (p.y < 0) p.y = canvas.height;
+
+          // Draw particle
+          ctx.beginPath();
+          ctx.arc(p.x, p.y, p.radius, 0, 2 * Math.PI);
+          ctx.fillStyle = p.color;
+          ctx.fill();
+
+          // Connect particles that are close to each other
+          for (let j = index + 1; j < particles.length; j++) {
+            const p2 = particles[j];
+            const dist = Math.hypot(p.x - p2.x, p.y - p2.y);
+            if (dist < 100) {
+              ctx.beginPath();
+              ctx.moveTo(p.x, p.y);
+              ctx.lineTo(p2.x, p2.y);
+              ctx.strokeStyle = `rgba(37, 99, 235, ${1 - dist / 100})`;
+              ctx.lineWidth = 0.5;
+              ctx.stroke();
+            }
+          }
+        });
+      }
+
+      function animateParticles() {
+        drawParticles();
+        requestAnimationFrame(animateParticles);
+      }
+
+      // Initialize canvas and particles
+      resizeCanvas();
+      createParticles();
+      animateParticles();
+
+      // Re-adjust canvas on window resize
+      window.addEventListener('resize', resizeCanvas);
+    });
+
+  </script>
+
+
+  <!-- services card and videos section-->
+  <section class="relative w-full h-screen flex flex-col lg:flex-row items-center"
+    style="background-image: linear-gradient(to right, #f0e2e7, #d0dcf0)">
+    <!-- Text Content Section -->
+    <div class="relative z-10 text-white p-4 sm:p-6 md:p-8 flex flex-col justify-center mx-auto lg:w-1/2 h-full">
+      <div class="bg-white/70 text-[#111827] p-6 sm:p-8 md:p-10 rounded-md shadow-lg">
+        <h1 class="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-4">
+          <span class="text-[#2563EB]">Technical</span> SEO
+        </h1>
+        <p class="mt-4 text-gray-600 group-hover:text-white transition-colors duration-300">
+          <a href="seo.html"
+            class="block mb-2 text-lg sm:text-xl font-semibold text-gray-800 transform hover:text-blue-600" tabindex="0"
+            role="link">Streamline Your Site’s Backend for Maximum Search Visibility</a>
+          Technical SEO focuses on optimizing your website’s backend to improve performance and rankings. By enhancing
+          page speed, fixing errors, and ensuring mobile-friendliness. We create a seamless user experience that helps
+          search engines efficiently crawl and rank your site.
+        </p>
+      </div>
+    </div>
+
+    <!-- Video Section -->
+    <div class="lg:w-1/2 mt-8 lg:mt-0 lg:pl-6 flex justify-center items-center transition-video">
+      <video class="w-full max-w-md lg:max-w-full lg:h-auto rounded-md shadow-lg" autoplay muted
+        controlsList="nodownload">
+        <source src="./1103(11).mp4" type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
+    </div>
+  </section>
+
+  <section class="relative w-full h-screen" style="background-image: linear-gradient(to right, #f0e2e7, #d0dcf0)">
+    <!-- Container for Video and Text in Flexbox -->
+    <div class="relative flex flex-col lg:flex-row items-center h-full">
+      <!-- Video Section -->
+      <div class="lg:w-1/2 mt-8 lg:mt-0 lg:pl-6 flex justify-center items-center transition-video">
+        <video class="w-full max-w-md lg:max-w-full lg:h-auto rounded-md shadow-lg" autoplay muted
+          controlsList="nodownload">
+          <source src="./web design,seo,engaging design.mp4" type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
+      </div>
+
+      <!-- Text Section -->
+      <div
+        class="relative z-10 p-4 sm:p-6 md:p-8 flex flex-col justify-center mx-auto max-w-[1440px] w-full lg:w-1/2 h-full">
+        <div class="bg-white/70 text-[#111827] p-6 sm:p-8 md:p-10 rounded-md shadow-lg">
+          <h1 class="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-4">
+            ON Page
+            <span class="text-[#2563EB]">SEO</span>
+            <br />
+          </h1>
+          <p class="mt-4 text-gray-600 group-hover:text-white transition-colors duration-300">
+            <a href="seo.html"
+              class="block mb-2 text-lg sm:text-xl font-semibold text-gray-800 transform hover:text-blue-600"
+              tabindex="0" role="link">Elevate Your Website’s Visibility with Optimized On-Page SEO</a>
+            On-page SEO boosts your rankings by optimizing key elements like headlines, tags, and meta descriptions. We
+            align content with search engine guidelines, incorporate relevant keywords, and ensure fast-loading,
+            visually engaging pages for a seamless user experience.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="relative w-full h-screen flex flex-col lg:flex-row items-center"
+    style="background-image: linear-gradient(to right, #f0e2e7, #d0dcf0)">
+    <!-- Text Content Section -->
+    <div class="relative z-10 text-white p-4 sm:p-6 md:p-8 flex flex-col justify-center mx-auto lg:w-1/2 h-full">
+      <div class="bg-white/70 text-[#111827] p-6 sm:p-8 md:p-10 rounded-md shadow-lg">
+        <h1 class="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-4">
+          <span class="text-[#2563EB]">OFF Page</span> SEO
+        </h1>
+        <p class="mt-4 text-gray-600 group-hover:text-white transition-colors duration-300">
+          <a href="seo.html"
+            class="block mb-2 text-lg sm:text-xl font-semibold text-gray-800 transform hover:text-blue-600" tabindex="0"
+            role="link">Expand Your Online Presence with Powerful<br /> Off-Page SEO</a>
+          Off-page SEO boosts your authority by securing high-quality backlinks, driving social media engagement, and
+          managing online reviews. We enhance your digital presence beyond your website, increasing visibility, traffic,
+          and credibility for long-term growth.
+        </p>
+      </div>
+    </div>
+
+    <!-- Video Section -->
+    <div class="lg:w-1/2 mt-8 lg:mt-0 lg:pl-6 flex justify-center items-center transition-video">
+      <video class="w-full max-w-md lg:max-w-full lg:h-auto rounded-md shadow-lg" autoplay muted
+        controlsList="nodownload">
+        <source src="./marketing,analysis,seo.mp4" type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
+    </div>
+  </section>
+
+
+  <section class="relative w-full h-screen" style="background-image: linear-gradient(to right, #f0e2e7, #d0dcf0)">
+    <!-- Container for Video and Text in Flexbox -->
+    <div class="relative flex flex-col lg:flex-row items-center h-full">
+      <!-- Video Section -->
+      <div class="lg:w-1/2 mt-8 lg:mt-0 lg:pl-6 flex justify-center items-center transition-video">
+        <video class="w-full max-w-md lg:max-w-full lg:h-auto rounded-md shadow-lg" autoplay muted
+          controlsList="nodownload">
+          <source src="./social media,creativity,design.mp4" type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
+      </div>
+
+      <!-- Text Section -->
+      <div
+        class="relative z-10 p-4 sm:p-6 md:p-8 flex flex-col justify-center mx-auto max-w-[1440px] w-full lg:w-1/2 h-full">
+        <div class="bg-white/70 text-[#111827] p-6 sm:p-8 md:p-10 rounded-md shadow-lg">
+          <h1 class="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-4">
+            Local
+            <span class="text-[#2563EB]">SEO</span>
+            <br />
+          </h1>
+          <p class="mt-4 text-gray-600 group-hover:text-white transition-colors duration-300">
+            <a href="seo.html"
+              class="block mb-2 text-lg sm:text-xl font-semibold text-gray-800 transform hover:text-blue-600"
+              tabindex="0" role="link">Dominate Local Searches with Targeted<br /> Local SEO</a>
+            Local SEO boosts your visibility in local search results and Google Maps. We optimize your Google Business
+            Profile, manage reviews, and improve local citations, driving <br /> high-intent local customers to your
+            business and increasing your community presence.
+          </p>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- <img src="./SEO Page.png" alt="seo-stages"> -->
+
+
+  <section class="my-182">
+    <div class="max-w-8xl mx-auto p-4 flex items-center justify-between gap-[30px]">
+      <!-- Card 1 -->
+      <div
+        class="relative overflow-hidden bg-white shadow-xl rounded-3xl transform transition-transform duration-300 hover:scale-105 hover:shadow-2xl w-1/4 ml-8">
+        <img class="object-cover w-full h-68 rounded-t-3xl" src="./seo stage 1.png" alt="Web Design">
+        <div class="absolute left-1/2 transform -translate-x-1/2 mb-28">
+          <a href="webdesign.html"
+            class="block text-xl font-semibold text-gray-800 hover:text-blue-600 transition-colors duration-300 transform ml-[-48px] mt-4">Initial
+            Audit</a>
+        </div>
+        <div class="p-6 mt-10">
+          <p class="text-sm text-gray-600 text-justify leading-relaxed">Assess the website’s current SEO health,
+            audience, and competition. Actions: Conduct a full SEO audit, competitor analysis, and keyword research to
+            establish benchmarks and identify opportunities.</p>
+        </div>
+      </div>
+
+      <!-- Conversion Sign 1 -->
+      <div class="flex items-center justify-center">
+        <svg xmlns="http://www.w3.org/2000/svg" class="w-14 h-14 text-black transform rotate-90" fill="none"
+          viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M5 15l7-7 7 7" />
+        </svg>
+      </div>
+
+      <!-- Card 2 -->
+      <div
+        class="relative overflow-hidden bg-white shadow-xl rounded-3xl transform transition-transform duration-300 hover:scale-105 hover:shadow-2xl w-1/4">
+        <img class="object-cover w-full h-68 rounded-t-3xl" src="./seo stage 2.png" alt="SEO">
+        <div class="absolute  left-1/2 transform -translate-x-1/2 mb-28">
+          <a href="webdesign.html"
+            class="block text-xl font-semibold text-gray-800 hover:text-blue-600 transition-colors duration-300 transform">Technical
+            & On Page-SEO</a>
+        </div>
+        <div class="p-6 mt-10">
+          <p class="text-sm text-gray-600 text-justify leading-relaxed">Improve the site’s technical foundation for
+            SEO.Action: Resolve issues like broken links, mobile usability, site speed and indexing. Implement schema
+            markup for better visibility.</p>
+        </div>
+      </div>
+
+      <!-- Conversion Sign 2 -->
+      <div class="flex items-center justify-center">
+        <svg xmlns="http://www.w3.org/2000/svg" class="w-14 h-14 text-black transform rotate-90" fill="none"
+          viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M5 15l7-7 7 7" />
+        </svg>
+      </div>
+
+      <!-- Card 3 -->
+      <div
+        class="relative overflow-hidden bg-white shadow-xl rounded-3xl transform transition-transform duration-300 hover:scale-105 hover:shadow-2xl w-1/4 mr-8">
+        <img class="object-cover w-full h-68 rounded-t-3xl" src="./seo stage 3.png" alt="Branding">
+        <div class="absolute  left-1/2 transform -translate-x-1/2 mb-28">
+          <a href="webdesign.html"
+            class="block text-xl font-semibold text-gray-800 hover:text-blue-600 transition-colors duration-300 transform">Monitoring
+            & Reporting</a>
+        </div>
+        <div class="p-6 mt-10">
+          <p class="text-sm text-gray-600 text-justify leading-relaxed">Build authority and track performance. Action:
+            Develop a link building plan, monitor, analyze, refine strategies based on data and continuously adapt to
+            changes.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- <section
+class="relative w-full h-screen"
+style="background-image: linear-gradient(to right, #f0e2e7, #d0dcf0)"
+>
+<video
+    class="absolute top-1/2 w-full left-1/2 h-full object-cover transform -translate-x-1/2 -translate-y-1/2 z-0 max-w-full hidden sm:block"
+    autoplay
+    muted
+    loop
+    controlsList="nodownload"
+  >
+    <source src="./video.mp4" type="video/mp4" />
+    Your browser does not support the video tag.
+  </video>
+
+
+
+<div
+  class="relative z-10 text-white p-4 sm:p-6 md:p-8 flex flex-col justify-center mx-auto max-w-[1440px] h-full"
+>
+  <div class="flex flex-col lg:flex-row items-center h-full">
+
+    <div 
+      class="bg-white/70 text-[#111827] p-6 sm:p-8 md:p-10 rounded-md lg:w-1/2 lg:h-auto shadow-lg"
+    >
+    <h1 class="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-4">
+    
+      <span class="text-[#2563EB]">Local</span>
+      SEO
+    </h1>
+    <p class="mt-4 text-gray-600 group-hover:text-white transition-colors duration-300">
+      With 64 percent of customers searching online for local businesses, effective local SEO is crucial for attracting nearby customers. Boost your local presence by optimizing your Google Business Profile (formerly Google My Business). <span id="moreText">
+        We enhance your profile to ensure it appears prominently in local search results and Google Maps, making it easier for potential customers to find you.
+        <br><br>
+        Our approach includes refining your business information, managing reviews, and improving local citations to strengthen your online reputation. By optimizing these elements, we help you connect with high-intent local customers who are ready to engage with your business.
+        <br><br>
+        Investing in local SEO not only drives traffic from nearby areas but also enhances your visibility in local search queries, giving your business the competitive edge it needs to thrive in your community.
+        <br><br>
+        On-Page SEO: Raise your website’s visibility and attract high-quality traffic with effective on-page SEO strategies. We meticulously align our SEO practices with the latest search engine guidelines to enhance your site’s credibility and performance. Our team of SEO specialists focuses on creating compelling, original content that provides real value to your audience, setting you apart from the competition.
+        <br><br>
+        We optimize key on-page elements, including headlines and HTML tags, ensuring they are both search-engine friendly and engaging for visitors. By incorporating relevant keywords and crafting effective meta descriptions, we help search engines understand your content better and improve your rankings.
+        <br><br>
+        Additionally, we utilize high-resolution images and ensure they are properly tagged and compressed for faster loading times, further boosting your site’s performance and user experience.
+      </span>
+    </p>
+    
+    
+    
+    </div>
+   
+    <div class="lg:w-1/2 hidden lg:block"></div>
+  </div>
+</div>
+</section> -->
+
+
+  <!-- questions ans answers SEO -->
+  <section class="max-w-4xl mx-auto p-6">
+    <h2 class="text-3xl font-semibold text-center mb-8">Frequently Asked Questions</h2>
+    <div class="space-y-4">
+      <!-- Question 1 -->
+      <div class="border-b border-gray-300">
+        <button class="w-full text-left flex justify-between items-center py-4 focus:outline-none"
+          onclick="toggleFaq('faq1')">
+          <span class="text-lg font-medium text-gray-800">How long does it takes to see SEO results?</span>
+          <svg class="h-6 w-6 text-gray-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+          </svg>
+        </button>
+        <div id="faq1" class="hidden text-gray-600 mt-2">
+          <p>Investment in SEO is a long-term strategy. Results usually start showing with 3 to 6 months, depending on
+            your industry, competition, and current rankings.</p>
+        </div>
+      </div>
+
+      <!-- Question 2 -->
+      <div class="border-b border-gray-300">
+        <button class="w-full text-left flex justify-between items-center py-4 focus:outline-none"
+          onclick="toggleFaq('faq2')">
+          <span class="text-lg font-medium text-gray-800">What is the difference in SEO and SEA?</span>
+          <svg class="h-6 w-6 text-gray-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+          </svg>
+        </button>
+        <div id="faq2" class="hidden text-gray-600 mt-2">
+          <p>SEO focuses on generating organic traffic through search engine optimization, while SEA (Search Engine
+            Advertising) is based on paid ads to appear at the top of search results.</p>
+        </div>
+      </div>
+
+      <!-- Question 3 -->
+      <div class="border-b border-gray-300">
+        <button class="w-full text-left flex justify-between items-center py-4 focus:outline-none"
+          onclick="toggleFaq('faq3')">
+          <span class="text-lg font-medium text-gray-800">How does SEO improve Website Visibility?</span>
+          <svg class="h-6 w-6 text-gray-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+          </svg>
+        </button>
+        <div id="faq3" class="hidden text-gray-600 mt-2">
+          <p>SEO strategies consist of optimizing various elements of your website, such as keywords, content, and
+            structure, making it easier for search engines (like Google) to understand your website and rank it higher.
+          </p>
+        </div>
+      </div>
+
+      <!-- Question 4 -->
+      <div class="border-b border-gray-300">
+        <button class="w-full text-left flex justify-between items-center py-4 focus:outline-none"
+          onclick="toggleFaq('faq4')">
+          <span class="text-lg font-medium text-gray-800">Does website optimization really help SMEs (Small and Medium
+            Enterprises)?</span>
+          <svg class="h-6 w-6 text-gray-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+          </svg>
+        </button>
+        <div id="faq4" class="hidden text-gray-600 mt-2">
+          <p>Website optimization process is crucial for businesses of all sizes. It helps businesses compete by
+            improving local visibility, driving targeted audience, and improving overall presence.</p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <script>
+    function toggleFaq(id) {
+      const faq = document.getElementById(id);
+      faq.classList.toggle('hidden');
+    }
+  </script>
+
+
+  <!-- Talk to our team -->
+  <!-- <section class="bg-blue-600 py-8">
+    <div class="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl">
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center text-white">
+        <div class="flex flex-col">
+          <h2 class="text-3xl font-extrabold mb-2">Talk to our Team</h2>
+          <p class="text-lg">We’re here to help with any questions you have. Reach out to us!</p>
+        </div>
+        <div class="flex justify-start md:justify-end">
+          <button href="contact.html" class="flex items-center px-6 py-3 text-blue-500 bg-white rounded-lg transition-transform transform hover:scale-105 hover:text-white bg-blue-600 border border-black focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2">
+            <span class="text-sm font-semibold">Contact Us</span>
+            <i class="fa-solid fa-arrow-right text-sm ml-2"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+  </section> -->
+  <!-- Interested to Now more  -->
+  <section class="relative bg-white" id="animated-content-1">
+    <div class="flex items-center justify-center p-4 bg-white">
+      <div id="animated-content" class=" bg-[#2563EB] rounded-lg p-8 max-w-3xl shadow-lg text-center">
+        <h3 class="text-gray-400 font-semibold mb-2">FIND OUT MORE</h3>
+        <h2 class="text-3xl font-bold mb-4 text-black text-center">Save Time & Effort with the <br>ASN SEO team</h2>
+        <p class="text-gray-400 mb-8">Come and see what we’re up to.</p>
+        <div class="flex justify-center space-x-4">
+          <!-- Facebook Icon -->
+          <a href="https://www.facebook.com/profile.php?id=61572800012355"
+            class="text-white bg-blue-500 hover:bg-blue-600 rounded-full p-3 transition duration-300">
+            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z" />
+            </svg>
+          </a>
+          <!-- <Linked In> -->
+          <a href="https://www.linkedin.com/company/asnconsultingsrl"
+            class="text-white bg-blue-400 hover:bg-blue-500 rounded-full p-3 transition duration-300">
+            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M4.98 3.5c0 1.38-1.12 2.5-2.5 2.5S0 4.88 0 3.5 1.12 1 2.48 1s2.5 1.12 2.5 2.5zM.5 8.5h4V23h-4V8.5zM8.5 8.5h3.72v2.07h.05c.52-.98 1.8-2.02 3.7-2.02 3.96 0 4.69 2.61 4.69 6.01V23h-4v-6.32c0-1.51-.03-3.46-2.11-3.46-2.11 0-2.44 1.65-2.44 3.35V23h-4V8.5z" />
+            </svg>
+          </a>
+
+          <!-- Instagram Icon -->
+          <a href="https://www.instagram.com/asn_consultingsrl/"
+            class="text-white bg-pink-500 hover:bg-pink-600 rounded-full p-3 transition duration-300">
+            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M7.75 2h8.5A5.76 5.76 0 0 1 22 7.75v8.5A5.76 5.76 0 0 1 16.25 22h-8.5A5.76 5.76 0 0 1 2 16.25v-8.5A5.76 5.76 0 0 1 7.75 2zm0-2A7.75 7.75 0 0 0 0 7.75v8.5A7.75 7.75 0 0 0 7.75 24h8.5A7.75 7.75 0 0 0 24 16.25v-8.5A7.75 7.75 0 0 0 16.25 0h-8.5zM12 6.5a5.5 5.5 0 1 1 0 11 5.5 5.5 0 0 1 0-11zm0 2a3.5 3.5 0 1 0 0 7 3.5 3.5 0 0 0 0-7zm6-3.5a1 1 0 1 1 0 2 1 1 0 0 1 0-2z" />
+            </svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <footer class="bg-blue-600">
+    <div class="container px-6 py-12 mx-auto max-w-7xl">
+      <div class="md:flex md:-mx-3 md:items-center md:justify-between">
+        <div class="flex flex-col md:flex-row lg:flex-row xl:flex-row">
+          <h1 class="text-xl font-semibold tracking-tight md:mx-3 xl:text-2xl text-white">
+            Your business’s online image is important:
+          </h1>
+          <span class="text-lg font-normal text-gray-300 ml-4">
+            Let us help you create it, advertise it, optimize it.
+          </span>
+        </div>
+        <div class="mt-6 md:mx-3 shrink-0 md:mt-0 md:w-auto">
+          <a href="contact.html"
+            class="inline-flex items-center justify-center w-full px-4 py-2 text-sm text-white duration-300 bg-blue-600 border border-black rounded-lg gap-x-3 hover:border-blue-600 focus:ring focus:ring-gray-300 focus:ring-opacity-80">
+            <span>Contact Us</span>
+            <i class="fa-solid fa-arrow-right text-sm ml-2"></i>
+          </a>
+
+        </div>
+      </div>
+      <hr class="my-6 border-gray-200 md:my-10">
+      <div class="grid grid-cols-1 gap-6 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
+        <div>
+          <p class="font-semibold text-white">Quick Link</p>
+          <div class="flex flex-col items-start mt-5 space-y-2">
+            <a href="index.html"
+              class="text-white text-sm transition-colors duration-300 hover:text-gray-400 hover:underline">Home</a>
+            <a href="services.html"
+              class="text-white text-sm transition-colors duration-300 hover:text-gray-400 hover:underline">Services</a>
+            <a href="about.html"
+              class="text-white text-sm transition-colors duration-300 hover:text-gray-400 hover:underline">About Us</a>
+          </div>
+        </div>
+        <!-- <div>
+          <p class="font-semibold text-white">Portfolio</p>
+           <div class="flex flex-col items-start mt-5 space-y-2">
+            <a href="#" class="text-white text-sm transition-colors duration-300 hover:text-gray-400 hover:underline">E-Commerce Store</a>
+            <a href="#" class="text-white text-sm transition-colors duration-300 hover:text-gray-400 hover:underline">Information Technology</a>
+            <a href="#" class="text-white text-sm transition-colors duration-300 hover:text-gray-400 hover:underline">Business & Finance</a>
+          </div> 
+        </div> -->
+        <div>
+          <p class="font-semibold text-white">Services</p>
+          <div class="flex flex-col items-start mt-5 space-y-2">
+            <a href="seo.html"
+              class="text-white text-sm transition-colors duration-300 hover:text-gray-400 hover:underline">Search
+              Engine Optimization</a>
+            <a href="webdesign.html"
+              class="text-white text-sm transition-colors duration-300 hover:text-gray-400 hover:underline">Web
+              Design</a>
+            <a href="branding.html"
+              class="text-white text-sm transition-colors duration-300 hover:text-gray-400 hover:underline">Branding</a>
+          </div>
+        </div>
+        <div>
+          <p class="font-semibold text-white">Contact Us</p>
+          <div class="flex flex-col items-start mt-5 space-y-2">
+            <div>
+              <i class="text-white mr-2 text-base fa-brands fa-whatsapp"></i>
+              <a href="#"
+                class="text-white text-sm transition-colors duration-300 hover:text-gray-400 hover:underline">0032467632815</a>
+            </div>
+            <!-- <div>
+              <i class="text-white mr-2 text-base fa-brands fa-whatsapp"></i>
+              <a href="#"
+                class="text-white text-sm transition-colors duration-300 hover:text-gray-400 hover:underline">00923170083555</a>
+            </div>          -->
+            <div>
+              <i class="text-white mr-2 text-base fa-solid fa-envelope"></i>
+              <a href="#"
+                class="text-white text-sm transition-colors duration-300 hover:text-gray-400 hover:underline">info@asnconsulting.be</a>
+            </div>
+            <div>
+              <i class="text-white mr-2 text-base fa-solid fa-location-dot"></i>
+              <a href="#"
+                class="text-white text-sm transition-colors duration-300 hover:text-gray-400 hover:underline">Brussels,
+                Belgium</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <hr class="my-6 border-gray-200 md:my-18">
+      <div class="flex flex-col items-center justify-between sm:flex-row">
+        <a href="index.html">
+          <img class="w-auto h-9" src="./ASNlogowhite.png" alt="">
+        </a>
+        <p class="mt-4 text-sm white sm:mt-0 text-gray-100">©2023-2024 ASN Consulting all rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+  <script src="script.js"></script>
+</body>
+
+</html>

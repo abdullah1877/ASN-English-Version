@@ -1,0 +1,519 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Branding & Logo Design</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+  <script src="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"></script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" />
+  <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <link href="https://fonts.googleapis.com/css2?family=Duru+Sans&display=swap" rel="stylesheet" />
+
+
+  <!-- <script type="text/javascript">
+    function googleTranslateElementInit() {
+      new google.translate.TranslateElement({
+        pageLanguage: 'en',
+        includedLanguages: 'en,fr',
+        layout: google.translate.TranslateElement.InlineLayout.SIMPLE,
+        autoDisplay: false
+      }, 'google_translate_element');
+    }
+  </script>
+  <script type="text/javascript"
+    src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script> -->
+
+  <style>
+    /* Custom style for the Google Translate dropdown */
+    #google_translate_element {
+      font-size: 14px;
+      padding: 5px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      background-color: #fff;
+    }
+  </style>
+
+</head>
+
+<body class="bg-gray-900 text-white">
+  <!-- header -->
+
+  <header class="bg-white shadow-lg">
+    <nav class="flex justify-between items-center w-[92%] mx-auto max-w-7xl">
+      <div>
+        <a href="index.html">
+          <img class="md:w-56 w-40 p-3 cursor-pointer" src="ASNlogo.png" alt="...">
+        </a>
+      </div>
+      <div>
+        <div
+          class="nav-links duration-500 md:static absolute bg-white md:min-h-fit top-[57px] left-[-100%] md:w-auto w-60 px-5 flex flex-col justify-start h-full">
+          <ul
+            class="text-gray-500 flex md:flex-row flex-col md:items-center md:gap-[4vw] gap-8 md:font-semibold pt-8 md:pt-0">
+            <li>
+              <div class="hover:text-blue-600 transition duration-300 ease-out">
+                <i class="text-base fas fa-home mr-1 md:hidden"></i>
+                <a href="index.html">Home</a>
+              </div>
+            </li>
+            <li class="relative group">
+              <div class="hover:text-blue-600 transition duration-300 ease-out">
+                <i class="text-base fa-solid fa-briefcase mr-2 md:hidden"></i>
+                <span>Services</span>
+                <i class="ml-2 text-sm fa-solid fa-chevron-down"></i>
+              </div>
+              <div
+                class="absolute z-50 text-sm left-0 hidden group-hover:block bg-white border border-gray-200 border-t-0 rounded-b shadow-lg mt-[-8px] w-40 transition duration-300 ease-out transform translate-y-1">
+                <ul class="pt-2 text-gray-500">
+                  <li><a
+                      class="block px-4 py-2 hover:bg-blue-600 rounded hover:text-white transition duration-300 ease-in-out"
+                      href="webdesign.html">Web Designing</a></li>
+                  <li><a
+                      class="block px-4 py-2 hover:bg-blue-600 rounded hover:text-white transition duration-300 ease-in-out"
+                      href="seo.html">SEO</a></li>
+                  <li><a
+                      class="block px-4 py-2 hover:bg-blue-600 rounded hover:text-white transition duration-300 ease-in-out"
+                      href="branding.html">Branding</a></li>
+                  <li><a
+                      class="block px-4 py-2 text-gray-700 hover:bg-blue-600 rounded hover:text-white transition duration-300 ease-in-out"
+                      href="digitalmarketing.html">Digital Marketing</a></li>
+                </ul>
+              </div>
+            </li>
+            <li>
+              <div class="hover:text-blue-600 transition duration-300 ease-out">
+                <i class="text-base fas fa-envelope mr-2 md:hidden"></i>
+                <a href="contact.html">Contact Us</a>
+              </div>
+            </li>
+            <!-- Language Dropdown -->
+            <li class="relative group">
+              <div class="hover:text-blue-600 transition duration-300 ease-out cursor-pointer">
+                <span>Language</span> <!-- Make this clickable -->
+                <i class="ml-2 text-sm fa-solid fa-chevron-down"></i>
+              </div>
+              <!-- Language Dropdown Menu -->
+              <div id="google_translate_element"
+                class="absolute z-50 text-sm left-0 hidden group-hover:block bg-white border border-gray-200 border-t-0 rounded-b shadow-lg mt-[-4px] w-40 transition duration-300 ease-out transform translate-y-1">
+                <ul class="pt-2 text-gray-500">
+                  <li>
+                    <a class="block px-4 py-2 hover:bg-blue-600 rounded hover:text-white transition duration-300 ease-in-out"
+                       href="http://french.asnconsulting.be/" target="_blank">Français</a>
+                  </li> 
+                  <li>
+                    <a class="block px-4 py-2 hover:bg-blue-600 rounded hover:text-white transition duration-300 ease-in-out"
+                      href="#" onclick="changeLanguage('en')">English</a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <div>
+          <ion-icon onclick="onToggleMenu(this)" name="menu" class="text-3xl cursor-pointer md:hidden"></ion-icon>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+
+  <!-- Hero Section -->
+  <section
+    class="relative flex items-center justify-center h-[90vh] border-1  text-center bg-gradient-to-r from-blue-800 to-indigo-900 overflow-hidden">
+    <!-- Background Video -->
+    <video style="background-image: url('branding banner.jpg'); opacity: 0.5;" id="bgVideo"
+      class="absolute inset-0 top-0 left-0 w-full z-5 h-full object-cover" autoplay muted playsinline>
+      <source src="br4" type="video/mp4" />
+      Your browser does not support the video tag.
+    </video>
+
+    <!-- Overlay to darken the video for better text readability -->
+    <!-- <div class="absolute inset-0 bg-black opacity-50"></div> -->
+
+    <!-- Content -->
+    <div class="relative z-10 text-white px-4 ">
+      <h1 class="text-5xl font-bold mb-4">Elevate your brand with a strong identity.</h1>
+      <p class="text-lg mb-8">
+        Your brand is more than just your logo; it's the heart of your business identity.
+      </p>
+      <button class="bg-blue-600 hover:bg-blue-500 text-white font-bold py-3 px-6 rounded-lg">
+        Get a Free Branding Consultation
+      </button>
+    </div>
+  </section>
+
+  <!-- Services Overview -->
+  <section class="py-10">
+    <!-- <video autoplay muted loop class="absolute top-0 left-0 w-full object-cover z-[-1]">
+        <source src="branding1.mp4" type="video/mp4" />
+        Your browser does not support the video tag.
+    </video> -->
+    <div class="max-w-7xl mx-auto px-6 text-center">
+
+      <h2 class="text-4xl font-semibold mb-12">Our Branding Services</h2>
+      <div class="grid grid-cols-1 md:grid-cols-4 gap-12">
+        <!-- Card 1: Logo Design --> 
+        <div class="bg-gray-800 p-6 rounded-lg shadow-lg">
+          <img style="height: 175px; border-radius: 10px ;" src="./120185.jpg" alt="Brand Identity"
+            class="h-[120] w-[100] object-contain mb-12 rounded" />
+
+          <h3 class="text-2xl font-bold mb-2">Brand Identity</h3>
+          <p class="text-white">
+            Create a distinctive logo, style and messaging style.
+          </p>
+        </div>
+        <!-- Card 2: Brand Identity -->
+        <div class="bg-gray-800 p-6 rounded-lg shadow-lg mb">
+          <img style="width: 250px; height: 170px;" src="Strategy Banner.jpg" alt="Strategy"
+            class="h-100px w-80 object-cover mx-auto mb-9 rounded" />
+          <h3 class="text-2xl font-bold  mb-2">Strategy</h3>
+          <p class="text-white">
+            Build a strategic plan that aligns with brand goals and your target audience.
+          </p>
+        </div>
+        <!-- Card 3: Brand Strategy -->
+        <div class="bg-gray-800 p-6 rounded-lg shadow-lg">
+          <img src="SMM Branding....png" alt="Social Media Branding"
+            class="h-41 w-41 rounded object-cover mx-auto mb-4" />
+          <h3 class="text-2xl font-bold mb-2">Social Media Branding</h3>
+          <p class="text-white">
+            Develop a consistent look for your brand across all social media channels.
+          </p>
+        </div>
+
+        <div class="bg-gray-800 p-6 rounded-lg shadow-lg">
+          <img src="Audit & Competitor....png" alt="Audit and Competitor"
+            class="h-45 w-45 object-contain mx-auto mb-5 rounded" />
+          <h3 class="text-2xl font-bold mb-2">Audit & Competitor Analysis</h3>
+          <p class="text-white">
+            Assess your brand’s strengths and analyse competitors to discover growth opportunities.
+          </p>
+        </div>
+      </div> audit & Competitor
+    </div>
+  </section>
+
+
+  <!-- services card-->
+  <!-- card 1 -->
+  <section class="relative w-full h-screen flex items-center"
+    style="background-image: linear-gradient(to right, #f0e2e7, #d0dcf0);">
+    <!-- Text Section -->
+    <div class="flex flex-col justify-center lg:w-1/2 h-full px-6 sm:px-8 md:px-10 lg:px-12">
+      <div class="bg-white/70 text-[#111827] p-6 sm:p-8 md:p-10 rounded-md shadow-lg">
+        <h1 class="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-4">
+          <span class="text-[#2563EB]">Brand</span> Identity
+        </h1>
+        <p class="mt-4 text-gray-600">
+          Your brand identity helps you make a strong first impression and build loyalty with customers.
+          We create a unique look and feel, along with clear messaging that connects with your audience.
+        </p>
+        <ul class="list-disc pl-5 mt-4 text-gray-800">
+          <li>Logo design and development</li>
+          <li>Typography and color selection</li>
+          <li>Visual brand style guides</li>
+          <li>Brand collateral design (business cards, packaging, signage)</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Video Section -->
+    <div class="lg:w-1/2 h-full flex justify-center items-center p-6">
+      <video class="w-full max-w-md lg:max-w-full lg:h-auto rounded-md shadow-lg" autoplay muted
+        controlsList="nodownload">
+        <source src="./vecteezy_a-perfect-creative-industry-animation_28716489 (1).mp4" type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
+    </div>
+  </section>
+
+
+  <!-- card 2 -->
+
+  <section class="relative w-full h-screen" style="background-image: linear-gradient(to right, #f0e2e7, #d0dcf0)">
+    <!-- Container for Video and Text in Flexbox -->
+    <div class="relative flex flex-col lg:flex-row items-center h-full">
+      <!-- Video Section -->
+      <div class="relative w-full lg:w-1/2 h-full">
+        <video class="absolute top-0 left-0 w-full h-full pl-6" autoplay muted controlsList="nodownload">
+          <source src="vecteezy_online-shopping-and-order-4k-animation-home-delivery_7118556.mp4" type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
+      </div>
+
+      <!-- Text Section -->
+      <div
+        class="relative z-10 p-4 sm:p-6 md:p-8 flex flex-col justify-center mx-auto max-w-[1440px] w-full lg:w-1/2 h-full">
+        <div class="bg-white/70 text-[#111827] p-6 sm:p-8 md:p-10 rounded-md shadow-lg">
+          <h1 class="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-4">
+
+            <span class="text-[#2563EB]">Strategy</span>
+            <br />
+          </h1>
+          <p class="mt-4 text-gray-600 group-hover:text-white transition-colors duration-300">
+            <a href="seo.html"
+              class="block mb-2 text-lg sm:text-xl font-semibold text-gray-800 transform hover:text-blue-600"
+              tabindex="0" role="link">A clear brand strategy guides your growth and keeps your brand consistent. We
+              work with you to define a clear roadmap that supports your business objectives.</a>
+          <ul class="list-disc pl-5">
+            <li>Brand positioning and value proposition</li>
+            <li>Market research and audience segmentation</li>
+            <li>Mission, vision, and values development</li>
+            <li>Long-term brand growth strategy planning</li>
+          </ul>
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- card 3 -->
+
+  <section class="relative w-full h-screen" style="background-image: linear-gradient(to right, #f0e2e7, #d0dcf0)">
+    <video
+      class=" pl-5 pr-6 absolute top-1/2 w-1/2 left-2/4  h-full  transform-translate-x-1/4 -translate-y-1/2 z-0 max-w-full hidden sm:block"
+      autoplay muted controlsList="nodownload">
+      <source src="vecteezy_vfx-animated-background-with-virtual-social-media-reality_28716273.mp4" type="video/mp4" />
+      Your browser does not support the video tag.
+    </video>
+
+
+    <!-- Text and Video Separated by Flexbox Layout -->
+    <div class="relative z-10 text-white p-4 sm:p-6 md:p-8 flex flex-col justify-center mx-auto max-w-[1440px] h-full">
+      <div class="flex flex-col lg:flex-row items-center h-full">
+        <!-- Text Section with Semi-transparent Background -->
+        <div class="bg-white/70 text-[#111827] p-6 sm:p-8 md:p-10 rounded-md lg:w-1/2 lg:h-auto shadow-lg">
+          <h1 class="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-4">
+
+            <span class="text-[#2563EB]">Social Media</span>
+            Branding
+          </h1>
+          <p class="mt-4 text-gray-600 group-hover:text-white transition-colors duration-300">
+            <a href="seo.html"
+              class="block mb-2 text-lg sm:text-xl font-semibold text-gray-800 transform hover:text-blue-600"
+              tabindex="0" role="link">Consistent and engaging social media branding amplifies your presence and
+              connects with your audience across all platforms. We ensure your brand stands out and engages your
+              audience effectively online.</a>
+          <ul class="list-disc pl-5">
+            <li>Social media visual identity and branding</li>
+            <li>Profile setup and optimization </li>
+            <li>Content strategy and planning</li>
+            <li>Social media graphics and assets creation</li>
+          </ul>
+          </p>
+
+
+
+        </div>
+        <!-- Empty Space for Separation -->
+        <div class="lg:w-1/2 hidden lg:block"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- card 4 -->
+
+  <section class="relative w-full h-screen" style="background-image: linear-gradient(to right, #f0e2e7, #d0dcf0)">
+    <!-- Container for Video and Text in Flexbox -->
+    <div class="relative flex flex-col lg:flex-row items-center h-full">
+      <!-- Video Section -->
+      <div class="relative w-full lg:w-1/2 h-full">
+        <video class="absolute top-0 left-0 w-full h-full pl-6" autoplay muted controlsList="nodownload">
+          <source src="./vecteezy_vfx-animated-background-with-virtual-social-media-reality_28716264.mp4"
+            type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
+      </div>
+
+      <!-- Text Section -->
+      <div
+        class="relative z-10 p-4 sm:p-6 md:p-8 flex flex-col justify-center mx-auto max-w-[1440px] w-full lg:w-1/2 h-full">
+        <div class="bg-white/70 text-[#111827] p-6 sm:p-8 md:p-10 rounded-md shadow-lg">
+          <h1 class="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-4">
+            Audit & Competitor
+            <span class="text-[#2563EB]">Analysis</span>
+            <br />
+          </h1>
+          <p class="mt-4 text-gray-600 group-hover:text-white transition-colors duration-300">
+            <a href="seo.html"
+              class="block mb-2 text-lg sm:text-xl font-semibold text-gray-800 transform hover:text-blue-600"
+              tabindex="0" role="link">A brand audit helps you understand where you stand, while competitor analysis
+              reveals new opportunities. We help you identify market gaps and develop strategies.</a>
+          <ul class="list-disc pl-5">
+            <li>Brand audit (visuals, messaging, and audience perception)</li>
+            <li>SWOT analysis</li>
+            <li>Performance analysis and reporting</li>
+            <li>Recommendations for brand improvements and growth</li>
+          </ul>
+          </p>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Why Choose Us -->
+  <!-- <section class="relative py-20 text-center overflow-hidden">
+     
+      <div
+        class="absolute top-0 left-0 w-full h-full bg-black opacity-50"
+      ></div>
+
+      <div class="relative z-10 max-w-7xl mx-auto px-6">
+        <h2 class="text-4xl font-semibold text-white mb-12">Our Branding Approach</h2>
+        <p>
+      
+          In today's fast moving digital world and competitive markets,businesses need to adapt quickly.We help businesses define and refresh their brand identity to stay ahead.         
+        </p>
+      </div>
+    </section> -->
+
+  <!-- Contact CTA -->
+  <section class="py-20 bg-zinc-800 text-center">
+    <h2 class="text-4xl font-bold mb-4">Ready to Transform Your Brand?</h2>
+    <p class="text-white mb-5">
+      Custom designs for your business, including visiting cards, brochures,
+      pamphlets and more.
+    </p>
+    <button class="bg-blue-600 hover:bg-blue-900 text-white font-bold py-4 px-8 rounded-lg">
+      Contact Us
+    </button>
+  </section>
+
+  <footer class="bg-blue-600">
+    <div class="container px-6 py-12 mx-auto max-w-7xl">
+      <div class="md:flex md:-mx-3 md:items-center md:justify-between">
+        <div class="flex flex-col md:flex-row lg:flex-row xl:flex-row">
+          <h1 class="text-xl font-semibold tracking-tight md:mx-3 xl:text-2xl text-white">
+            Your business’s online image is important:
+          </h1>
+          <span class="text-lg font-normal text-gray-300 ml-4">
+            Let us help you create it, advertise it, optimize it.
+          </span>
+        </div>
+        <div class="mt-6 md:mx-3 shrink-0 md:mt-0 md:w-auto">
+          <a href="contact.html"
+            class="inline-flex items-center justify-center w-full px-4 py-2 text-sm text-white duration-300 bg-blue-600 border border-black rounded-lg gap-x-3 hover:border-blue-600 focus:ring focus:ring-gray-300 focus:ring-opacity-80">
+            <span>Contact Us</span>
+            <i class="fa-solid fa-arrow-right text-sm ml-2"></i>
+          </a>
+
+        </div>
+      </div>
+
+      <hr class="my-6 border-gray-200 md:my-10" />
+
+      <div class="grid grid-cols-1 gap-6 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
+        <div>
+          <p class="font-semibold text-white">Quick Link</p>
+          <div class="flex flex-col items-start mt-5 space-y-2">
+            <a href="home.html"
+              class="text-white text-sm transition-colors duration-300 hover:text-gray-400 hover:underline">Home</a>
+            <a
+              class="text-white text-sm transition-colors duration-300 hover:text-gray-400 hover:underline">Services</a>
+            <a href="about.html"
+              class="text-white text-sm transition-colors duration-300 hover:text-gray-400 hover:underline">About Us</a>
+          </div>
+        </div>
+
+        <!-- <div>
+            <p class="font-semibold text-white">Portfolio</p>
+             <div class="flex flex-col items-start mt-5 space-y-2">
+              <a
+                href="#"
+                class="text-white text-sm transition-colors duration-300 hover:text-gray-400 hover:underline"
+                >E-Commerce Store</a
+              >
+              <a
+                href="#"
+                class="text-white text-sm transition-colors duration-300 hover:text-gray-400 hover:underline"
+                >Information Technology</a
+              >
+              <a
+                href="#"
+                class="text-white text-sm transition-colors duration-300 hover:text-gray-400 hover:underline"
+                >Business & Finance</a
+              >
+            </div> 
+          </div> -->
+
+        <div>
+          <p class="font-semibold text-white">Services</p>
+          <div class="flex flex-col items-start mt-5 space-y-2">
+            <a href="seo.html"
+              class="text-white text-sm transition-colors duration-300 hover:text-gray-400 hover:underline">Search
+              Engine Optimization</a>
+            <a href="webdesign.html"
+              class="text-white text-sm transition-colors duration-300 hover:text-gray-400 hover:underline">Web
+              Design</a>
+            <a href="branding.html"
+              class="text-white text-sm transition-colors duration-300 hover:text-gray-400 hover:underline">Branding</a>
+          </div>
+        </div>
+
+        <div>
+          <p class="font-semibold text-white">Contact Us</p>
+          <div class="flex flex-col items-start mt-5 space-y-2">
+            <div>
+              <i class="text-white mr-2 text-base fa-brands fa-whatsapp"></i>
+              <a href="#"
+                class="text-white text-sm transition-colors duration-300 hover:text-gray-400 hover:underline">0032467632815</a>
+            </div>
+            <!-- <div>
+                <i class="text-white mr-2 text-base fa-brands fa-whatsapp"></i>
+                <a href="#"
+                  class="text-white text-sm transition-colors duration-300 hover:text-gray-400 hover:underline">00923170083555</a>
+              </div>          -->
+            <div>
+              <i class="text-white mr-2 text-base fa-solid fa-envelope"></i>
+              <a href="#"
+                class="text-white text-sm transition-colors duration-300 hover:text-gray-400 hover:underline">info@asnconsulting.be</a>
+            </div>
+            <div>
+              <i class="text-white mr-2 text-base fa-solid fa-location-dot"></i>
+              <a href="#"
+                class="text-white text-sm transition-colors duration-300 hover:text-gray-400 hover:underline">Brussels,
+                Belgium</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <hr class="my-6 border-gray-200 md:my-18" />
+
+      <div class="flex flex-col items-center justify-between sm:flex-row">
+        <a href="#">
+          <img class="w-auto h-9" src="./assets/ASN-logo-white.png" alt="" />
+        </a>
+        <p class="mt-4 text-sm white sm:mt-0 text-gray-100">
+          ©2023-2024 ASN Consulting all rights reserved.
+        </p>
+      </div>
+    </div>
+  </footer>
+  <script>const buttons = document.querySelectorAll("button");
+    buttons.forEach((button) => {
+      button.addEventListener("click", () => {
+        window.scrollTo({
+          top: document.body.scrollHeight,
+          behavior: "smooth",
+        });
+      });
+    });
+  </script>
+</body>
+
+</html>

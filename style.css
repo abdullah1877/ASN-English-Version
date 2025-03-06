@@ -1,0 +1,380 @@
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.card {
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  width: 300px;
+}
+
+.card-content {
+  padding: 16px;
+}
+
+.card-title {
+  font-size: 1.5em;
+  margin-bottom: 8px;
+}
+
+.card-text {
+  margin-bottom: 16px;
+}
+
+.read-more-btn {
+  background-color: #007BFF;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.read-more-btn:hover {
+  background-color: #0056b3;
+}
+
+.additional-text {
+  display: none;
+  margin-top: 16px;
+}
+
+.hover\:bg-opacity-20:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.shadow-lg {
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.1);
+}
+
+.pt-12 {
+  padding-top: 3rem; 
+}
+
+/* a:hover {
+  background-color: #1e3a8a;
+} */
+
+
+
+.bg-fixed-image{
+    background-image: linear-gradient(
+        rgba(68, 58, 58, 0.7), /* Brown color with 70% opacity */
+        rgba(129, 118, 118, 0.7)
+    ),url('./asset/office.jpg');
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+};
+
+.animate__fadeIn {
+    --animate-duration: 2s; /* Adjust this value for your desired duration */
+  }
+  .z-decrease {
+    margin-right: 0px;
+}
+
+@keyframes moveHorizontally {
+  0% {
+      transform: translateX(0);
+  }
+  50% {
+      transform: translateX(80px);
+  }
+  100% {
+      transform: translateX(0);
+  }
+}
+
+.z-decrease {
+  animation: moveHorizontally 3s infinite cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+
+      @keyframes fadeInUp {
+        from {
+          opacity: 0;
+          transform: translateY(20px);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+
+      .fade-in-up {
+        opacity: 0;
+        animation: fadeInUp 3s forwards;
+      }
+
+      .scroll-fade-in-up {
+        opacity: 0;
+      }
+
+      .parallax-bg {
+        background: url("https://images.unsplash.com/photo-1562577309-2592ab84b1bc?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D")
+          no-repeat center center fixed;
+        background-size: cover;
+        position: relative;
+      }
+
+      .parallax-bg::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.3);
+        z-index: 1;
+      }
+
+      .parallax-bg > * {
+        position: relative;
+        z-index: 2;
+      }
+
+      .h_cb_top_div {
+        background-color: #3b82f6;
+        width: 64px;
+        height: 64px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        top: 50%;
+        transform: translatey(-50%);
+      }
+
+      .h_cb_top_div img {
+        width: 40px;
+        height: 40px;
+      }
+
+      @media (max-width: 640px) {
+        .text-left-on-small {
+          font-weight: 500;
+          text-align: center;
+        }
+        .head-left-on-small {
+          text-align: center;
+        }
+
+        .container-on-small {
+          margin: 0;
+        }
+      }
+
+      .max-w-1440 {
+        max-width: 1440px;
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+
+      #send{
+        background-color: #2563EB;
+    }
+    
+    #send:hover{
+        background-color: #427af2;
+    }
+    
+    #free{
+        background-color: #2563EB;
+    }
+    
+    #free:hover{
+        background-color: #427af2;
+    }
+    
+    #find{
+        background-color: #2563EB;
+    }
+    
+    #find:hover{
+        background-color: #427af2;
+    }
+    .moving-text {
+      display: inline-block; /* Allow for movement */
+      animation: move 2s linear infinite; /* Continuous left-right movement */
+      transition: transform 0.5s ease; /* Smooth transition for hover/click */
+    }
+    
+    @keyframes move {
+      0% {
+        transform: translateX(0); /* Start position */
+      }
+      50% {
+        transform: translateX(20px); /* Move right */
+      }
+      100% {
+        transform: translateX(0); /* Return to start position */
+      }
+    }
+    
+    .moving-text:hover,
+    /* .moving-text.clicked {
+      animation: none; 
+      transform: scale(1.05);
+      color: #ff6347;
+      background-color: #f0f0f0; 
+    }  */
+    .custom-button {
+      position: relative;
+      background-color: #3b82f6;
+      color: white;
+      margin-top: 1.5rem; /* mt-6 */
+      padding: 0.5rem 1rem; /* px-4 py-2 */
+      border-radius: 0.375rem; /* rounded-md */
+      display: flex;
+      align-items: center;
+      transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+      z-index: 10;
+    }
+    
+    .custom-button a {
+      color: inherit;
+      text-decoration: none;
+      display: flex;
+      align-items: center;
+    }
+    
+    .custom-button .icon {
+      font-size: 1.25rem; /* text-xl */
+      margin-right: 0.5rem; /* mr-2 */
+    }
+    
+    .custom-button:hover {
+      transform: scale(1.05);
+      box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.15); /* hover:shadow-lg */
+    }
+    
+    .custom-button:active {
+      transform: scale(0.95);
+      background-color: #2563eb; /* active:bg-blue-600 */
+    }
+    .custom-box {
+      background-color: white; 
+      color: #4a5568; /* text-gray-700 */
+      font-size: 1.3rem; /* text-base */
+      line-height: 1.75; /* leading-relaxed */
+      padding: 2rem; /* Adds spacing inside the box */
+      border: 2px solid #d1d5db; /* gray border */
+      border-radius: 8px; /* Rounded corners */ 
+      width: 100%; /* Full width of its container */
+      max-width: 900px; /* Set a maximum width for larger screens */
+      margin: 1.5rem auto; /* Centering and spacing */
+      box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+      transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out; /* Smooth transition */
+    }
+    
+    .custom-box:hover {
+      transform: scale(1.05); /* Slight zoom on hover */
+      box-shadow: 0px 8px 30px rgba(0, 0, 0, 0.2); /* More intense shadow */
+      border-color: #5c6570; /* Darker gray border on hover */
+    }
+    
+
+    .card {
+      transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+      border: 2px solid transparent; /* Initial border */
+      border-radius: 20px; /* Rounded corners */
+  }
+
+  .card:hover {
+      transform: scale(1.05); /* Slightly scale up the card */
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); /* Deeper shadow effect */
+      border: 2px solid transparent; /* To avoid flickering */
+      background: linear-gradient(white, white), linear-gradient(to right, #3b82f6, #2563eb); /* Gradient effect */
+      background-clip: padding-box, border-box; /* Clipping to make gradient visible */
+      border-radius: 20px; /* Keep rounded corners */
+      z-index: 1; /* Ensure hover effect appears above other elements */
+  }
+
+  /* Content visibility on hover */
+  .card-content {
+      transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
+      opacity: 0; /* Hide content by default */
+      visibility: hidden; /* Make it non-interactive */
+  }
+
+  .card:hover .card-content {
+      opacity: 1; /* Show content on hover */
+      visibility: visible; /* Make it interactive */
+  }
+
+  /* Button styles */
+  .card-button {
+      background-color: #3b82f6; /* Blue-500 from Tailwind CSS */
+      color: white;
+      padding: 0.5rem 1rem;
+      border-radius: 0.375rem; /* Rounded button */
+      transition: background-color 0.3s ease;
+  }
+
+  .card-button:hover {
+      background-color: #2563eb; 
+  }
+  .pea-circle {
+    width: 20px; 
+    height: 20px; 
+    border-radius: 50%; 
+}
+
+.hover-items {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.hover-item {
+  position: relative;
+  cursor: pointer;
+  padding-left: 10px;
+  display: inline-block;
+}
+
+.hover-item::before {
+  content: "";
+  position: absolute;
+  left: 30px; 
+  bottom: 0;
+  width: 0;
+  height: 2px;
+  background-color: #3B82F6;
+  transition: width 3s ease, height 3s ease;
+}
+
+.hover-item:hover::before {
+  width: 87%;
+  height: 3px;
+}
+
+
+/* This CSS sets the container for positioning, but does not enforce full-screen dimensions */
+.transition-video {
+  position: relative; 
+  width: 100%; 
+  height: 90%; 
+  overflow: hidden;
+  margin: 0 auto; 
+  margin-top: 2rem;
+  margin-right: 2rem;
+}
+
+.transition-video video {
+  width: 100%; 
+  height: 90%; 
+  object-fit: cover; 
+}
+.webvideo1 { 
+  width: 50%;
+  height: 50%;
+  display: flex;
+  justify-content: flex-end;
+  margin-left: 38rem;
+}

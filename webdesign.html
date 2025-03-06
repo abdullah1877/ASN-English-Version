@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ASN Consulting</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <script src="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    />
+    <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Duru+Sans&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body class="bg-gray-50">
+    <!-- header -->
+    <header class="bg-white shadow-2xl">
+      <nav class="flex justify-between items-center w-[92%] mx-auto max-w-7xl">
+        <div>
+          <a href="index.html">
+            <img class="md:w-56 w-40 p-3 cursor-pointer" src="ASNlogo.png" alt="...">
+          </a>
+        </div>
+        <div>
+          <div
+            class="nav-links duration-500 md:static absolute bg-white md:min-h-fit top-[57px] left-[-100%] md:w-auto w-60 px-5 flex flex-col justify-start h-full">
+            <ul
+              class="text-gray-500 flex md:flex-row flex-col md:items-center md:gap-[4vw] gap-8 md:font-semibold pt-8 md:pt-0">
+              <li>
+                <div class="hover:text-blue-600 transition duration-300 ease-out">
+                  <i class="text-base fas fa-home mr-1 md:hidden"></i>
+                  <a href="index.html">Home</a>
+                </div>
+              </li>
+              <li class="relative group">
+                <div class="hover:text-blue-600 transition duration-300 ease-out">
+                  <i class="text-base fa-solid fa-briefcase mr-2 md:hidden"></i>
+                  <span>Services</span>
+                  <i class="ml-2 text-sm fa-solid fa-chevron-down"></i>
+                </div>
+                <div
+                  class="absolute z-50 text-sm left-0 hidden group-hover:block bg-white border border-gray-200 border-t-0 rounded-b shadow-lg mt-[-8px] w-40 transition duration-300 ease-out transform translate-y-1">
+                  <ul class="pt-2 text-gray-500">
+                    <li><a
+                        class="block px-4 py-2 hover:bg-blue-600 rounded hover:text-white transition duration-300 ease-in-out"
+                        href="webdesign.html">Web Designing</a></li>
+                    <li><a
+                        class="block px-4 py-2 hover:bg-blue-600 rounded hover:text-white transition duration-300 ease-in-out"
+                        href="seo.html">SEO</a></li>
+                    <li><a
+                        class="block px-4 py-2 hover:bg-blue-600 rounded hover:text-white transition duration-300 ease-in-out"
+                        href="branding.html">Branding</a></li>
+                    <li><a
+                        class="block px-4 py-2 text-gray-700 hover:bg-blue-600 rounded hover:text-white transition duration-300 ease-in-out"
+                        href="digitalmarketing.html">Digital Marketing</a></li>
+                  </ul>
+                </div>
+              </li>
+              <li>
+                <div class="hover:text-blue-600 transition duration-300 ease-out">
+                  <i class="text-base fas fa-envelope mr-2 md:hidden"></i>
+                  <a href="contact.html">Contact Us</a>
+                </div>
+              </li>
+              <!-- Language Dropdown -->
+              <li class="relative group">
+                <div class="hover:text-blue-600 transition duration-300 ease-out cursor-pointer">
+                  <span>Language</span> <!-- Make this clickable -->
+                  <i class="ml-2 text-sm fa-solid fa-chevron-down"></i>
+                </div>
+                <!-- Language Dropdown Menu -->
+                <div id="google_translate_element"
+                  class="absolute z-50 text-sm left-0 hidden group-hover:block bg-white border border-gray-200 border-t-0 rounded-b shadow-lg mt-[-4px] w-40 transition duration-300 ease-out transform translate-y-1">
+                  <ul class="pt-2 text-gray-500">
+                    <li>
+                      <a class="block px-4 py-2 hover:bg-blue-600 rounded hover:text-white transition duration-300 ease-in-out"
+                         href="http://french.asnconsulting.be/" target="_blank">Français</a>
+                    </li>                    
+                    <li>
+                      <a class="block px-4 py-2 hover:bg-blue-600 rounded hover:text-white transition duration-300 ease-in-out"
+                        href="#" onclick="changeLanguage('en')">English</a>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <div>
+            <ion-icon onclick="onToggleMenu(this)" name="menu" class="text-3xl cursor-pointer md:hidden"></ion-icon>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section
+      class="px-4 py-16 bg-white flex flex-col md:flex-row items-center max-w-1440 mx-auto"
+    >
+      <!-- First div for text content -->
+      <div class="text-center lg:ms-10 md:text-left md:w-1/2">
+        <h1
+          class="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-[111827] mb-4"
+        >
+          Don't Miss Out
+          <span class="text-[#2563EB]"
+            >on <br />
+            Potential </span>
+            Customers!
+        </h1>
+        <p class="text-xl font-semibold text-gray-600 mb-8">
+          In today's digital age, having a website is more important than ever.
+          People’s behavior is heavily influenced by digital media. Boost your
+          credibility and customer reach, and get a website now.
+        </p>
+        <a
+          href="contact.html"
+          class="inline-block bg-blue-600 text-white px-6 py-3 rounded-full hover:bg-blue-200 hover:text-blue-600"
+          >Contact Us</a
+        >
+      </div>
+
+      <style>
+        @keyframes moveUpDown {
+          0% {
+            transform: translateY(0); /* Starting position */
+          }
+          50% {
+            transform: translateY(-40px); /* Move up */
+          }
+          100% {
+            transform: translateY(0); /* Return to starting position */
+          }
+        }
+      
+        .transition-img {
+          animation: moveUpDown 2s ease-in-out infinite; /* Run the animation continuously */
+        }
+      </style>
+      
+      <div class="md:w-1/2 pt-3 md:mt-0 flex justify-center">
+        <video src="./seo, creative, finance, legal.mp4" type="video/mp4" autoplay muted playsinline> 
+        </video>
+      </div>
+      
+      
+    </section>
+
+    <!-- Process Section -->
+    <section class="container mx-auto px-4 py-16 max-w-1440">
+      <div class="w-full flex justify-center mb-6">
+        <h2 class="text-5xl font-bold" style="color: #2563EB; margin-top: -40px;">
+          Our Process
+        </h2>      
+      </div>      
+      <div class="grid lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-1 gap-8 mt-4">
+        <div class="bg-white shadow-lg p-8 rounded-lg text-center" style="margin-top: -40px;">
+          <img src="./pic4.jpg" class="h-[227px] mx-auto mb-4" />
+          <h3 class="text-2xl font-bold text-gray-800  mb-2">Conception</h3>
+          <p class="text-gray-600">
+            We start by understanding your needs <br /> and goals to create a vision
+            for your <br /> website.
+          </p>
+        </div>
+        <div class="bg-white shadow-lg p-8 rounded-lg text-center" style="margin-top: -40px;">
+          <img src="./pic5.png" class="h-[220px] mx-auto mb-4" />
+          <h3 class="text-2xl font-bold text-gray-800 mb-2">UX/UI Design and Development
+          </h3>
+          <p class="text-gray-600">
+            Our team creates visually appealing designs and ensures smooth functionality, focusing on user experience and interface to make your website user-friendly and engaging.
+          </p>
+        </div>
+        <div class="bg-white shadow-lg p-8 rounded-lg text-center" style="margin-top: -40px;">
+          <img src="./pic6.jpg" class="h-[220px] mx-auto" />
+          <h3 class="text-2xl font-bold text-gray-800 mt-5 mb-2">
+            Development
+          </h3>
+          <p class="text-gray-600">
+            We develop a seamless user experience, ensuring your website runs
+            smoothly and efficiently.
+          </p>
+        </div>
+      </div>
+    </section>
+    
+    
+    <!-- Maintenance & Hosting Section -->
+    <section class="bg-blue-700 text-white py-16 mx-auto">
+      <div
+        class="container mx-auto px-4 grid lg:grid-cols-2 sm:grid-cols-1 max-w-1440 gap-8"
+      >
+        <div class="bg-blue-800 px-8 pb-8 rounded-lg text-center">
+          <div class="flex justify-center">
+            <span class="h_cb_top_div rounded">
+              <img class="h-10 w-10" src="./maintenance.png" alt="" />
+            </span>
+          </div>
+          <h3 class="text-2xl font-bold mb-2">Maintenance</h3>
+          <p class="text-lg">
+            We’ll ensure your website runs smoothly. Choose our long-term
+            service package, and we’ll handle updates, security, and
+            troubleshooting.
+          </p> 
+        </div>
+        <div class="bg-blue-800 px-8 pb-8 rounded-lg text-center">
+          <div class="flex justify-center">
+            <span class="h_cb_top_div rounded">
+              <img class="h-10 w-10 " src="./server_10176659.png" alt="" />
+            </span>
+          </div>
+          <h3 class="text-2xl font-bold mb-2">Hosting Services</h3>
+          <p class="text-lg">
+            Reliable and secure hosting solutions keep your website online and
+            always accessible.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+
+    <!-- Video Section -->
+    <div class="flex">
+      <section
+        class="relative w-full h-screen"
+        style="background-image: linear-gradient(to right, #f0e2e7, #d0dcf0)"
+      >
+        <div
+          class="relative z-10 p-4 sm:p-6 md:p-8 flex flex-col lg:flex-row justify-center items-center mx-auto max-w-[1440px] h-full"
+        >
+          <!-- Text Section -->
+          <div class="bg-white/70 text-[#111827] p-6 sm:p-8 md:p-10 rounded-md shadow-lg lg:w-1/2 lg:h-auto">
+            <h1 class="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-4">
+              Clear,
+              <span class="text-[#2563EB]">Responsive,</span> and
+              <br />
+              <span class="text-[#2563EB]">Engaging</span> Websites.
+            </h1>
+            <p class="text-sm sm:text-base md:text-lg lg:text-xl font-semibold text-gray-700">
+              We design websites that look attractive and are easy to use,
+              with our UX optimization. We ensure a smooth user experience.
+              Our responsive designs ensure your site looks good on any device.
+            </p>
+          </div> 
+    
+          <!-- Video Section with Animation -->
+          <div class="lg:w-1/2 mt-8 lg:mt-0 lg:pl-6 flex justify-center items-center transition-video">
+            <video
+              class="w-full max-w-md lg:max-w-full lg:h-auto rounded-md shadow-lg"
+              autoplay
+              muted
+              controlsList="nodownload"
+            >
+              <source src="./1103(11).mp4" type="video/mp4" />
+              Your browser does not support the video tag.
+            </video>
+          </div>
+        </div>
+      </section>
+    </div>
+    
+      
+  <!-- Video Section 2 -->
+  <section
+  class="relative w-full h-screen"
+  style="background-image: linear-gradient(to right, #f0e2e7, #d0dcf0)"
+>
+  <!-- Container for Video and Text in Flexbox -->
+  <div class="relative flex flex-col lg:flex-row items-center h-full">
+    <!-- Video Section (Left) -->
+    <div class="lg:w-1/2 mt-8 lg:mt-0 lg:pl-6 flex justify-center items-center transition-video">
+      <video
+        class="w-full max-w-md lg:max-w-full lg:h-auto rounded-md shadow-lg"
+        autoplay
+        muted 
+        controlsList="nodownload"
+      >
+        <source src="./1103(9).mp4" type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
+    </div>
+
+    <!-- Text Section (Right) -->
+    <div
+      class="relative z-10 p-4 sm:p-6 md:p-8 flex flex-col justify-center mx-auto max-w-[1600px] w-full lg:w-1/2 h-full"
+    >
+      <div class="bg-white/70 text-[#111827] p-6 sm:p-8 md:p-10 rounded-md shadow-lg">
+        <h1 class="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-4">
+          Add custom <span class="text-[#2563EB]">solution</span>
+          <span class="text-[#2563EB]"> to streamline </span>
+          Business Operation.
+        </h1>
+        <p class="text-sm sm:text-base md:text-lg lg:text-xl font-semibold text-gray-700">
+          Add customizable features to your website to streamline your operations.<br />
+          From online appointment scheduling to workflow management and reservations,
+          choose the features that best suit your business needs.
+        </p>
+      </div>
+    </div> 
+  </div>
+</section>
+
+          <!-- Video Section 2 end--> 
+      <section
+      class="px-4 py-16 md:py-25 bg-white flex flex-col md:flex-row items-center max-w-1440 mx-auto"
+    >
+      <!-- First div for text content -->
+      <div class="md:w-1/2 mt-8 md:mt-0 flex justify-center">
+        <img src="./pic9.jpg" alt="Website Image" class="w-[80%] h-auto" />
+      </div>
+      <!-- Second div for image or SVG -->
+      <div class="text-center lg:ms-10 md:text-left md:w-1/2">
+        <h1
+          class="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-4 text-[#111827]"
+        >
+          By offering these accompaniment services,
+          <span class="text-[#2563EB]">we aim to elevate our role</span> from services providers to trusted partners.
+        </h1>
+        <a
+          href="contact.html"
+          class="inline-block bg-blue-600 text-white px-6 py-3 rounded-full hover:bg-blue-200 hover:text-blue-600 mt-[8px]"
+          >Get in touch</a
+        >
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-blue-600">
+      <div class="container px-6 py-12 mx-auto max-w-7xl">
+        <div class="md:flex md:-mx-3 md:items-center md:justify-between">
+          <div class="flex flex-col md:flex-row lg:flex-row xl:flex-row">
+            <h1
+              class="text-xl font-semibold tracking-tight md:mx-3 xl:text-2xl text-white"
+            >
+              Your business’s online image is important:
+            </h1>
+            <span class="text-lg font-normal text-gray-300 ml-4">
+              Let us help you create it, advertise it, optimize it.
+            </span>
+          </div>
+          <div class="mt-6 md:mx-3 shrink-0 md:mt-0 md:w-auto">
+            <a
+  href="contact.html"
+  class="inline-flex items-center justify-center w-full px-4 py-2 text-sm text-white duration-300 bg-blue-600 border border-black rounded-lg gap-x-3 hover:border-blue-600 focus:ring focus:ring-gray-300 focus:ring-opacity-80">
+  <span>Contact Us</span>
+  <i class="fa-solid fa-arrow-right text-sm ml-2"></i>
+</a>
+
+          </div>
+        </div>
+
+        <hr class="my-6 border-gray-200 md:my-10" />
+
+        <div
+          class="grid grid-cols-1 gap-6 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4"
+        >
+          <div> 
+            <p class="font-semibold text-white">Quick Link</p>
+            <div class="flex flex-col items-start mt-5 space-y-2">
+              <a
+                href="home.html"
+                class="text-white text-sm transition-colors duration-300 hover:text-gray-400 hover:underline"
+                >Home</a
+              >
+              <a
+                href="services.html"
+                class="text-white text-sm transition-colors duration-300 hover:text-gray-400 hover:underline"
+                >Services</a
+              >
+              <a
+                href="about.html"
+                class="text-white text-sm transition-colors duration-300 hover:text-gray-400 hover:underline"
+                >About Us</a
+              >
+            </div>
+          </div>
+
+          <!-- <div>
+            <p class="font-semibold text-white">Portfolio</p>
+             <div class="flex flex-col items-start mt-5 space-y-2">
+              <a
+                href="#"
+                class="text-white text-sm transition-colors duration-300 hover:text-gray-400 hover:underline"
+                >E-Commerce Store</a
+              >
+              <a
+                href="#"
+                class="text-white text-sm transition-colors duration-300 hover:text-gray-400 hover:underline"
+                >Information Technology</a
+              >
+              <a
+                href="#"
+                class="text-white text-sm transition-colors duration-300 hover:text-gray-400 hover:underline"
+                >Business & Finance</a
+              >
+            </div> 
+          </div>   -->
+
+          <div>
+            <p class="font-semibold text-white">Services</p>
+            <div class="flex flex-col items-start mt-5 space-y-2">
+              <a
+                href="seo.html"
+                class="text-white text-sm transition-colors duration-300 hover:text-gray-400 hover:underline"
+                >Search Engine Optimization</a
+              >
+              <a
+                href="webdesign.html"
+                class="text-white text-sm transition-colors duration-300 hover:text-gray-400 hover:underline"
+                >Web Design</a
+              >
+              <a
+                href="branding.html"
+                class="text-white text-sm transition-colors duration-300 hover:text-gray-400 hover:underline"
+                >Branding</a
+              >
+            </div>
+          </div>
+
+          <div>
+            <p class="font-semibold text-white">Contact Us</p>
+            <div class="flex flex-col items-start mt-5 space-y-2">
+              <div>
+                <i class="text-white mr-2 text-base fa-brands fa-whatsapp"></i>
+                <a href="#"
+                  class="text-white text-sm transition-colors duration-300 hover:text-gray-400 hover:underline">0032467632815</a>
+              </div>
+              <!-- <div>
+                <i class="text-white mr-2 text-base fa-brands fa-whatsapp"></i>
+                <a href="#"
+                  class="text-white text-sm transition-colors duration-300 hover:text-gray-400 hover:underline">00923170083555</a>
+              </div>          -->
+              <div>
+                <i class="text-white mr-2 text-base fa-solid fa-envelope"></i>
+                <a
+                  href="#"
+                  class="text-white text-sm transition-colors duration-300 hover:text-gray-400 hover:underline"
+                  >info@asnconsulting.be</a 
+                >
+              </div>
+              <div>
+                <i
+                  class="text-white mr-2 text-base fa-solid fa-location-dot"
+                ></i>
+                <a
+                  href="#"
+                  class="text-white text-sm transition-colors duration-300 hover:text-gray-400 hover:underline"
+                  >Brussels, Belgium</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <hr class="my-6 border-gray-200 md:my-18" />
+
+        <div class="flex flex-col items-center justify-between sm:flex-row">
+          <a href="#">
+            <img class="w-auto h-9" src="./assets/ASN-logo-white.png" alt="" />
+          </a>
+          <p class="mt-4 text-sm white sm:mt-0 text-gray-100">
+            ©2023-2024 ASN Consulting all rights reserved.
+          </p>
+        </div>
+      </div>
+    </footer> 
+    <script src="script.js"></script>
+  </body>
+</html>
